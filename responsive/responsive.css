@@ -1,0 +1,44 @@
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+@media screen and (max-width: 986px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    .title-header{
+        font-size: 1rem;
+    }
+    .content{
+        font-size: 1rem;
+    }
+    .content__container__list{
+        padding-left: 75px;
+    }
+    .cover-table{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .table{
+        width: 96%;
+        margin: 0 auto;
+    }
+    button:before{
+        display: none;
+    }
+    button:after{
+        display: none;
+    }
+    body{
+        background-image: none;
+    }
+}

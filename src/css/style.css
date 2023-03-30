@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	--color-white: white;
+	--colors-bg--300: #1e181e;
+	--colors-bg--500: #191a1e;
+	--color-primary-strong: rgb(240, 47, 47);
+	--colors-primary--200: #f4908b;
+	--colors-primary--300: #ea6f69;
+	--colors-primary--500: #e8615a;
+	--colors-primary--600: #9c3230;
+	--colors-primary--700: #5e2122;
+	--colors-primary--800: #451717;
+	--colors-primary--900: #3c181a;
+	--colors-secondary--500: #2be4ea;
+	--colors-secondary--900: #295459;
+	--colors-tertiary--500: #fed33f;
+	--colors-on_bg--500: var(--colors-primary--500);
+	--colors-on_tertiary--500: var(--colors-bg--300);
+	--colors-on_primary--500: var(--colors-primary--200);
+	--colors-active--500: #2bfea0;
+	--fonts-primary: "Rajdhani", sans-serif;
+	--fonts-secondary: "VT323", monospace;
+	--ui-glow: 0 0 5px var(--colors-primary--500);
+	--ui-glow-borders--500: 0 0 3px var(--colors-primary--500);
+	--ui-glow-color: currentcolor;
+	--ui-glow-text: -9px -6px 40px var(--ui-glow-color);
+	--ui-glow-text--dimmed: -9px -6px 40px var(--ui-glow-color);
+	--ui-glow-text--header: 1px 1px 1px 0px var(--ui-glow-color);
+	--ui-elevation--1: 2px 2px 0 rgba(0, 0, 0, 0.8);
+	--ui-notch-amount: 1rem;
+	--ui-notch-hypotenuse: 22.627416px;
+	/* hypothenuse of --ui-notch-amount */
+	--ui-notch-path: polygon(0 0,
+			100% 0,
+			100% calc(100% - var(--ui-notch-amount) + 2px),
+			calc(100% - var(--ui-notch-amount) + 2px) 100%,
+			0 100%);
+
+	background-color: var(--colors-bg--500);
+	background-image: radial-gradient(ellipse at 33% 10%,
+			#c19931 0%,
+			transparent 15%);
+	background-repeat: no-repeat;
+	color: var(--colors-on_bg--500);
+	font-family: var(--fonts-primary);
+	font-size: 100%;
+	line-height: 1.4;
+	margin: 0;
+	min-height: 100vh;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+svg {
+	width: 100%;
+	text-align: center;
+	height: 200px;
+}
+
+/* Thiết lập một số giá trị cho phần tử chung */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 5px;
+	border: 1px solid black;
+}
+
+/* Thiết lập giao diện cho bàn */
+.table {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 300px;
+	float: left;
+	height: 100%;
+}
+
+.table h3 {
+	text-align: center;
+}
+
+.table div {
+	margin-bottom: 10px;
+}
+.cover-table{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
+}
+
+
+button {
+
+	border: 1.5px solid var(--colors-tertiary--500);
+	border-radius: 3px;
+	color: var(--colors-tertiary--500);
+	display: inline-block;
+	font-size: 0.92rem;
+	background: transparent;
+	line-height: 1;
+	vertical-align: middle;
+	font-family: var(--fonts-primary);
+	margin: 0 2px;
+	padding: 4px 5px;
+}
+
+.flex-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+button:focus {
+	outline: 0;
+}
+
+button:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.5);
+	width: 60px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0.5;
+	filter: blur(40px);
+	transform: translateX(-100px) skewX(-15deg);
+}
+
+button:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: rgba(243, 244, 244, 0.2);
+	width: 30px;
+	height: 100%;
+	left: 30px;
+	top: 0;
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100px) skewX(-15deg);
+}
+
+
+
+button:hover:before {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: 0.6;
+	transition: 0.7s;
+}
+
+button:hover:after {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: 1;
+	transition: 0.7s;
+}
+
+.first {
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+	box-shadow: 0 0 40px 40px red inset;
+}
+
+.table {
+	border: 1px solid red;
+}
+
+/* Thiết lập giao diện cho kết quả tổng tiền */
+.table p {
+	font-weight: bold;
+	text-align: center;
+}
+
+.title-table {
+	text-align: center;
+	font-size: 20px;
+	color: var(--colors-primary--200);
+	font-family: var(--fonts-primary);
+	text-transform: uppercase;
+}
+
+.drink {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.drink input {
+	margin-left: 7px;
+	padding: 5px 10px;
+	outline: none;
+	border: 1px solid #5d2322;
+	background: black;
+	color: var(--color-white);
+	cursor: pointer;
+}
+
+/* .drink label {
+	font-size: .9rem;
+	color: var(--color-white);	color: var(--color-white);
+	text-transform: capitalize;
+} */
+.drink label {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: var(--colors-secondary--500);
+	display: block;
+	font-family: var(--fonts-primary);
+	padding: 0.5rem 0.75rem;
+	transition: background-color 0.25s;
+	font-size: .8rem;
+}
+
+.flex-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-button button {
+	font-size: .8rem;
+}
+
+.total {
+	font-size: .9rem;
+	color: var(--colors-active--500);
+	font-family: var(--fonts-primary);
+}
+
+/* button:nth-child(1) {
+	background: #070707;
+	color: var(--color-white);
+}
+
+button:nth-child(2) {
+	background: #c90303;
+	color: var(--color-white);
+}
+
+button:nth-child(3) {
+	background: #1ea91e;
+	color: var(--color-white);
+} */
+.title-header {
+	text-align: center;
+	font-family: var(--fonts-primary);
+	color: var(--colors-active--500);
+	margin-top: 30px;
+	box-shadow: var(--ui-glow-text--header);
+	background: none;
+	font-size: 2rem;
+	font-weight: 300;
+	border: none;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+}
+
+
+
+.content {
+
+	height: 145px;
+	overflow: hidden;
+	font-size: 1.5rem;
+	line-height: 40px;
+	color: var(--colors-tertiary--500);
+	font-family: var(--fonts-primary);
+	font-weight: 300;
+}
+
+.content__container {
+	font-weight: 300;
+	overflow: hidden;
+	height: 40px;
+	line-height: 40px;
+}
+
+.content__container:before {
+	content: "[";
+	left: 0;
+}
+
+.content__container:after {
+	content: "]";
+	position: absolute;
+	right: 0;
+}
+
+.content__container:after,
+.content__container:before {
+	position: absolute;
+	top: 0;
+	color: #16a085;
+	font-size: 1rem;
+	line-height: 40px;
+	-webkit-animation-name: opacity;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: opacity;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.content__container__text {
+	display: inline;
+	float: left;
+	margin: 0;
+}
+
+.content__container__list {
+	margin-top: 0;
+	padding-left: 110px;
+	text-align: left;
+	list-style: none;
+	-webkit-animation-name: change;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: change;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+.content__container__list__item {
+	line-height: 40px;
+	margin: 0;
+}
+
+@-webkit-keyframes opacity {
+
+	0%,
+	100% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes change {
+
+	0%,
+	12.66%,
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	16.66%,
+	29.32% {
+		transform: translate3d(0, -25%, 0);
+	}
+
+	33.32%,
+	45.98% {
+		transform: translate3d(0, -50%, 0);
+	}
+
+	49.98%,
+	62.64% {
+		transform: translate3d(0, -75%, 0);
+	}
+
+	66.64%,
+	79.3% {
+		transform: translate3d(0, -50%, 0);
+	}
+
+	83.3%,
+	95.96% {
+		transform: translate3d(0, -25%, 0);
+	}
+}
+
+@keyframes opacity {
+
+	0%,
+	100% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes change {
+
+	0%,
+	12.66%,
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	16.66%,
+	29.32% {
+		transform: translate3d(0, -25%, 0);
+	}
+
+	33.32%,
+	45.98% {
+		transform: translate3d(0, -50%, 0);
+	}
+
+	49.98%,
+	62.64% {
+		transform: translate3d(0, -75%, 0);
+	}
+
+	66.64%,
+	79.3% {
+		transform: translate3d(0, -50%, 0);
+	}
+
+	83.3%,
+	95.96% {
+		transform: translate3d(0, -25%, 0);
+	}
+}
+
+.cover-table{
+	margin-top: -90px;
+}
