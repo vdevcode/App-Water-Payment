@@ -527,3 +527,20 @@ openA.addEventListener("blur", function(){
 		openA.style.color = 'black';
 	}
 });
+
+//open modal
+const  iconModal = document.querySelector('.open-modal');
+let  showModal = document.querySelector('.button-price');
+const openModalPrice = document.querySelector('.cover-popup-header');
+const iconClosePrice = document.querySelector('.close-btn-header');
+iconModal.addEventListener('click', () => {
+	showModal.classList.toggle('active');
+})
+
+showModal.addEventListener('click', () => {
+	openModalPrice.classList.toggle('active');
+})
+
+iconClosePrice.addEventListener('click', () => {
+	openModalPrice.classList.remove('active');
+})

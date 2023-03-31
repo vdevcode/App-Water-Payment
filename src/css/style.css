@@ -507,4 +507,15 @@ button:nth-child(3) {
 	cursor: pointer;
 	transition: background-color 0.25s;
 	text-align: right;
+	text-transform: capitalize;
+	font-size: .8rem;
+}
+.nav-header{
+	display: none;
+}
+.button-price{
+	display: none;
+}
+.cover-popup-header{
+	display: none;
 }
