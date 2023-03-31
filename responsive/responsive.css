@@ -61,31 +61,37 @@
     .title-header {
         padding: 8px;
     }
-    .cover-button{
+
+    .cover-button {
         margin-top: 30px;
     }
-    .nav-header{
+
+    .nav-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
     }
-    .nav-header i{
+
+    .nav-header i {
         font-size: 2rem;
 
     }
-    .nav-header img{
+
+    .nav-header img {
         width: 50px;
         height: 50px;
     }
-    .button-price{
+
+    .button-price {
         display: none;
         position: relative;
         text-align: end;
 
-        
+
     }
-    .button-price::before{
+
+    .button-price::before {
         content: '';
         width: 10px;
         height: 10px;
@@ -94,12 +100,14 @@
         right: 10px;
         top: -8px;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-   
+
     }
-    .button-price.active{
+
+    .button-price.active {
         display: block;
     }
-    .cover-popup-header{
+
+    .cover-popup-header {
         display: none;
         width: 100%;
         height: 100%;
@@ -109,38 +117,45 @@
         left: 0;
         z-index: 2;
     }
-    .cover-popup-header.active{
+
+    .cover-popup-header.active {
         display: block;
     }
-    .popup-modal-header{
+
+    .popup-modal-header {
         position: absolute;
         top: -50%;
         left: 0;
         width: 90%;
-      
+
         background-color: rgb(247, 248, 245);
         margin-top: 50%;
         margin-left: 50%;
         transform: translate(-50%, 50%);
     }
+
     table {
         border-collapse: collapse;
         width: 100%;
         font-family: var(--fonts-primary);
     }
-    th, td {
+
+    th,
+    td {
         text-align: left;
         padding: 8px;
         border-bottom: 1px solid #ddd;
         font-size: 1rem;
     }
+
     th {
         background-color: #d76464;
         color: black;
         text-align: center;
         font-family: var(--fonts-primary);
     }
-    .cover-popup-header i{
+
+    .cover-popup-header i {
         right: 0;
         text-align: end;
         margin-right: 10px;
@@ -153,7 +168,19 @@
         top: 10px;
         border-radius: 4px;
     }
-    .flex-button button{
+
+    .flex-button button {
         padding: 5px;
+    }
+
+    body {
+        background-image: url("https://i.pinimg.com/736x/a5/6d/e1/a56de1f48b042127a16397682a1997e1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .drink input{
+        font-size: .8rem;
     }
 }
