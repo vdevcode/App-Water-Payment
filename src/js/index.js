@@ -508,9 +508,22 @@ openA.addEventListener('click', () => {
 	allTable.classList.toggle('active')
 	if(isKhuOpen){
 		openA.innerHTML = 'Đã Đóng Khu A';
+		openA.style.backgroundColor = '#e74c3c';
+		openA.style.color = 'white';
 		isKhuOpen = false;
 	}
 	else{
 		openA.innerHTML = 'Đã Mở Khu A';
 		isKhuOpen = true;
+		openA.style.backgroundColor = '#2bfea0';
+		openA.style.color = 'black';
 }})
+openA.addEventListener("blur", function(){
+	if(isKhuOpen){
+		openA.innerHTML = "Đã Mở Khu A";
+	}else{
+		openA.innerHTML = "Khu A";
+		openA.style.backgroundColor = '#2bfea0';
+		openA.style.color = 'black';
+	}
+});
