@@ -98,6 +98,7 @@ h6 {
 
 table {
 	border-collapse: collapse;
+	
 }
 
 td {
@@ -108,12 +109,13 @@ td {
 /* Thiết lập giao diện cho bàn */
 .table {
 	margin: 20px;
-	padding: 20px;
+	padding:10px;
 	border: 1px solid black;
 	border-radius: 5px;
 	width: 300px;
 	float: left;
 	height: 100%;
+	
 }
 
 .table h3 {
@@ -125,8 +127,9 @@ td {
 }
 .cover-table{
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	gap: 20px;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 20px;
+
 }
 
 
@@ -154,7 +157,7 @@ button {
 button:focus {
 	outline: 0;
 }
-
+/* 
 button:before {
 	content: "";
 	display: block;
@@ -167,9 +170,9 @@ button:before {
 	opacity: 0.5;
 	filter: blur(40px);
 	transform: translateX(-100px) skewX(-15deg);
-}
+} */
 
-button:after {
+/* button:after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -181,21 +184,21 @@ button:after {
 	opacity: 0;
 	filter: blur(5px);
 	transform: translateX(-100px) skewX(-15deg);
-}
+} */
 
 
-
+/* 
 button:hover:before {
 	transform: translateX(300px) skewX(-15deg);
 	opacity: 0.6;
 	transition: 0.7s;
-}
-
+} */
+/* 
 button:hover:after {
 	transform: translateX(300px) skewX(-15deg);
 	opacity: 1;
 	transition: 0.7s;
-}
+} */
 
 .first {
 	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
@@ -462,5 +465,23 @@ button:nth-child(3) {
 }
 
 .cover-table{
-	margin-top: -90px;
+	margin-top: 10px;
+	display: none;
+}
+.cover-table.active{
+	display: block;
+}
+.cover-button{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+}
+.cover-button button{
+	background: var(--colors-active--500);
+	color: black;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.25s;
 }
