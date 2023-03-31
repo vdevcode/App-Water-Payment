@@ -135,12 +135,11 @@ td {
 
 button {
 	border: none;
-	
 	border-radius: 2px;
 	color: black;
 	display: inline-block;
 	font-size: 0.92rem;
-	background: var(--colors-tertiary--500);;
+	background: var(--colors-tertiary--500);
 	line-height: 1;
 	vertical-align: middle;
 	font-family: var(--fonts-primary);
@@ -525,4 +524,15 @@ button:nth-child(3) {
 }
 .cover-popup-header{
 	display: none;
+}
+#history{
+	font-size: .8rem;
+	color: #2bfea0;
+	text-align: justify;
+	font-family: var(--fonts-primary);
+	font-weight: 300;
+	display: none;
+}
+#history.active{
+	display: block;
 }

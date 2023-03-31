@@ -25,7 +25,23 @@ function calculate() {
 		const tigerNau = document.getElementById("tigerBac")
 		tigerNau.innerHTML = 0
 	}
+	const history = JSON.parse(localStorage.getItem('totalHistory')) || [];
+	history.push(total);
+	localStorage.setItem('totalHistory', JSON.stringify(history));
 
+}
+
+
+function clearHistory() {
+	localStorage.removeItem('totalHistory');
+	document.getElementById("history").innerHTML = ""; // Xóa hiển thị lịch sử trên trang web
+}
+function showHistory() {
+	const history = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Hiển thị lịch sử tổng tiền lên trang web
+	const historyText = history.map((total, index) => `Lần ${index + 1}: ${total} đồng`).join('<br>');
+	document.getElementById("history").innerHTML = historyText;
 }
 
 function confirmReset() {
@@ -506,22 +522,23 @@ const allTable = document.querySelector('.cover-table');
 var isKhuOpen = false;
 openA.addEventListener('click', () => {
 	allTable.classList.toggle('active')
-	if(isKhuOpen){
+	if (isKhuOpen) {
 		openA.innerHTML = 'Đã Đóng Khu A';
 		openA.style.backgroundColor = '#e74c3c';
 		openA.style.color = 'white';
 		isKhuOpen = false;
 	}
-	else{
+	else {
 		openA.innerHTML = 'Đã Mở Khu A';
 		isKhuOpen = true;
 		openA.style.backgroundColor = '#2bfea0';
 		openA.style.color = 'black';
-}})
-openA.addEventListener("blur", function(){
-	if(isKhuOpen){
+	}
+})
+openA.addEventListener("blur", function () {
+	if (isKhuOpen) {
 		openA.innerHTML = "Đã Mở Khu A";
-	}else{
+	} else {
 		openA.innerHTML = "Khu A";
 		openA.style.backgroundColor = '#2bfea0';
 		openA.style.color = 'black';
@@ -529,8 +546,8 @@ openA.addEventListener("blur", function(){
 });
 
 //open modal
-const  iconModal = document.querySelector('.open-modal');
-let  showModal = document.querySelector('.button-price');
+const iconModal = document.querySelector('.open-modal');
+let showModal = document.querySelector('.button-price');
 const openModalPrice = document.querySelector('.cover-popup-header');
 const iconClosePrice = document.querySelector('.close-btn-header');
 iconModal.addEventListener('click', () => {

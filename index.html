@@ -1031,6 +1031,7 @@
       <h1 class="title-header">Tính tiền nước quán Vua Biển 68</h1>
     </div>
 
+
     <div class="content">
       <div class="content__container">
         <p class="content__container__text">
@@ -1109,8 +1110,14 @@
 
         <button onclick="confirmReset()">Reset tất cả</button>
 
+        <button onclick="showHistory()">Xem lịch sử tổng tiền</button>
+       
       </div>
-
+      <div>
+        <p id="history"></p>
+        <button onclick="clearHistory()">Xoá lịch sử tổng tiền</button>
+      </div>
+     
       <div class="total" id="total"></div>
     </div>
 
