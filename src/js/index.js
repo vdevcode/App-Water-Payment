@@ -19,29 +19,32 @@ function calculate() {
 
 	const total = (tigerNau * 24000) + (tigerBac * 25000) + (heineken * 26000) + (sevenUp * 18000) + (coke * 18000) + (sting * 18000) + (napkin * 3000);
 
-	document.getElementById("total").innerHTML = "Tổng tiền: " + total + " đồng";
 
-	function resetQuantity() {
-		const tigerNau = document.getElementById("tigerBac")
-		tigerNau.innerHTML = 0
-	}
 	const history = JSON.parse(localStorage.getItem('totalHistory')) || [];
-	history.push(total);
+
+	// Lấy thời gian hiện tại
+	const currentTime = new Date().getTime();
+	history.push({ time: currentTime, total: total });
 	localStorage.setItem('totalHistory', JSON.stringify(history));
 
+	// Hiển thị tổng tiền lên trang web
+	document.getElementById("total").innerHTML = "Tổng tiền: " + total + " đồng";
+
 }
 
 
-function clearHistory() {
-	localStorage.removeItem('totalHistory');
-	document.getElementById("history").innerHTML = ""; // Xóa hiển thị lịch sử trên trang web
-}
+// Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
 function showHistory() {
 	const history = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
 	// Hiển thị lịch sử tổng tiền lên trang web
-	const historyText = history.map((total, index) => `Lần ${index + 1}: ${total} đồng`).join('<br>');
-	document.getElementById("history").innerHTML = historyText;
+	const historyText = history.map((item, index) => `Lần ${index + 1}: ${item.total} đồng (Thời gian: ${new Date(item.time).toLocaleString()})`).join('<br>');
+	document.getElementById("history").innerHTML = historyText + '<br><button class="delete-history" onclick="clearHistory()">Xoá lịch sử</button>';
+}
+
+function clearHistory() {
+	localStorage.removeItem('totalHistory');
+	document.getElementById("history").innerHTML = "đã xoá lịch sử tổng tiền"; // Xóa hiển thị lịch sử trên trang web
 }
 
 function confirmReset() {
@@ -538,6 +541,8 @@ openA.addEventListener('click', () => {
 openA.addEventListener("blur", function () {
 	if (isKhuOpen) {
 		openA.innerHTML = "Đã Mở Khu A";
+		openA.style.backgroundColor = '#2bfea0';
+		openA.style.color = 'black';
 	} else {
 		openA.innerHTML = "Khu A";
 		openA.style.backgroundColor = '#2bfea0';
@@ -547,17 +552,44 @@ openA.addEventListener("blur", function () {
 
 //open modal
 const iconModal = document.querySelector('.open-modal');
-let showModal = document.querySelector('.button-price');
+let showModal = document.querySelector('.table-modal');
+const openModalPriceWater = document.querySelector('.price-water');
 const openModalPrice = document.querySelector('.cover-popup-header');
 const iconClosePrice = document.querySelector('.close-btn-header');
 iconModal.addEventListener('click', () => {
 	showModal.classList.toggle('active');
 })
 
-showModal.addEventListener('click', () => {
+openModalPriceWater.addEventListener('click', () => {
 	openModalPrice.classList.toggle('active');
 })
 
 iconClosePrice.addEventListener('click', () => {
 	openModalPrice.classList.remove('active');
 })
+
+function openCamera() {
+	navigator.mediaDevices.getUserMedia({ video: true })
+		.then(function (stream) {
+			var video = document.getElementById('camera-stream');
+			video.srcObject = stream;
+			video.play();
+		})
+		.catch(function (error) {
+			if (error.name === 'PermissionDeniedError' || error.name === 'NotAllowedError') {
+				console.error('User denied access to the camera');
+			} else {
+				console.error('Error accessing the camera', error);
+			}
+		});
+}
+// const runEffectButton = document.getElementById('run-effect-button');
+// const titleHeader = document.querySelector('h1');
+// const colors = ['#FF5733', '#C70039', '#900C3F', '#581845','#FFFFCC','#66FFFF','#CCCCFF','#33CC33','#9999FF','#3399CC','#FF66FF','#FF6600','#3366CC'];
+
+// runEffectButton.addEventListener('click', () => {
+// 	const randomColor = colors[Math.floor(Math.random() * colors.length)];
+// 	titleHeader.style.color = randomColor;
+// 	titleHeader.classList.add('random-color');
+// });
+

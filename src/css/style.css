@@ -85,6 +85,7 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 20px;
+
 }
 
 h1,
@@ -98,7 +99,7 @@ h6 {
 
 table {
 	border-collapse: collapse;
-	
+
 }
 
 td {
@@ -109,13 +110,13 @@ td {
 /* Thiết lập giao diện cho bàn */
 .table {
 	margin: 20px;
-	padding:10px;
+	padding: 10px;
 	border: 1px solid black;
 	border-radius: 5px;
 	width: 300px;
 	float: left;
 	height: 100%;
-	
+
 }
 
 .table h3 {
@@ -125,9 +126,10 @@ td {
 .table div {
 	margin-bottom: 10px;
 }
-.cover-table{
+
+.cover-table {
 	display: grid;
-	grid-template-columns: repeat(4,1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 20px;
 
 }
@@ -147,13 +149,15 @@ button {
 	padding: 5px 8px;
 }
 
-button:nth-child(2){
+button:nth-child(2) {
 	background: var(--colors-secondary--500);
 }
-button:nth-child(3){
+
+button:nth-child(3) {
 	background: red;
 	color: white;
 }
+
 .flex-button {
 	display: flex;
 	align-items: center;
@@ -163,6 +167,7 @@ button:nth-child(3){
 button:focus {
 	outline: 0;
 }
+
 /* 
 button:before {
 	content: "";
@@ -308,10 +313,17 @@ button:nth-child(3) {
 	text-transform: uppercase;
 	width: 100%;
 }
-.text-icon-header{
-	
-}
 
+.text-icon-header {
+	display: flex;
+	align-items: center;
+}
+.text-icon-header i{
+	font-size: 2rem;
+	padding-bottom: 3px;
+	margin-top: 30px auto 0 auto;
+	color: var(--colors-active--500);
+}
 
 
 .content {
@@ -474,19 +486,22 @@ button:nth-child(3) {
 	}
 }
 
-.cover-table{
+.cover-table {
 	margin-top: 10px;
 	display: none;
 }
-.cover-table.active{
+
+.cover-table.active {
 	display: block;
 }
-.cover-button{
+
+.cover-button {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 20px;
 }
-.cover-button button{
+
+.cover-button button {
 	background: var(--colors-active--500);
 	color: black;
 	border: none;
@@ -495,16 +510,19 @@ button:nth-child(3) {
 	cursor: pointer;
 	transition: background-color 0.25s;
 }
-.text-icon-header{
+
+.text-icon-header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.text-icon-header img{
+
+.text-icon-header img {
 	width: 30px;
 	height: 30px;
 }
-.price-water button{
+
+.price-water button {
 	background: var(--colors-primary--200);
 	color: black;
 	border: none;
@@ -516,23 +534,44 @@ button:nth-child(3) {
 	text-transform: capitalize;
 	font-size: .8rem;
 }
-.nav-header{
+
+.nav-header {
 	display: none;
 }
-.button-price{
+
+.button-price {
 	display: none;
 }
-.cover-popup-header{
+
+.cover-popup-header {
 	display: none;
 }
-#history{
+
+#history {
 	font-size: .8rem;
 	color: #2bfea0;
 	text-align: justify;
 	font-family: var(--fonts-primary);
 	font-weight: 300;
+}
+
+.delete-history {
+	margin: 5px 0;
+}
+
+.table-modal {
 	display: none;
 }
-#history.active{
-	display: block;
+
+#camera-stream {
+	width: 100%;
+	height: auto;
+}
+
+.title-header span {
+	visibility: hidden;
+}
+
+.title-header.visible span {
+	visibility: visible;
 }
