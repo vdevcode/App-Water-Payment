@@ -199,9 +199,11 @@
         top: 10px;
         border-radius: 4px;
     }
+   
 
     .flex-button button {
-        padding: 8px;
+        padding: 8px 0;
+       
     }
 
     body {
