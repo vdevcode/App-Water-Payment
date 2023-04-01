@@ -42,25 +42,25 @@ function calculate() {
 
 
 
- // Lấy tất cả các ô input của nước
- const drinkInputs = document.querySelectorAll('.drink input[type="number"]');
+// Lấy tất cả các ô input của nước
+const drinkInputs = document.querySelectorAll('.drink input[type="number"]');
 
- // Thêm sự kiện onblur cho từng ô input
- drinkInputs.forEach(input => {
-   input.addEventListener('blur', checkInput);
- });
+// Thêm sự kiện onblur cho từng ô input
+drinkInputs.forEach(input => {
+	input.addEventListener('blur', checkInput);
+});
 
- // Hàm kiểm tra giá trị của ô input
- function checkInput(event) {
-   const input = event.target;
-   const value = input.value.trim();
-   
-   // Kiểm tra nếu ô input chưa có giá trị
-   if (!value) {
-	 // Hiển thị thông báo "chưa tính tiền"
-	 input.setAttribute('placeholder', 'Chưa nhập giá trị');
-   }
- }
+// Hàm kiểm tra giá trị của ô input
+function checkInput(event) {
+	const input = event.target;
+	const value = input.value.trim();
+
+	// Kiểm tra nếu ô input chưa có giá trị
+	if (!value) {
+		// Hiển thị thông báo "chưa tính tiền"
+		input.setAttribute('placeholder', 'Chưa nhập giá trị');
+	}
+}
 
 // Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
 function showHistory() {
@@ -597,21 +597,62 @@ iconClosePrice.addEventListener('click', () => {
 	openModalPrice.classList.remove('active');
 })
 
-function openCamera() {
-	navigator.mediaDevices.getUserMedia({ video: true })
-		.then(function (stream) {
-			var video = document.getElementById('camera-stream');
-			video.srcObject = stream;
-			video.play();
-		})
-		.catch(function (error) {
-			if (error.name === 'PermissionDeniedError' || error.name === 'NotAllowedError') {
-				console.error('User denied access to the camera');
-			} else {
-				console.error('Error accessing the camera', error);
-			}
-		});
-}
+// async function openCamera() {
+// 	const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+// 	const video = document.getElementById('camera-stream');
+// 	video.srcObject = stream;
+// 	video.play();
+  
+// 	const canvas = document.getElementById('canvas');
+// 	const context = canvas.getContext('2d');
+// 	const tracker = new cv.TrackerMIL();
+  
+	
+// 	const model = await tf.loadLayersModel('https://storage.googleapis.com/tfjs-models/tfjs/age_gender_classification_v1/model.json');
+
+  
+// 	function trackFaces() {
+// 	  context.drawImage(video, 0, 0, canvas.width, canvas.height);
+// 	  const image = cv.imread(canvas);
+// 	  const gray = new cv.Mat();
+// 	  cv.cvtColor(image, gray, cv.COLOR_RGBA2GRAY);
+// 	  const faces = new cv.RectVector();
+// 	  const classifier = new cv.CascadeClassifier();
+// 	  classifier.load('haarcascade_frontalface_default.xml');
+// 	  classifier.detectMultiScale(gray, faces);
+// 	  for (let i = 0; i < faces.size(); ++i) {
+// 		const face = faces.get(i);
+// 		context.beginPath();
+// 		context.lineWidth = '2';
+// 		context.strokeStyle = 'green';
+// 		context.rect(face.x, face.y, face.width, face.height);
+// 		context.stroke();
+  
+// 		// Cắt phần hình ảnh chứa khuôn mặt để dự đoán độ tuổi
+// 		const faceImage = new cv.Mat();
+// 		cv.cvtColor(image.roi(face), faceImage, cv.COLOR_RGBA2RGB);
+// 		faceImage.resize(227, 227);
+// 		faceImage.convertTo(faceImage, cv.CV_32F, 1.0 / 255.0);
+// 		const inputTensor = tf.tensor4d(faceImage.data, [1, 227, 227, 3]);
+// 		const ageTensor = model.predict(inputTensor);
+// 		const age = ageTensor.dataSync()[0];
+// 		ageTensor.dispose();
+// 		inputTensor.dispose();
+// 		// Hiển thị độ tuổi lên màn hình
+// 		context.font = '20px Arial';
+// 		context.fillStyle = 'green';
+// 		context.fillText('Age: ' + age.toFixed(0), face.x, face.y - 10);
+// 	  }
+// 	  tracker.update(image);
+// 	  cv.imshow(canvas, image);
+// 	  requestAnimationFrame(trackFaces);
+// 	}
+  
+// 	tracker.init(canvas, new cv.Rect(0, 0, canvas.width, canvas.height));
+// 	requestAnimationFrame(trackFaces);
+//   }
+  
+
 // const runEffectButton = document.getElementById('run-effect-button');
 // const titleHeader = document.querySelector('h1');
 // const colors = ['#FF5733', '#C70039', '#900C3F', '#581845','#FFFFCC','#66FFFF','#CCCCFF','#33CC33','#9999FF','#3399CC','#FF66FF','#FF6600','#3366CC'];
@@ -622,3 +663,12 @@ function openCamera() {
 // 	titleHeader.classList.add('random-color');
 // });
 
+
+const buttonShowImage = document.querySelector('.button-show-image');
+const imageContainer = document.querySelector('#image-container');
+
+buttonShowImage.addEventListener('click', function() {
+  const imageCreate = document.createElement('img');
+  imageCreate.src = '/image/khu-a.jpg';
+  imageContainer.appendChild(imageCreate);
+});

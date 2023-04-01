@@ -37,7 +37,7 @@
     }
 
     .table {
-        width: 96%;
+        width: 100%;
         margin-left: 50%;
         transform: translateX(-50%);
     }
@@ -215,4 +215,26 @@
     .drink input {
         font-size: .8rem;
     }
+    .are-one{
+        text-align: center;
+    }
+    .are-one button{
+        font-size: .9rem;
+        padding: 10px 20px;
+        background-color: #e73c7e;
+        color: white;
+    }
+    #image-container{
+        margin: 10px 0;
+    }
+    #image-container img{
+        width: 100%;
+        height: 100%;
+        border: 2px solid rgb(230, 243, 88);
+        border-radius: 3px;
+    }
+    .table-price{
+        border: 1px solid black;
+    }
+
 }
