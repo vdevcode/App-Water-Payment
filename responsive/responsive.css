@@ -202,8 +202,13 @@
    
 
     .flex-button button {
-        padding: 8px 0;
+        padding: 8px ;
        
+    }
+    #order h2,
+    #order tr,td,th{
+        font-size: .8rem;
+        color: white;
     }
 
     body {

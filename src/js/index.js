@@ -1,5 +1,10 @@
 //shift option click
 //A1
+function confirmCalculate(){
+	if(confirm("bạn chắc chắn tính tiền bàn này chứ")){
+		calculate()
+	}
+}
 function calculate() {
 	const bottleTigerBac = document.getElementById("bottleTigerBac").value;
 	const bottleTigerNau = document.getElementById("bottleTigerNau").value;
@@ -13,6 +18,36 @@ function calculate() {
 	const waterNature = document.getElementById("water").value;
 	const tea = document.getElementById("tea").value;
 	const napkin = document.getElementById("napkin").value;
+
+	const products = [
+		{ name: "Chai Tiger Bạc", quantity: bottleTigerBac },
+		{ name: "Chai Tiger Nâu", quantity: bottleTigerNau },
+		{ name: "Bia Tiger Nâu", quantity: tigerNau },
+		{ name: "Bia Tiger Bạc", quantity: tigerBac },
+		{ name: "Bia Heineken", quantity: heineken },
+		{ name: "Nước 7up", quantity: sevenUp },
+		{ name: "Nước CocaCola", quantity: coke },
+		{ name: "Nước pepsi", quantity: pepsi },
+		{ name: "Nước Sting", quantity: sting },
+		{ name: "Nước suối", quantity: water },
+		{ name: "Trà tắc", quantity: tea },
+		{ name: "Khăn giấy", quantity: napkin },
+	];
+
+	const selectedProducts = products.filter((product) => product.quantity > 0);
+
+	// Tạo ra một bill
+	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
+	bill += "<table>";
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	}
+	bill += "</table>";
+
+	// Hiển thị bill
+	document.getElementById("order").innerHTML = bill;
 
 
 	localStorage.setItem("tigerNau", tigerNau);
@@ -80,14 +115,14 @@ const toggleDrinksButton = document.getElementById("toggleDrinks");
 const drinkElements = document.querySelectorAll(".drink:nth-child(n+8)");
 
 toggleDrinksButton.addEventListener("click", () => {
-  drinkElements.forEach(drink => drink.classList.toggle("hidden"));
-  localStorage.setItem("showDrinks", toggleDrinksButton.classList.contains("hidden") ? "0" : "1");
+	drinkElements.forEach(drink => drink.classList.toggle("hidden"));
+	localStorage.setItem("showDrinks", toggleDrinksButton.classList.contains("hidden") ? "0" : "1");
 });
 
 if (localStorage.getItem("showDrinks") === "0") {
-  drinkElements.forEach(drink => drink.classList.add("hidden"));
-  toggleDrinksButton.textContent = "Hiển thị các loại nước";
-  
+	drinkElements.forEach(drink => drink.classList.add("hidden"));
+	toggleDrinksButton.textContent = "Hiển thị các loại nước";
+
 }
 
 // Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
@@ -101,10 +136,10 @@ function showHistory() {
 function clearHistory() {
 	localStorage.removeItem('totalHistory');
 	document.getElementById("history").innerHTML = "đã xoá lịch sử tổng tiền";
-	setTimeout(function() {
-	  document.getElementById("history").innerHTML = ""; // Ẩn thông báo sau 5 giây
+	setTimeout(function () {
+		document.getElementById("history").innerHTML = ""; // Ẩn thông báo sau 5 giây
 	}, 5000);
-  }
+}
 
 function confirmReset() {
 	if (confirm('Bạn có chắc chắn muốn reset không?')) {
@@ -176,17 +211,17 @@ function resetAll() {
 
 const inputs = document.querySelectorAll('input[type="number"]');
 inputs.forEach(input => {
-  input.addEventListener('input', () => {
-    localStorage.setItem(input.id, input.value);
-  });
+	input.addEventListener('input', () => {
+		localStorage.setItem(input.id, input.value);
+	});
 });
 
 // Lấy giá trị đã lưu trong LocalStorage và hiển thị lại trên các ô input tương ứng
 inputs.forEach(input => {
-  const value = localStorage.getItem(input.id);
-  if (value !== null) {
-    input.value = value;
-  }
+	const value = localStorage.getItem(input.id);
+	if (value !== null) {
+		input.value = value;
+	}
 });
 
 //open are 
