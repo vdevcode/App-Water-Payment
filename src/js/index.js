@@ -29,7 +29,7 @@ function calculate() {
 		{ name: "Nước CocaCola", quantity: coke },
 		{ name: "Nước pepsi", quantity: pepsi },
 		{ name: "Nước Sting", quantity: sting },
-		{ name: "Nước suối", quantity: water },
+		{ name: "Nước suối", quantity: waterNature },
 		{ name: "Trà tắc", quantity: tea },
 		{ name: "Khăn giấy", quantity: napkin },
 	];
