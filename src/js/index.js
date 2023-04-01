@@ -1,6 +1,8 @@
 //shift option click
 //A1
+let calculated = false;
 function calculate() {
+	calculated = true;
 	const tigerNau = document.getElementById("tigerNau").value;
 	const tigerBac = document.getElementById("tigerBac").value;
 	const heineken = document.getElementById("heineken").value;
@@ -32,6 +34,33 @@ function calculate() {
 
 }
 
+
+
+
+
+
+
+
+
+ // Lấy tất cả các ô input của nước
+ const drinkInputs = document.querySelectorAll('.drink input[type="number"]');
+
+ // Thêm sự kiện onblur cho từng ô input
+ drinkInputs.forEach(input => {
+   input.addEventListener('blur', checkInput);
+ });
+
+ // Hàm kiểm tra giá trị của ô input
+ function checkInput(event) {
+   const input = event.target;
+   const value = input.value.trim();
+   
+   // Kiểm tra nếu ô input chưa có giá trị
+   if (!value) {
+	 // Hiển thị thông báo "chưa tính tiền"
+	 input.setAttribute('placeholder', 'Chưa nhập giá trị');
+   }
+ }
 
 // Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
 function showHistory() {
