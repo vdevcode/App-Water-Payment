@@ -254,9 +254,10 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
     }
     .drink-water-add input{
-        border: 2px solid rgb(11, 212, 212);
+        border: 1px solid rgb(11, 212, 212);
         border-radius: 5px;
         margin: 10px;
         outline: none;
@@ -271,5 +272,7 @@
         border: 1px solid aquamarine;
         color: white;
         border-radius: 2px;
+        font-weight: 300;
+        font-size: .8rem;
     }
 }
