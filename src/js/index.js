@@ -282,6 +282,63 @@ openA.addEventListener("blur", function () {
 	}
 });
 
+const addBtn = document.getElementById("addBtn");
+const newDrinkForm = document.getElementById("newDrinkForm");
+
+addBtn.addEventListener("click", () => {
+  const formDiv = document.createElement("div");
+  formDiv.classList.add("drink-water-add");
+
+  const nameLabel = document.createElement("label");
+  nameLabel.textContent = "Tên loại nước:";
+  formDiv.appendChild(nameLabel);
+
+  const nameInput = document.createElement("input");
+  nameInput.type = "text";
+  nameInput.placeholder = "Nhập tên loại nước...";
+  formDiv.appendChild(nameInput);
+
+  const priceLabel = document.createElement("label");
+  priceLabel.textContent = "Giá:";
+  formDiv.appendChild(priceLabel);
+
+  const priceInput = document.createElement("input");
+  priceInput.type = "number";
+  priceInput.placeholder = "Nhập giá loại nước...";
+  formDiv.appendChild(priceInput);
+
+  const submitBtn = document.createElement("button");
+  submitBtn.textContent = "Đồng ý";
+  submitBtn.addEventListener("click", () => {
+	const newName = nameInput.value;
+	const newPrice = priceInput.value;
+
+	const drinkDiv = document.createElement("div");
+	drinkDiv.classList.add("drink");
+
+	const drinkLabel = document.createElement("label");
+	drinkLabel.textContent = newName + ":";
+	drinkDiv.appendChild(drinkLabel);
+
+	const drinkInput = document.createElement("input");
+	drinkInput.type = "number";
+	drinkInput.placeholder = "0";
+	drinkInput.dataset.price = newPrice;
+	drinkDiv.appendChild(drinkInput);
+
+	const drinkList = document.getElementById("drinkList");
+	if (drinkList) {
+	  drinkList.appendChild(drinkDiv);
+	}
+
+	formDiv.remove();
+  });
+
+  formDiv.appendChild(submitBtn);
+  newDrinkForm.appendChild(formDiv);
+});
+  
+
 //open modal
 const iconModal = document.querySelector('.open-modal');
 let showModal = document.querySelector('.table-modal');

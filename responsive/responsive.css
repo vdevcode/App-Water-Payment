@@ -250,4 +250,26 @@
     th{
         border: 1px solid rgb(246, 243, 243);
     }
+    .drink-water-add{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .drink-water-add input{
+        border: 2px solid rgb(11, 212, 212);
+        border-radius: 5px;
+        margin: 10px;
+        outline: none;
+        font-size: .8rem;
+        color: white;
+    }
+    .drink-water-add label{
+        color: wheat;
+        font-size: .8rem;
+    }
+    .drink-water-add button{
+        border: 1px solid aquamarine;
+        color: white;
+        border-radius: 2px;
+    }
 }
