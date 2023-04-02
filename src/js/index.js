@@ -254,35 +254,24 @@ inputs.forEach(input => {
 });
 
 //open are 
-const openA = document.getElementById('btnA');
-const allTable = document.querySelector('.cover-table');
-var isKhuOpen = false;
-openA.addEventListener('click', () => {
-	allTable.classList.toggle('active')
-	if (isKhuOpen) {
-		openA.innerHTML = 'Đã Đóng Khu A';
-		openA.style.backgroundColor = '#e74c3c';
-		openA.style.color = 'white';
-		isKhuOpen = false;
-	}
-	else {
-		openA.innerHTML = 'Đã Mở Khu A';
-		isKhuOpen = true;
-		openA.style.backgroundColor = '#2bfea0';
-		openA.style.color = 'black';
-	}
-})
-openA.addEventListener("blur", function () {
-	if (isKhuOpen) {
-		openA.innerHTML = "Đã Mở Khu A";
-		openA.style.backgroundColor = '#2bfea0';
-		openA.style.color = 'black';
-	} else {
-		openA.innerHTML = "Khu A";
-		openA.style.backgroundColor = '#2bfea0';
-		openA.style.color = 'black';
-	}
-});
+// const openA = document.getElementById('btnA');
+// const allTable = document.querySelector('.cover-table');
+// var isKhuOpen = false;
+// openA.addEventListener('click', () => {
+// 	allTable.classList.toggle('active')
+// 	if (isKhuOpen) {
+// 		openA.innerHTML = 'Đã Đóng Khu A';
+// 		openA.style.backgroundColor = '#e74c3c';
+// 		openA.style.color = 'white';
+// 		isKhuOpen = false;
+// 	}
+// 	else {
+// 		openA.innerHTML = 'Đã Mở Khu A';
+// 		isKhuOpen = true;
+// 		openA.style.backgroundColor = '#2bfea0';
+// 		openA.style.color = 'black';
+// 	}
+// })
 
 const addBtn = document.getElementById("addBtn");
 const newDrinkForm = document.getElementById("newDrinkForm");
