@@ -113,21 +113,6 @@ function checkInput(event) {
 	}
 }
 
-const toggleDrinksButton = document.getElementById("toggleDrinks");
-const drinkElements = document.querySelectorAll(".drink:nth-child(n+8)");
-
-toggleDrinksButton.addEventListener("click", () => {
-  drinkElements.forEach(drink => drink.classList.toggle("hidden"));
-  const isHidden = toggleDrinksButton.classList.toggle("hidden");
-  toggleDrinksButton.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
-  localStorage.setItem("showDrinks", isHidden ? "0" : "1");
-});
-
-if (localStorage.getItem("showDrinks") === "0") {
-  drinkElements.forEach(drink => drink.classList.add("hidden"));
-  toggleDrinksButton.textContent = "Hiển thị các loại nước";
-}
-
 
 // Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
 function showHistory() {
@@ -254,24 +239,24 @@ inputs.forEach(input => {
 });
 
 //open are 
-// const openA = document.getElementById('btnA');
-// const allTable = document.querySelector('.cover-table');
-// var isKhuOpen = false;
-// openA.addEventListener('click', () => {
-// 	allTable.classList.toggle('active')
-// 	if (isKhuOpen) {
-// 		openA.innerHTML = 'Đã Đóng Khu A';
-// 		openA.style.backgroundColor = '#e74c3c';
-// 		openA.style.color = 'white';
-// 		isKhuOpen = false;
-// 	}
-// 	else {
-// 		openA.innerHTML = 'Đã Mở Khu A';
-// 		isKhuOpen = true;
-// 		openA.style.backgroundColor = '#2bfea0';
-// 		openA.style.color = 'black';
-// 	}
-// })
+const openA = document.getElementById('btnA');
+const allTable = document.querySelector('.cover-table');
+var isKhuOpen = false;
+openA.addEventListener('click', () => {
+	allTable.classList.toggle('active')
+	if (isKhuOpen) {
+		openA.innerHTML = 'Đã Đóng Khu A';
+		openA.style.backgroundColor = '#e74c3c';
+		openA.style.color = 'white';
+		isKhuOpen = false;
+	}
+	else {
+		openA.innerHTML = 'Đã Mở Khu A';
+		isKhuOpen = true;
+		openA.style.backgroundColor = '#2bfea0';
+		openA.style.color = 'black';
+	}
+})
 
 const addBtn = document.getElementById("addBtn");
 const newDrinkForm = document.getElementById("newDrinkForm");
