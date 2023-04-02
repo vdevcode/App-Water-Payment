@@ -98,7 +98,7 @@
         content: '';
         width: 10px;
         height: 10px;
-        background: var(--colors-primary--200);
+        background: rgb(233, 33, 33);
         position: absolute;
         right: 10px;
         top: -8px;
@@ -112,11 +112,11 @@
 
     .table-modal nav {
         padding: 6px 10px;
-        background: var(--colors-primary--200);
+        background:rgb(233, 33, 33);
         display: inline-block;
         font-size: .8rem;
         color: white;
-        border-bottom: 1px solid rgb(202, 36, 36);
+        border-bottom: 1px solid rgb(233, 33, 33);
         width: 150px;
         text-align: left;
     }
@@ -319,7 +319,7 @@
         margin-top: 20px;
     }
     #div1 h2{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 300;
         padding: 4px 10px;
         border:1px solid #0aabba;
@@ -329,7 +329,7 @@
         color: white;
     }
     #div2 h2{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 300;
         padding: 4px 10px;
         border:1px solid #b70aba;
@@ -337,6 +337,7 @@
         display: inline-block;
         border-radius: 4px;
         color: white;
+        margin-top: 10px;
     }
     #div2 label{
         color: rgb(219, 230, 15);
@@ -344,7 +345,7 @@
         font-size: .9rem;
     }
     #div3 h2{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 300;
         padding: 4px 10px;
         border:1px solid #d60419;
@@ -380,16 +381,31 @@
         display: flex ;
         align-items: center;
         flex-wrap: wrap;
+        margin-bottom: 10px;
     }
     #nuoc-kho-container .cover-nuoc-item{
         font-size: .8rem !important;
-        color: rgb(8, 7, 7) !important;
+        color: rgb(247, 244, 244) !important;
         font-weight: 300;
         padding: 5px 10px;
-        background: rgb(207, 236, 164);
+        background: rgb(4, 126, 29);
         margin: 7px;
         border-radius: 4px;
         display: flex;
         align-items: center;
+    }
+    .delete-nuoc-kho{
+        font-size: .8rem !important;
+        color: rgb(247, 244, 244) !important;
+        font-weight: 300;
+        padding: 10px 10px;
+        background: rgb(185, 82, 13);
+        margin: 7px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    }
+    .table-modal{
+        border-radius: 4px;
     }
 }
