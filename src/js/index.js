@@ -113,6 +113,22 @@ function checkInput(event) {
 	}
 }
 
+// const toggleDrinksButton = document.getElementById("toggleDrinks");
+// const drinkElements = document.querySelectorAll(".drink:nth-child(n+9)");
+
+// toggleDrinksButton.addEventListener("click", () => {
+//   drinkElements.forEach(drink => drink.classList.toggle("hidden"));
+//   const isHidden = toggleDrinksButton.classList.toggle("hidden");
+//   toggleDrinksButton.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
+//   localStorage.setItem("showDrinks", isHidden ? "1" : "0");
+// });
+
+// if (localStorage.getItem("showDrinks") === "1") {
+//   drinkElements.forEach(drink => drink.classList.add("hidden"));
+//   toggleDrinksButton.textContent = "Hiển thị các loại nước";
+// }
+
+
 const toggleDrinksButton = document.getElementById("toggleDrinks");
 const drinkElements = document.querySelectorAll(".drink:nth-child(n+9)");
 
@@ -123,11 +139,15 @@ toggleDrinksButton.addEventListener("click", () => {
   localStorage.setItem("showDrinks", isHidden ? "1" : "0");
 });
 
-if (localStorage.getItem("showDrinks") === "1") {
+const showDrinks = localStorage.getItem("showDrinks");
+
+if (showDrinks === "1") {
   drinkElements.forEach(drink => drink.classList.add("hidden"));
   toggleDrinksButton.textContent = "Hiển thị các loại nước";
+  toggleDrinksButton.classList.add("hidden");
+} else {
+  toggleDrinksButton.textContent = "Đóng hiển thị";
 }
-
 
 // Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
 function showHistory() {
@@ -273,7 +293,13 @@ openA.addEventListener('click', () => {
 	}
 })
 
-
+openA.addEventListener('blur', () => {
+	if (!isKhuOpen) {
+		openA.innerHTML = 'Khu A';
+		openA.style.backgroundColor = '#2bfea0';
+		openA.style.color = 'black';
+	}
+});
 const addBtn = document.getElementById("addBtn");
 const newDrinkForm = document.getElementById("newDrinkForm");
 
