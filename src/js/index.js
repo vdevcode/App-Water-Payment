@@ -380,3 +380,83 @@ openPayment.addEventListener('click', () => {
 	}
 })
 
+// Lưu trữ giá trị của input từ div 1 vào LocalStorage có tên "div1Values"
+localStorage.setItem("div1Values", JSON.stringify({
+  "soLuongKhanGiay": document.getElementById("so-luong-khan-giay").value,
+  "soLuongNgot": document.getElementById("so-luong-ngot").value,
+  "soLuongTigerBac": document.getElementById("so-luong-tiger-bac").value,
+  "soLuongTigerNau": document.getElementById("so-luong-tiger-nau").value,
+  "soLuongHeineken": document.getElementById("so-luong-heineken").value,
+  "soLuongTigerBacChai": document.getElementById("so-luong-tiger-bac-chai").value,
+  "soLuongTigerNauChai": document.getElementById("so-luong-tiger-nau-chai").value,
+  "soLuongHeinekenChai": document.getElementById("so-luong-heineken-chai").value
+}));
+
+// Lưu trữ giá trị của input từ div 2 vào LocalStorage có tên "div2Values"
+localStorage.setItem("div2Values", JSON.stringify({
+  "soLuongKhanGiayNhap": document.getElementById("so-luong-khan-giay-nhap").value,
+  "soLuongNgotNhap": document.getElementById("so-luong-ngot-nhap").value,
+  "soLuongTigerBacNhap": document.getElementById("so-luong-tiger-bac-nhap").value,
+  "soLuongTigerNauNhap": document.getElementById("so-luong-tiger-nau-nhap").value,
+  "soLuongHeinekenNhap": document.getElementById("so-luong-heineken-nhap").value,
+  "soLuongTigerBacChaiNhap": document.getElementById("so-luong-tiger-bac-chai-nhap").value,
+  "soLuongTigerNauChaiNhap": document.getElementById("so-luong-tiger-nau-chai-nhap").value,
+  "soLuongHeinekenChaiNhap": document.getElementById("so-luong-heineken-chai-nhap").value
+}));
+
+// Lưu trữ giá trị của input từ div 3 vào LocalStorage có tên "div3Values"
+localStorage.setItem("div3Values", JSON.stringify({
+  "soLuongKhanGiayXuat": document.getElementById("so-luong-khan-giay-xuat").value,
+  "soLuongNgotXuat": document.getElementById("so-luong-ngot-xuat").value,
+  "soLuongTigerBacXuat": document.getElementById("so-luong-tiger-bac-xuat").value,
+  "soLuongTigerNauXuat": document.getElementById("so-luong-tiger-nau-xuat").value,
+  "soLuongHeinekenXuat": document.getElementById("so-luong-heineken-xuat").value,
+  "soLuongTigerBacChaiXuat": document.getElementById("so-luong-tiger-bac-chai-xuat").value,
+  "soLuongTigerNauChaiXuat": document.getElementById("so-luong-tiger-nau-chai-xuat").value,
+  "soLuongHeinekenChaiXuat": document.getElementById("so-luong-heineken-chai-xuat").value
+
+}));
+  
+
+const div1Values = JSON.parse(localStorage.getItem("div1Values"));
+document.getElementById("so-luong-khan-giay").value = div1Values.soLuongKhanGiay;
+document.getElementById("so-luong-ngot").value = div1Values.soLuongNgot;
+document.getElementById("so-luong-tiger-bac").value = div1Values.soLuongTigerBac;
+document.getElementById("so-luong-tiger-nau").value = div1Values.soLuongTigerNau;
+document.getElementById("so-luong-heineken").value = div1Values.soLuongHeineken;
+document.getElementById("so-luong-tiger-bac-chai").value = div1Values.soLuongTigerBacChai;
+document.getElementById("so-luong-tiger-nau-chai").value = div1Values.soLuongTigerNauChai;
+document.getElementById("so-luong-heineken-chai").value = div1Values.soLuongHeinekenChai;
+
+const div2Values = JSON.parse(localStorage.getItem("div2Values"));
+document.getElementById("so-luong-khan-giay-nhap").value = div2Values.soLuongKhanGiayNhap;
+document.getElementById("so-luong-ngot-nhap").value = div2Values.soLuongNgotNhap;
+document.getElementById("so-luong-tiger-bac-nhap").value = div2Values.soLuongTigerBacNhap;
+document.getElementById("so-luong-tiger-nau-nhap").value = div2Values.soLuongTigerNauNhap;
+document.getElementById("so-luong-heineken-nhap").value = div2Values.soLuongHeinekenNhap;
+document.getElementById("so-luong-tiger-bac-chai-nhap").value = div2Values.soLuongTigerBacChaiNhap;
+document.getElementById("so-luong-tiger-nau-chai-nhap").value = div2Values.soLuongTigerNauChaiNhap;
+document.getElementById("so-luong-heineken-chai-nhap").value = div2Values.soLuongHeinekenChaiNhap;
+
+const div3Values = JSON.parse(localStorage.getItem("div3Values"));
+document.getElementById("so-luong-khan-giay-xuat").value = div3Values.soLuongKhanGiayXuat;
+document.getElementById("so-luong-ngot-xuat").value = div3Values.soLuongNgotXuat;
+document.getElementById("so-luong-tiger-bac-xuat").value = div3Values.soLuongTigerBacXuat;
+document.getElementById("so-luong-tiger-nau-xuat").value = div3Values.soLuongTigerNauXuat;
+document.getElementById("so-luong-heineken-xuat").value = div3Values.soLuongHeinekenXuat;
+document.getElementById("so-luong-tiger-bac-chai-xuat").value = div3Values.soLuongTigerBacChaiXuat;
+document.getElementById("so-luong-tiger-nau-chai-xuat").value = div3Values.soLuongTigerNauChaiXuat;
+document.getElementById("so-luong-heineken-chai-xuat").value = div3Values.soLuongHeinekenChaiXuat;
+
+// // Tính toán tổng số lượng hàng nhập và tổng số lượng hàng xuất
+// const soLuongNhap = div2Values.soLuongKhanGiayNhap + div2Values.soLuongNgotNhap + div2Values.soLuongTigerBacNhap + div2Values.soLuongTigerNauNhap + div2Values.soLuongHeinekenNhap + div2Values.soLuongTigerBacChaiNhap + div2Values.soLuongTigerNauChaiNhap + div2Values.soLuongHeinekenChaiNhap;
+// const soLuongXuat = div3Values.soLuongKhanGiayXuat + div3Values.soLuongNgotXuat + div3Values.soLuongTigerBacXuat + div3Values.soLuongTigerNauXuat + div3Values.soLuongHeinekenXuat + div3Values.soLuongTigerBacChaiXuat + div3Values.soLuongTigerNauChaiXuat + div3Values.soLuongHeinekenChaiXuat;
+
+// // Hiển thị tổng số lượng hàng nhập và tổng số lượng hàng xuất
+// document.getElementById("tong-so-luong-nhap").innerHTML = `Tổng số lượng nhập: ${soLuongNhap}`;
+// document.getElementById("tong-so-luong-xuat").innerHTML = `Tổng số lượng xuất: ${soLuongXuat}`;
+
+// // Tính toán số lượng tồn kho và hiển thị lên màn hình
+// const soLuongTonKho = div1Values.soLuongKhanGiay + div1Values.soLuongNgot + div1Values.soLuongTigerBac + div1Values.soLuongTigerNau + div1Values.soLuongHeineken + div1Values.soLuongTigerBacChai + div1Values.soLuongTigerNauChai + div1Values.soLuongHeinekenChai + soLuongNhap - soLuongXuat;
+// document.getElementById("so-luong-ton-kho").innerHTML = `Số lượng tồn kho: ${soLuongTonKho}`;
+
