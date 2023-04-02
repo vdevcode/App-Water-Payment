@@ -115,7 +115,7 @@ td {
 	width: 300px;
 	float: left;
 	height: 100%;
-	
+
 }
 
 .table h3 {
@@ -144,7 +144,7 @@ button {
 	line-height: 1;
 	vertical-align: middle;
 	font-family: var(--fonts-primary);
-	margin: 0 2px;
+	margin: 4px 2px;
 	padding: 5px 8px;
 }
 
@@ -163,6 +163,8 @@ button:nth-child(4) {
 
 .flex-button {
 	display: flex;
+	flex-wrap: wrap;
+
 	align-items: center;
 	justify-content: space-between;
 }
@@ -596,4 +598,9 @@ button:nth-child(3) {
 .drink:nth-child(8), /* Nước pepsi */
 .drink:nth-child(n+9).hidden { /* Tất cả các đối tượng từ "Nước pepsi" đến "Khăn giấy" */
   display: flex;
+}
+#change-money{
+	padding: 8px;
+	font-size: .8rem;
+	font-weight: 300;
 }

@@ -1,7 +1,7 @@
 //shift option click
 //A1
-function confirmCalculate(){
-	if(confirm("bạn chắc chắn tính tiền bàn này chứ")){
+function confirmCalculate() {
+	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
 		calculate()
 	}
 }
@@ -88,6 +88,8 @@ function calculate() {
 	// Hiển thị tổng tiền lên trang web
 	document.getElementById("total").innerHTML = "Tổng tiền: " + total + " đồng";
 
+
+
 }
 
 // Lấy tất cả các ô input của nước
@@ -135,11 +137,36 @@ function showHistory() {
 }
 function clearHistory() {
 	localStorage.removeItem('totalHistory');
-	document.getElementById("history").innerHTML = "đã xoá lịch sử tổng tiền";
-	setTimeout(function () {
-		document.getElementById("history").innerHTML = ""; // Ẩn thông báo sau 5 giây
-	}, 5000);
+	var countdown = 5;
+	var countdownInterval = setInterval(function () {
+		countdown--;
+		document.getElementById("history").innerHTML = "Đã xoá lịch sử tổng tiền, sẽ ẩn sau " + countdown + " giây";
+		if (countdown == 0) {
+			clearInterval(countdownInterval);
+			document.getElementById("history").innerHTML = ""; // Ẩn thông báo sau 5 giây
+		}
+	}, 1000);
 }
+
+function changeMoney() {
+	var totalAmount = localStorage.getItem('totalAmount');
+	var customerMoney = prompt("Nhập số tiền khách đưa:");
+	if (customerMoney == null || customerMoney == "") {
+		alert("Bạn chưa nhập số tiền khách đưa");
+		return false;
+	}
+	if (isNaN(customerMoney)) {
+		alert("Bạn nhập số tiền không hợp lệ");
+		return false;
+	}
+	var change = customerMoney - totalAmount;
+	var message = "Thối lại cho khách: " + change + " VNĐ";
+	alert(message);
+	localStorage.removeItem('totalAmount');
+	document.getElementById("total").innerHTML = "";
+	return false;
+}
+
 
 function confirmReset() {
 	if (confirm('Bạn có chắc chắn muốn reset không?')) {
