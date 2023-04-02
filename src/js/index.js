@@ -146,7 +146,7 @@ if (showDrinks === "1") {
   toggleDrinksButton.textContent = "Hiển thị các loại nước";
   toggleDrinksButton.classList.add("hidden");
 } else {
-  toggleDrinksButton.textContent = "Đóng hiển thị";
+  toggleDrinksButton.textContent = "Hiển thị các loại nước";
 }
 
 // Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
