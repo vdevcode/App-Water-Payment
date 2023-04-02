@@ -258,7 +258,8 @@
     }
     .drink-water-add input{
         border: 1px solid rgb(11, 212, 212);
-        border-radius: 5px;
+        border-radius: 2px;
+        padding: 4px 8px;
         margin: 10px;
         outline: none;
         font-size: .8rem;
@@ -274,5 +275,6 @@
         border-radius: 2px;
         font-weight: 300;
         font-size: .8rem;
+        padding: 6px 8px;
     }
 }

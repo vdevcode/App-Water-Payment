@@ -112,20 +112,21 @@ function checkInput(event) {
 	}
 }
 
-
 const toggleDrinksButton = document.getElementById("toggleDrinks");
 const drinkElements = document.querySelectorAll(".drink:nth-child(n+8)");
 
 toggleDrinksButton.addEventListener("click", () => {
-	drinkElements.forEach(drink => drink.classList.toggle("hidden"));
-	localStorage.setItem("showDrinks", toggleDrinksButton.classList.contains("hidden") ? "0" : "1");
+  drinkElements.forEach(drink => drink.classList.toggle("hidden"));
+  const isHidden = toggleDrinksButton.classList.toggle("hidden");
+  toggleDrinksButton.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
+  localStorage.setItem("showDrinks", isHidden ? "0" : "1");
 });
 
 if (localStorage.getItem("showDrinks") === "0") {
-	drinkElements.forEach(drink => drink.classList.add("hidden"));
-	toggleDrinksButton.textContent = "Hiển thị các loại nước";
-
+  drinkElements.forEach(drink => drink.classList.add("hidden"));
+  toggleDrinksButton.textContent = "Hiển thị các loại nước";
 }
+
 
 // Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
 function showHistory() {
