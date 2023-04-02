@@ -203,8 +203,8 @@
         padding: 8px ;
         font-weight: 300;
     }
-    #order h2,
-    #order tr,td,th{
+    .order h2,
+    .order tr,td,th{
         font-size: .8rem;
         color: white;
     }
