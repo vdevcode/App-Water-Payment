@@ -1,4 +1,5 @@
-//shift option click
+
+
 //A1
 function confirmCalculate() {
 	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
@@ -366,3 +367,16 @@ buttonShowImage.addEventListener('click', function () {
 	imageCreate.src = '/image/khu-a.jpg';
 	imageContainer.appendChild(imageCreate);
 });
+
+const openPayment = document.getElementsByClassName("open-payment")[0];
+const showPayment = document.getElementsByClassName("cover-popup-payment")[0];
+const  closePayment = document.getElementsByClassName("close-btn-payment")[0];
+openPayment.addEventListener('click', () => {
+	showPayment.classList.add("active")
+	if(showPayment.classList.contains("active")){
+		closePayment.addEventListener('click', () => {
+			showPayment.classList.remove("active")
+		})
+	}
+})
+
