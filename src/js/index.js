@@ -114,16 +114,16 @@ function checkInput(event) {
 }
 
 const toggleDrinksButton = document.getElementById("toggleDrinks");
-const drinkElements = document.querySelectorAll(".drink:nth-child(n+8)");
+const drinkElements = document.querySelectorAll(".drink:nth-child(n+9)");
 
 toggleDrinksButton.addEventListener("click", () => {
   drinkElements.forEach(drink => drink.classList.toggle("hidden"));
   const isHidden = toggleDrinksButton.classList.toggle("hidden");
   toggleDrinksButton.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
-  localStorage.setItem("showDrinks", isHidden ? "0" : "1");
+  localStorage.setItem("showDrinks", isHidden ? "1" : "0");
 });
 
-if (localStorage.getItem("showDrinks") === "0") {
+if (localStorage.getItem("showDrinks") === "1") {
   drinkElements.forEach(drink => drink.classList.add("hidden"));
   toggleDrinksButton.textContent = "Hiển thị các loại nước";
 }
@@ -373,6 +373,8 @@ openPayment.addEventListener('click', () => {
 // Lưu trữ giá trị của input từ div 1 vào LocalStorage có tên "div1Values"
 localStorage.setItem("div1Values", JSON.stringify({
   "soLuongKhanGiay": document.getElementById("so-luong-khan-giay").value,
+  'soLuongNuocSuoi': document.getElementById("so-luong-nuoc-suoi").value,
+  'soLuongLy': document.getElementById("so-luong-ly-nuoc").value,
   "soLuongNgot": document.getElementById("so-luong-ngot").value,
   "soLuongTigerBac": document.getElementById("so-luong-tiger-bac").value,
   "soLuongTigerNau": document.getElementById("so-luong-tiger-nau").value,
@@ -385,6 +387,8 @@ localStorage.setItem("div1Values", JSON.stringify({
 // Lưu trữ giá trị của input từ div 2 vào LocalStorage có tên "div2Values"
 localStorage.setItem("div2Values", JSON.stringify({
   "soLuongKhanGiayNhap": document.getElementById("so-luong-khan-giay-nhap").value,
+  'soLuongNuocSuoiNhap': document.getElementById("so-luong-nuoc-suoi-nhap").value,
+  'soLuongLyNhap': document.getElementById("so-luong-ly-nuoc-nhap").value,
   "soLuongNgotNhap": document.getElementById("so-luong-ngot-nhap").value,
   "soLuongTigerBacNhap": document.getElementById("so-luong-tiger-bac-nhap").value,
   "soLuongTigerNauNhap": document.getElementById("so-luong-tiger-nau-nhap").value,
@@ -397,6 +401,8 @@ localStorage.setItem("div2Values", JSON.stringify({
 // Lưu trữ giá trị của input từ div 3 vào LocalStorage có tên "div3Values"
 localStorage.setItem("div3Values", JSON.stringify({
   "soLuongKhanGiayXuat": document.getElementById("so-luong-khan-giay-xuat").value,
+  'soLuongNuocSuoiXuat': document.getElementById("so-luong-nuoc-suoi-xuat").value,
+  'soLuongLyXuat': document.getElementById("so-luong-ly-nuoc-xuat").value,
   "soLuongNgotXuat": document.getElementById("so-luong-ngot-xuat").value,
   "soLuongTigerBacXuat": document.getElementById("so-luong-tiger-bac-xuat").value,
   "soLuongTigerNauXuat": document.getElementById("so-luong-tiger-nau-xuat").value,
@@ -410,6 +416,9 @@ localStorage.setItem("div3Values", JSON.stringify({
 
 const div1Values = JSON.parse(localStorage.getItem("div1Values"));
 document.getElementById("so-luong-khan-giay").value = div1Values.soLuongKhanGiay;
+document.getElementById("so-luong-nuoc-suoi").value = div1Values.soLuongNuocSuoi;
+document.getElementById("so-luong-ly-nuoc-nhap").value = div1Values.soLuongLy;
+
 document.getElementById("so-luong-ngot").value = div1Values.soLuongNgot;
 document.getElementById("so-luong-tiger-bac").value = div1Values.soLuongTigerBac;
 document.getElementById("so-luong-tiger-nau").value = div1Values.soLuongTigerNau;
@@ -420,6 +429,8 @@ document.getElementById("so-luong-heineken-chai").value = div1Values.soLuongHein
 
 const div2Values = JSON.parse(localStorage.getItem("div2Values"));
 document.getElementById("so-luong-khan-giay-nhap").value = div2Values.soLuongKhanGiayNhap;
+document.getElementById("so-luong-nuoc-suoi-nhap").value = div2Values.soLuongNuocSuoiNhap;
+document.getElementById("so-luong-ly-nuoc-nhap").value = div2Values.soLuongLyNhap;
 document.getElementById("so-luong-ngot-nhap").value = div2Values.soLuongNgotNhap;
 document.getElementById("so-luong-tiger-bac-nhap").value = div2Values.soLuongTigerBacNhap;
 document.getElementById("so-luong-tiger-nau-nhap").value = div2Values.soLuongTigerNauNhap;
@@ -430,6 +441,8 @@ document.getElementById("so-luong-heineken-chai-nhap").value = div2Values.soLuon
 
 const div3Values = JSON.parse(localStorage.getItem("div3Values"));
 document.getElementById("so-luong-khan-giay-xuat").value = div3Values.soLuongKhanGiayXuat;
+document.getElementById("so-luong-nuoc-suoi-xuat").value = div3Values.soLuongNuocSuoiXuat;
+document.getElementById("so-luong-ly-nuoc-xuat").value = div3Values.soLuongLyXuat;
 document.getElementById("so-luong-ngot-xuat").value = div3Values.soLuongNgotXuat;
 document.getElementById("so-luong-tiger-bac-xuat").value = div3Values.soLuongTigerBacXuat;
 document.getElementById("so-luong-tiger-nau-xuat").value = div3Values.soLuongTigerNauXuat;
@@ -438,15 +451,20 @@ document.getElementById("so-luong-tiger-bac-chai-xuat").value = div3Values.soLuo
 document.getElementById("so-luong-tiger-nau-chai-xuat").value = div3Values.soLuongTigerNauChaiXuat;
 document.getElementById("so-luong-heineken-chai-xuat").value = div3Values.soLuongHeinekenChaiXuat;
 
-// // Tính toán tổng số lượng hàng nhập và tổng số lượng hàng xuất
-// const soLuongNhap = div2Values.soLuongKhanGiayNhap + div2Values.soLuongNgotNhap + div2Values.soLuongTigerBacNhap + div2Values.soLuongTigerNauNhap + div2Values.soLuongHeinekenNhap + div2Values.soLuongTigerBacChaiNhap + div2Values.soLuongTigerNauChaiNhap + div2Values.soLuongHeinekenChaiNhap;
-// const soLuongXuat = div3Values.soLuongKhanGiayXuat + div3Values.soLuongNgotXuat + div3Values.soLuongTigerBacXuat + div3Values.soLuongTigerNauXuat + div3Values.soLuongHeinekenXuat + div3Values.soLuongTigerBacChaiXuat + div3Values.soLuongTigerNauChaiXuat + div3Values.soLuongHeinekenChaiXuat;
+// Lấy các input
+const inputsdiv1 = document.querySelectorAll('#div1 input');
 
-// // Hiển thị tổng số lượng hàng nhập và tổng số lượng hàng xuất
-// document.getElementById("tong-so-luong-nhap").innerHTML = `Tổng số lượng nhập: ${soLuongNhap}`;
-// document.getElementById("tong-so-luong-xuat").innerHTML = `Tổng số lượng xuất: ${soLuongXuat}`;
+// Lặp qua các input và thêm sự kiện khi nhập giá trị vào
+inputsdiv1.forEach(input => {
+  const name = input.id.replace('so-luong-', '');
+  const nuocItem = document.querySelector(`.nuoc-item[data-name="${name}"]`);
+  const value = localStorage.getItem(name) || 0;
+  input.value = value;
+  nuocItem.textContent = value;
 
-// // Tính toán số lượng tồn kho và hiển thị lên màn hình
-// const soLuongTonKho = div1Values.soLuongKhanGiay + div1Values.soLuongNgot + div1Values.soLuongTigerBac + div1Values.soLuongTigerNau + div1Values.soLuongHeineken + div1Values.soLuongTigerBacChai + div1Values.soLuongTigerNauChai + div1Values.soLuongHeinekenChai + soLuongNhap - soLuongXuat;
-// document.getElementById("so-luong-ton-kho").innerHTML = `Số lượng tồn kho: ${soLuongTonKho}`;
-
+  input.addEventListener('input', function() {
+    const value = parseInt(this.value);
+    localStorage.setItem(name, value);
+    nuocItem.textContent = value;
+  });
+});
