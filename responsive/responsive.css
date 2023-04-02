@@ -154,15 +154,15 @@
     }
 
     .popup-modal-header {
-        position: fixed;
-        top: -50%;
+        position: absolute;
+        
         left: 0;
         width: 90%;
-
+     
         background-color: rgb(247, 248, 245);
-        margin-top: 50%;
+        margin-top: 100%;
         margin-left: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, -50%);
     }
 
     table {
@@ -203,7 +203,7 @@
 
     .flex-button button {
         padding: 8px ;
-       
+        font-weight: 300;
     }
     #order h2,
     #order tr,td,th{
@@ -243,5 +243,11 @@
     .table-price{
         border: 1px solid black;
     }
-
+    .title-product-popup{
+        color: red !important;
+    }
+    td,
+    th{
+        border: 1px solid rgb(246, 243, 243);
+    }
 }
