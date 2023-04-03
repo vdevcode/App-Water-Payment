@@ -624,9 +624,11 @@ button:nth-child(3) {
 	font-size: .8rem !important;
 	text-align: left !important;
 	background-color: #1dba1d !important;
-	color: white !important;
+	color: rgb(1, 1, 1) !important;
 	font-weight: 300 !important;
-	justify-content: flex-start;
+	transform: translateX(100%);
+	right: 0;
+
 }
 
 .table-modal {

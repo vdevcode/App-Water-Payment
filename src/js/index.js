@@ -5676,20 +5676,20 @@ var btnB1 = document.getElementById("btnB1");
 var coverTableB1 = document.querySelector(".cover-table-B1");
 
 // Thêm sự kiện click cho nút Bàn B1
-btnB1.addEventListener("click", function() {
-  // Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
-  coverTableB1.classList.toggle("active");
-  
-  // Thay đổi văn bản của nút
-  if (btnB1.innerHTML === "Bàn B1") {
-    btnB1.innerHTML = "Đóng bàn B1";
-	btnB1.style.backgroundColor = 'rgb(222, 59, 59)';
-	btnB1.style.color = 'white';
-  } else {
-    btnB1.innerHTML = "Bàn B1";
-	btnB1.style.backgroundColor = 'yellow';
-	btnB1.style.color = 'black';
-  }
+btnB1.addEventListener("click", function () {
+	// Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+	coverTableB1.classList.toggle("active");
+
+	// Thay đổi văn bản của nút
+	if (btnB1.innerHTML === "Bàn B1") {
+		btnB1.innerHTML = "Đóng bàn B1";
+		btnB1.style.backgroundColor = 'rgb(222, 59, 59)';
+		btnB1.style.color = 'white';
+	} else {
+		btnB1.innerHTML = "Bàn B1";
+		btnB1.style.backgroundColor = 'yellow';
+		btnB1.style.color = 'black';
+	}
 });
 
 var btnB2 = document.getElementById("btnB2");
@@ -5698,20 +5698,20 @@ var btnB2 = document.getElementById("btnB2");
 var coverTableB2 = document.querySelector(".cover-table-B2");
 
 // Thêm sự kiện click cho nút Bàn B1
-btnB2.addEventListener("click", function() {
-  // Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
-  coverTableB2.classList.toggle("active");
-  
-  // Thay đổi văn bản của nút
-  if (btnB2.innerHTML === "Bàn B2") {
-    btnB2.innerHTML = "Đóng bàn B2";
-	btnB2.style.backgroundColor = 'rgb(222, 59, 59)';
-	btnB2.style.color = 'white';
-  } else {
-    btnB2.innerHTML = "Bàn B2";
-	btnB2.style.backgroundColor = 'yellow';
-	btnB2.style.color = 'black';
-  }
+btnB2.addEventListener("click", function () {
+	// Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+	coverTableB2.classList.toggle("active");
+
+	// Thay đổi văn bản của nút
+	if (btnB2.innerHTML === "Bàn B2") {
+		btnB2.innerHTML = "Đóng bàn B2";
+		btnB2.style.backgroundColor = 'rgb(222, 59, 59)';
+		btnB2.style.color = 'white';
+	} else {
+		btnB2.innerHTML = "Bàn B2";
+		btnB2.style.backgroundColor = 'yellow';
+		btnB2.style.color = 'black';
+	}
 });
 
 
@@ -5722,20 +5722,20 @@ var btnB3 = document.getElementById("btnB3");
 var coverTableB3 = document.querySelector(".cover-table-B3");
 
 // Thêm sự kiện click cho nút Bàn B1
-btnB3.addEventListener("click", function() {
-  // Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
-  coverTableB3.classList.toggle("active");
-  
-  // Thay đổi văn bản của nút
-  if (btnB3.innerHTML === "Bàn B3") {
-    btnB3.innerHTML = "Đóng bàn B3";
-	btnB3.style.backgroundColor = 'rgb(222, 59, 59)';
-	btnB3.style.color = 'white';
-  } else {
-    btnB3.innerHTML = "Bàn B3";
-	btnB3.style.backgroundColor = 'yellow';
-	btnB3.style.color = 'black';
-  }
+btnB3.addEventListener("click", function () {
+	// Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+	coverTableB3.classList.toggle("active");
+
+	// Thay đổi văn bản của nút
+	if (btnB3.innerHTML === "Bàn B3") {
+		btnB3.innerHTML = "Đóng bàn B3";
+		btnB3.style.backgroundColor = 'rgb(222, 59, 59)';
+		btnB3.style.color = 'white';
+	} else {
+		btnB3.innerHTML = "Bàn B3";
+		btnB3.style.backgroundColor = 'yellow';
+		btnB3.style.color = 'black';
+	}
 });
 
 var btnB4 = document.getElementById("btnB4");
@@ -5744,20 +5744,20 @@ var btnB4 = document.getElementById("btnB4");
 var coverTableB4 = document.querySelector(".cover-table-B4");
 
 // Thêm sự kiện click cho nút Bàn B1
-btnB4.addEventListener("click", function() {
-  // Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
-  coverTableB4.classList.toggle("active");
-  
-  // Thay đổi văn bản của nút
-  if (btnB4.innerHTML === "Bàn B4") {
-    btnB4.innerHTML = "Đóng bàn B4";
-	btnB4.style.backgroundColor = 'rgb(222, 59, 59)';
-	btnB4.style.color = 'white';
-  } else {
-    btnB4.innerHTML = "Bàn B4";
-	btnB4.style.backgroundColor = 'yellow';
-	btnB4.style.color = 'black';
-  }
+btnB4.addEventListener("click", function () {
+	// Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+	coverTableB4.classList.toggle("active");
+
+	// Thay đổi văn bản của nút
+	if (btnB4.innerHTML === "Bàn B4") {
+		btnB4.innerHTML = "Đóng bàn B4";
+		btnB4.style.backgroundColor = 'rgb(222, 59, 59)';
+		btnB4.style.color = 'white';
+	} else {
+		btnB4.innerHTML = "Bàn B4";
+		btnB4.style.backgroundColor = 'yellow';
+		btnB4.style.color = 'black';
+	}
 });
 
 var btnB5 = document.getElementById("btnB5");
@@ -5766,20 +5766,20 @@ var btnB5 = document.getElementById("btnB5");
 var coverTableB5 = document.querySelector(".cover-table-B5");
 
 // Thêm sự kiện click cho nút Bàn B1
-btnB5.addEventListener("click", function() {
-  // Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
-  coverTableB5.classList.toggle("active");
-  
-  // Thay đổi văn bản của nút
-  if (btnB5.innerHTML === "Bàn B5") {
-    btnB5.innerHTML = "Đóng bàn B5";
-	btnB5.style.backgroundColor = 'rgb(222, 59, 59)';
-	btnB5.style.color = 'white';
-  } else {
-    btnB5.innerHTML = "Bàn B5";
-	btnB5.style.backgroundColor = 'yellow';
-	btnB5.style.color = 'black';
-  }
+btnB5.addEventListener("click", function () {
+	// Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+	coverTableB5.classList.toggle("active");
+
+	// Thay đổi văn bản của nút
+	if (btnB5.innerHTML === "Bàn B5") {
+		btnB5.innerHTML = "Đóng bàn B5";
+		btnB5.style.backgroundColor = 'rgb(222, 59, 59)';
+		btnB5.style.color = 'white';
+	} else {
+		btnB5.innerHTML = "Bàn B5";
+		btnB5.style.backgroundColor = 'yellow';
+		btnB5.style.color = 'black';
+	}
 });
 
 
@@ -5801,7 +5801,7 @@ openA.addEventListener('click', () => {
 	allTable.classList.toggle('active')
 	if (isKhuOpen) {
 		openA.innerHTML = 'Khu A';
-		openA.style.backgroundColor ='#2bfea0'
+		openA.style.backgroundColor = '#2bfea0'
 		openA.style.color = 'black';
 		isKhuOpen = false;
 	}
@@ -6010,7 +6010,7 @@ btnB.addEventListener("click", function () {
 		// Nếu phần tử ẩn, thì hiển thị phần tử và đổi nội dung của nút thành "Đóng khu B"
 		coverButtonKhuB.style.display = "none";
 		btnB.innerHTML = "Khu B";
-		btnB.style.backgroundColor ='#2bfea0'
+		btnB.style.backgroundColor = '#2bfea0'
 		btnB.style.color = 'black';
 	}
 
