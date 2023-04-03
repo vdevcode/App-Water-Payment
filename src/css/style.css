@@ -537,12 +537,28 @@ button:nth-child(3) {
 .cover-table-B5.active{
 	display: block !important;
 }
+.cover-table-C1{
+	display: none !important;
+}
+.cover-table-C1.active{
+	display: block !important;
+}
+.cover-table-C2{
+	display: none !important;
+}
+.cover-table-C2.active{
+	display: block !important;
+}
 .cover-button {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 }
 .cover-button-khuB{
+	margin-top: 10px;
+	display: none;
+}
+.cover-button-khuC{
 	margin-top: 10px;
 	display: none;
 }
@@ -554,6 +570,20 @@ button:nth-child(3) {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
+}
+.button-khuC {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.cover-button-khuC .button-active-area-C{
+	background: rgb(39, 154, 236);
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.25s;
 }
 .cover-button-khuB .button-active-area-B{
 	background: yellow;
