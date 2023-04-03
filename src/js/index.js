@@ -3581,8 +3581,6 @@ addBtnB22.addEventListener("click", () => {
 	newDrinkForm.appendChild(formDiv);
 });
 
-
-
 //B2/1
 function confirmCalculateB21() {
 	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
@@ -3879,6 +3877,1779 @@ addBtnB21.addEventListener("click", () => {
 
 
 
+//B3/1
+function confirmCalculateB31() {
+	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
+		calculateB31()
+	}
+}
+function calculateB31() {
+	const bottleTigerBacB31 = document.getElementById("bottleTigerBacB31").value;
+	const bottleTigerNauB31 = document.getElementById("bottleTigerNauB31").value;
+	const tigerNauB31 = document.getElementById("tigerNauB31").value;
+	const tigerBacB31 = document.getElementById("tigerBacB31").value;
+	const heinekenB31 = document.getElementById("heinekenB31").value;
+	const sevenUpB31 = document.getElementById("sevenUpB31").value;
+	const cokeB31 = document.getElementById("cokeB31").value;
+	const pepsiB31 = document.getElementById("pepsiB31").value;
+	const stingB31 = document.getElementById("stingB31").value;
+	const waterNatureB31 = document.getElementById("waterB31").value;
+	const teaB31 = document.getElementById("teaB31").value;
+	const napkinB31 = document.getElementById("napkinB31").value;
+
+	const products = [
+		{ name: "Chai Tiger Bạc", quantity: bottleTigerBacB31 },
+		{ name: "Chai Tiger Nâu", quantity: bottleTigerNauB31 },
+		{ name: "Bia Tiger Nâu", quantity: tigerNauB31 },
+		{ name: "Bia Tiger Bạc", quantity: tigerBacB31 },
+		{ name: "Bia Heineken", quantity: heinekenB31 },
+		{ name: "Nước 7up", quantity: sevenUpB31 },
+		{ name: "Nước CocaCola", quantity: cokeB31 },
+		{ name: "Nước pepsi", quantity: pepsiB31 },
+		{ name: "Nước Sting", quantity: stingB31 },
+		{ name: "Nước suối", quantity: waterNatureB31 },
+		{ name: "Trà tắc", quantity: teaB31 },
+		{ name: "Khăn giấy", quantity: napkinB31 },
+	];
+
+	const selectedProductsB31 = products.filter((product) => product.quantity > 0);
+
+	// Tạo ra một bill
+	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
+	bill += "<table>";
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
+	for (let i = 0; i < selectedProductsB31.length; i++) {
+		const product = selectedProductsB31[i];
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	}
+	bill += "</table>";
+
+	// Hiển thị bill
+	document.getElementById("orderB31").innerHTML = bill;
+
+
+	localStorage.setItem("tigerNauB31", tigerNauB31);
+	localStorage.setItem("bottleTigerBacB31", bottleTigerBacB31);
+	localStorage.setItem("bottleTigerNauB31", bottleTigerNauB31);
+	localStorage.setItem("tigerBacB31", tigerBacB31);
+	localStorage.setItem("heinekenB31", heinekenB31);
+	localStorage.setItem("sevenUpB31", sevenUpB31);
+	localStorage.setItem("cokeB31", cokeB31);
+	localStorage.setItem("pepsiB31", pepsiB31)
+	localStorage.setItem("stingB31", stingB31);
+	localStorage.setItem("waterB31", waterNatureB31);
+	localStorage.setItem("teaB31", teaB31);
+	localStorage.setItem("napkinB31", napkinB31);
+
+	localStorage.removeItem("bottleTigerBacB31");
+	localStorage.removeItem("bottleTigerNauB31");
+	localStorage.removeItem("tigerNauB31");
+	localStorage.removeItem("tigerBacB31");
+	localStorage.removeItem("heinekenB31");
+	localStorage.removeItem("sevenUpB31");
+	localStorage.removeItem("cokeB31");
+	localStorage.removeItem("pepsiB31");
+	localStorage.removeItem("stingB31");
+	localStorage.removeItem("waterB31");
+	localStorage.removeItem("teaB31");
+	localStorage.removeItem("napkinB31");
+
+	const totalB31 = (bottleTigerBacB31 * 26000) + (bottleTigerNauB31 * 25000) + (tigerNauB31 * 24000) + (tigerBacB31 * 25000) + (heinekenB31 * 26000) + (sevenUpB31 * 18000) + (cokeB31 * 18000) + (pepsiB31 * 18000) + (waterNatureB31 * 14000) + (stingB31 * 18000) + (teaB31 * 10000) + (napkinB31 * 3000);
+
+	const historyB31 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Lấy thời gian hiện tại
+	const currentTime = new Date().getTime();
+	historyB31.push({ time: currentTime, totalB31: totalB31 });
+	localStorage.setItem('totalHistory', JSON.stringify(historyB31));
+
+	// Hiển thị tổng tiền lên trang web
+	document.getElementById("totalB31").innerHTML = "Tổng tiền: " + totalB31 + " đồng";
+
+
+
+}
+
+// Lấy tất cả các ô input của nước
+const drinkInputsB31 = document.querySelectorAll('.drink input[type="number"]');
+
+// Thêm sự kiện onblur cho từng ô input
+drinkInputsB31.forEach(input => {
+	input.addEventListener('blur', checkInput);
+});
+
+// Hàm kiểm tra giá trị của ô input
+function checkInput(event) {
+	const input = event.target;
+	const value = input.value.trim();
+
+	// Kiểm tra nếu ô input chưa có giá trị
+	if (!value) {
+		// Hiển thị thông báo "chưa tính tiền"
+		input.setAttribute('placeholder', 'Chưa nhập giá trị');
+	}
+}
+
+const toggleDrinksButtonB31 = document.getElementById("toggleDrinksB31");
+const drinkElementsB31 = document.querySelectorAll(".drink:nth-child(n+9)");
+
+toggleDrinksButtonB31.addEventListener("click", () => {
+	drinkElementsB31.forEach(drink => drink.classList.toggle("hidden"));
+	const isHidden = toggleDrinksButtonB31.classList.toggle("hidden");
+	toggleDrinksButtonB31.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
+	localStorage.setItem("showDrinks", isHidden ? "1" : "0");
+});
+
+const showDrinksB31 = localStorage.getItem("showDrinks");
+
+if (showDrinksB31 === "1") {
+	drinkElementsB31.forEach(drink => drink.classList.add("hidden"));
+	toggleDrinksButtonB31.textContent = "Hiển thị các loại nước";
+	toggleDrinksButtonB31.classList.add("hidden");
+} else {
+	toggleDrinksButtonB31.textContent = "Hiển thị các loại nước";
+}
+
+// Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
+function showHistoryB31() {
+	const historyB31 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Hiển thị lịch sử tổng tiền lên trang web
+	const historyText = historyB31.map((item, index) => `Lần ${index + 1}: ${item.totalB31} đồng (Thời gian: ${new Date(item.time).toLocaleString()})`).join('<br>');
+	document.getElementById("historyB31").innerHTML = historyText + '<br><button class="delete-history" onclick="clearHistoryB31()">Xoá lịch sử</button>';
+}
+function clearHistoryB31() {
+	localStorage.removeItem('totalHistory');
+	var countdown = 5;
+	var countdownInterval = setInterval(function () {
+		countdown--;
+		document.getElementById("historyB31").innerHTML = "Đã xoá lịch sử tổng tiền, sẽ ẩn sau " + countdown + " giây";
+		if (countdown == 0) {
+			clearInterval(countdownInterval);
+			document.getElementById("historyB31").innerHTML = ""; // Ẩn thông báo sau 5 giây
+		}
+	}, 1000);
+}
+
+
+function confirmResetB31() {
+	if (confirm('Bạn có chắc chắn muốn reset không?')) {
+		resetAllB31();
+	}
+}
+function resetAllB31() {
+	let inputs = {
+		'bottleTigerBacB31': document.getElementById('bottleTigerBacB31').value,
+		'bottleTigerNauB31': document.getElementById('bottleTigerNauB31').value,
+		'tigerNauB31': document.getElementById('tigerNauB31').value,
+		'tigerBacB31': document.getElementById('tigerBacB31').value,
+		'heinekenB31': document.getElementById('heinekenB31').value,
+		'sevenUpB31': document.getElementById('sevenUpB31').value,
+		'cokeB31': document.getElementById('cokeB31').value,
+		'pepsiB31': document.getElementById('pepsiB31').value,
+		'stingB31': document.getElementById('stingB31').value,
+		'waterNatureB31': document.getElementById('waterB31').value,
+		'napkinB31': document.getElementById('napkinB31').value,
+		'teaB31': document.getElementById('teaB31').value
+
+	};
+	localStorage.setItem('inputs', JSON.stringify(inputs));
+	let savedInputs = JSON.parse(localStorage.getItem('inputs'));
+
+	if (savedInputs) {
+		document.getElementById('bottleTigerBacB31').value = savedInputs.bottleTigerBacB31;
+		document.getElementById('bottleTigerNauB31').value = savedInputs.bottleTigerNauB31;
+		document.getElementById('tigerNauB31').value = savedInputs.tigerNauB31;
+		document.getElementById('tigerBacB31').value = savedInputs.tigerBacB31;
+		document.getElementById('heinekenB31').value = savedInputs.heinekenB31;
+		document.getElementById('sevenUpB31').value = savedInputs.sevenUpB31;
+		document.getElementById('cokeB31').value = savedInputs.cokeB31;
+		document.getElementById('pepsiB31').value = savedInputs.pepsiB31;
+		document.getElementById('stingB31').value = savedInputs.stingB31;
+		document.getElementById('waterB31').value = savedInputs.waterB31;
+		document.getElementById('teaB31').value = savedInputs.teaB31;
+		document.getElementById('napkinB31').value = savedInputs.napkinB31;
+	}
+
+	document.getElementById('bottleTigerBacB31').value = '';
+	document.getElementById('bottleTigerNauB31').value = '';
+	document.getElementById('tigerNauB31').value = '';
+	document.getElementById('tigerBacB31').value = '';
+	document.getElementById('heinekenB31').value = '';
+	document.getElementById('sevenUpB31').value = '';
+	document.getElementById('cokeB31').value = '';
+	document.getElementById('pepsiB31').value = '';
+	document.getElementById('stingB31').value = '';
+	document.getElementById('waterB31').value = '';
+	document.getElementById('teaB31').value = '';
+	document.getElementById('napkinB31').value = '';
+
+
+	localStorage.removeItem("bottleTigerBacB31");
+	localStorage.removeItem("bottleTigerNauB31");
+	localStorage.removeItem("tigerNauB31");
+	localStorage.removeItem("tigerBacB31");
+	localStorage.removeItem("heinekenB31");
+	localStorage.removeItem("sevenUpB31");
+	localStorage.removeItem("cokeB31");
+	localStorage.removeItem("pepsiB31");
+	localStorage.removeItem("stingB31");
+	localStorage.removeItem("waterB31");
+	localStorage.removeItem("teaB31");
+	localStorage.removeItem("napkinB31");
+
+}
+
+const inputsB31 = document.querySelectorAll('input[type="number"]');
+inputsB31.forEach(input => {
+	input.addEventListener('input', () => {
+		localStorage.setItem(input.id, input.value);
+	});
+});
+
+// Lấy giá trị đã lưu trong LocalStorage và hiển thị lại trên các ô input tương ứng
+inputs.forEach(input => {
+	const value = localStorage.getItem(input.id);
+	if (value !== null) {
+		input.value = value;
+	}
+});
+
+const addBtnB31 = document.getElementById("addBtnB31");
+const newDrinkFormB31 = document.getElementById("newDrinkFormB31");
+
+addBtnB31.addEventListener("click", () => {
+	const formDiv = document.createElement("div");
+	formDiv.classList.add("drink-water-add");
+
+	const nameLabel = document.createElement("label");
+	nameLabel.textContent = "Tên loại nước:";
+	formDiv.appendChild(nameLabel);
+
+	const nameInput = document.createElement("input");
+	nameInput.type = "text";
+	nameInput.placeholder = "Nhập tên loại nước...";
+	formDiv.appendChild(nameInput);
+
+	const priceLabel = document.createElement("label");
+	priceLabel.textContent = "Giá:";
+	formDiv.appendChild(priceLabel);
+
+	const priceInput = document.createElement("input");
+	priceInput.type = "number";
+	priceInput.placeholder = "Nhập giá loại nước...";
+	formDiv.appendChild(priceInput);
+
+	const submitBtn = document.createElement("button");
+	submitBtn.textContent = "Đồng ý";
+	submitBtn.addEventListener("click", () => {
+		const newName = nameInput.value;
+		const newPrice = priceInput.value;
+
+		const drinkDiv = document.createElement("div");
+		drinkDiv.classList.add("drink");
+
+		const drinkLabel = document.createElement("label");
+		drinkLabel.textContent = newName + ":";
+		drinkDiv.appendChild(drinkLabel);
+
+		const drinkInput = document.createElement("input");
+		drinkInput.type = "number";
+		drinkInput.placeholder = "0";
+		drinkInput.dataset.price = newPrice;
+		drinkDiv.appendChild(drinkInput);
+
+		const drinkList = document.getElementById("drinkList");
+		if (drinkList) {
+			drinkList.appendChild(drinkDiv);
+		}
+
+		formDiv.remove();
+	});
+
+	formDiv.appendChild(submitBtn);
+	newDrinkForm.appendChild(formDiv);
+});
+
+
+//B3/2
+function confirmCalculateB32() {
+	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
+		calculateB32()
+	}
+}
+function calculateB32() {
+	const bottleTigerBacB32 = document.getElementById("bottleTigerBacB32").value;
+	const bottleTigerNauB32 = document.getElementById("bottleTigerNauB32").value;
+	const tigerNauB32 = document.getElementById("tigerNauB32").value;
+	const tigerBacB32 = document.getElementById("tigerBacB32").value;
+	const heinekenB32 = document.getElementById("heinekenB32").value;
+	const sevenUpB32 = document.getElementById("sevenUpB32").value;
+	const cokeB32 = document.getElementById("cokeB32").value;
+	const pepsiB32 = document.getElementById("pepsiB32").value;
+	const stingB32 = document.getElementById("stingB32").value;
+	const waterNatureB32 = document.getElementById("waterB32").value;
+	const teaB32 = document.getElementById("teaB32").value;
+	const napkinB32 = document.getElementById("napkinB32").value;
+
+	const products = [
+		{ name: "Chai Tiger Bạc", quantity: bottleTigerBacB32 },
+		{ name: "Chai Tiger Nâu", quantity: bottleTigerNauB32 },
+		{ name: "Bia Tiger Nâu", quantity: tigerNauB32 },
+		{ name: "Bia Tiger Bạc", quantity: tigerBacB32 },
+		{ name: "Bia Heineken", quantity: heinekenB32 },
+		{ name: "Nước 7up", quantity: sevenUpB32 },
+		{ name: "Nước CocaCola", quantity: cokeB32 },
+		{ name: "Nước pepsi", quantity: pepsiB32 },
+		{ name: "Nước Sting", quantity: stingB32 },
+		{ name: "Nước suối", quantity: waterNatureB32 },
+		{ name: "Trà tắc", quantity: teaB32 },
+		{ name: "Khăn giấy", quantity: napkinB32 },
+	];
+
+	const selectedProductsB32 = products.filter((product) => product.quantity > 0);
+
+	// Tạo ra một bill
+	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
+	bill += "<table>";
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
+	for (let i = 0; i < selectedProductsB32.length; i++) {
+		const product = selectedProductsB32[i];
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	}
+	bill += "</table>";
+
+	// Hiển thị bill
+	document.getElementById("orderB32").innerHTML = bill;
+
+
+	localStorage.setItem("tigerNauB32", tigerNauB32);
+	localStorage.setItem("bottleTigerBacB32", bottleTigerBacB32);
+	localStorage.setItem("bottleTigerNauB32", bottleTigerNauB32);
+	localStorage.setItem("tigerBacB32", tigerBacB32);
+	localStorage.setItem("heinekenB32", heinekenB32);
+	localStorage.setItem("sevenUpB32", sevenUpB32);
+	localStorage.setItem("cokeB32", cokeB32);
+	localStorage.setItem("pepsiB32", pepsiB32)
+	localStorage.setItem("stingB32", stingB32);
+	localStorage.setItem("waterB32", waterNatureB32);
+	localStorage.setItem("teaB32", teaB32);
+	localStorage.setItem("napkinB32", napkinB32);
+
+	localStorage.removeItem("bottleTigerBacB32");
+	localStorage.removeItem("bottleTigerNauB32");
+	localStorage.removeItem("tigerNauB32");
+	localStorage.removeItem("tigerBacB32");
+	localStorage.removeItem("heinekenB32");
+	localStorage.removeItem("sevenUpB32");
+	localStorage.removeItem("cokeB32");
+	localStorage.removeItem("pepsiB32");
+	localStorage.removeItem("stingB32");
+	localStorage.removeItem("waterB32");
+	localStorage.removeItem("teaB32");
+	localStorage.removeItem("napkinB32");
+
+	const totalB32 = (bottleTigerBacB32 * 26000) + (bottleTigerNauB32 * 25000) + (tigerNauB32 * 24000) + (tigerBacB32 * 25000) + (heinekenB32 * 26000) + (sevenUpB32 * 18000) + (cokeB32 * 18000) + (pepsiB32 * 18000) + (waterNatureB32 * 14000) + (stingB32 * 18000) + (teaB32 * 10000) + (napkinB32 * 3000);
+
+	const historyB32 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Lấy thời gian hiện tại
+	const currentTime = new Date().getTime();
+	historyB32.push({ time: currentTime, totalB32: totalB32 });
+	localStorage.setItem('totalHistory', JSON.stringify(historyB32));
+
+	// Hiển thị tổng tiền lên trang web
+	document.getElementById("totalB32").innerHTML = "Tổng tiền: " + totalB32 + " đồng";
+
+
+
+}
+
+// Lấy tất cả các ô input của nước
+const drinkInputsB32 = document.querySelectorAll('.drink input[type="number"]');
+
+// Thêm sự kiện onblur cho từng ô input
+drinkInputsB32.forEach(input => {
+	input.addEventListener('blur', checkInput);
+});
+
+// Hàm kiểm tra giá trị của ô input
+function checkInput(event) {
+	const input = event.target;
+	const value = input.value.trim();
+
+	// Kiểm tra nếu ô input chưa có giá trị
+	if (!value) {
+		// Hiển thị thông báo "chưa tính tiền"
+		input.setAttribute('placeholder', 'Chưa nhập giá trị');
+	}
+}
+
+const toggleDrinksButtonB32 = document.getElementById("toggleDrinksB32");
+const drinkElementsB32 = document.querySelectorAll(".drink:nth-child(n+9)");
+
+toggleDrinksButtonB32.addEventListener("click", () => {
+	drinkElementsB32.forEach(drink => drink.classList.toggle("hidden"));
+	const isHidden = toggleDrinksButtonB32.classList.toggle("hidden");
+	toggleDrinksButtonB32.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
+	localStorage.setItem("showDrinks", isHidden ? "1" : "0");
+});
+
+const showDrinksB32 = localStorage.getItem("showDrinks");
+
+if (showDrinksB32 === "1") {
+	drinkElementsB32.forEach(drink => drink.classList.add("hidden"));
+	toggleDrinksButtonB32.textContent = "Hiển thị các loại nước";
+	toggleDrinksButtonB32.classList.add("hidden");
+} else {
+	toggleDrinksButtonB32.textContent = "Hiển thị các loại nước";
+}
+
+// Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
+function showHistoryB32() {
+	const historyB32 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Hiển thị lịch sử tổng tiền lên trang web
+	const historyText = historyB32.map((item, index) => `Lần ${index + 1}: ${item.totalB32} đồng (Thời gian: ${new Date(item.time).toLocaleString()})`).join('<br>');
+	document.getElementById("historyB32").innerHTML = historyText + '<br><button class="delete-history" onclick="clearHistoryB32()">Xoá lịch sử</button>';
+}
+function clearHistoryB32() {
+	localStorage.removeItem('totalHistory');
+	var countdown = 5;
+	var countdownInterval = setInterval(function () {
+		countdown--;
+		document.getElementById("historyB32").innerHTML = "Đã xoá lịch sử tổng tiền, sẽ ẩn sau " + countdown + " giây";
+		if (countdown == 0) {
+			clearInterval(countdownInterval);
+			document.getElementById("historyB32").innerHTML = ""; // Ẩn thông báo sau 5 giây
+		}
+	}, 1000);
+}
+
+
+function confirmResetB32() {
+	if (confirm('Bạn có chắc chắn muốn reset không?')) {
+		resetAllB32();
+	}
+}
+function resetAllB32() {
+	let inputs = {
+		'bottleTigerBacB32': document.getElementById('bottleTigerBacB32').value,
+		'bottleTigerNauB32': document.getElementById('bottleTigerNauB32').value,
+		'tigerNauB32': document.getElementById('tigerNauB32').value,
+		'tigerBacB32': document.getElementById('tigerBacB32').value,
+		'heinekenB32': document.getElementById('heinekenB32').value,
+		'sevenUpB32': document.getElementById('sevenUpB32').value,
+		'cokeB32': document.getElementById('cokeB32').value,
+		'pepsiB32': document.getElementById('pepsiB32').value,
+		'stingB32': document.getElementById('stingB32').value,
+		'waterNatureB32': document.getElementById('waterB32').value,
+		'napkinB32': document.getElementById('napkinB32').value,
+		'teaB32': document.getElementById('teaB32').value
+
+	};
+	localStorage.setItem('inputs', JSON.stringify(inputs));
+	let savedInputs = JSON.parse(localStorage.getItem('inputs'));
+
+	if (savedInputs) {
+		document.getElementById('bottleTigerBacB32').value = savedInputs.bottleTigerBacB32;
+		document.getElementById('bottleTigerNauB32').value = savedInputs.bottleTigerNauB32;
+		document.getElementById('tigerNauB32').value = savedInputs.tigerNauB32;
+		document.getElementById('tigerBacB32').value = savedInputs.tigerBacB32;
+		document.getElementById('heinekenB32').value = savedInputs.heinekenB32;
+		document.getElementById('sevenUpB32').value = savedInputs.sevenUpB32;
+		document.getElementById('cokeB32').value = savedInputs.cokeB32;
+		document.getElementById('pepsiB32').value = savedInputs.pepsiB32;
+		document.getElementById('stingB32').value = savedInputs.stingB32;
+		document.getElementById('waterB32').value = savedInputs.waterB32;
+		document.getElementById('teaB32').value = savedInputs.teaB32;
+		document.getElementById('napkinB32').value = savedInputs.napkinB32;
+	}
+
+	document.getElementById('bottleTigerBacB32').value = '';
+	document.getElementById('bottleTigerNauB32').value = '';
+	document.getElementById('tigerNauB32').value = '';
+	document.getElementById('tigerBacB32').value = '';
+	document.getElementById('heinekenB32').value = '';
+	document.getElementById('sevenUpB32').value = '';
+	document.getElementById('cokeB32').value = '';
+	document.getElementById('pepsiB32').value = '';
+	document.getElementById('stingB32').value = '';
+	document.getElementById('waterB32').value = '';
+	document.getElementById('teaB32').value = '';
+	document.getElementById('napkinB32').value = '';
+
+
+	localStorage.removeItem("bottleTigerBacB32");
+	localStorage.removeItem("bottleTigerNauB32");
+	localStorage.removeItem("tigerNauB32");
+	localStorage.removeItem("tigerBacB32");
+	localStorage.removeItem("heinekenB32");
+	localStorage.removeItem("sevenUpB32");
+	localStorage.removeItem("cokeB32");
+	localStorage.removeItem("pepsiB32");
+	localStorage.removeItem("stingB32");
+	localStorage.removeItem("waterB32");
+	localStorage.removeItem("teaB32");
+	localStorage.removeItem("napkinB32");
+
+}
+
+const inputsB32 = document.querySelectorAll('input[type="number"]');
+inputsB32.forEach(input => {
+	input.addEventListener('input', () => {
+		localStorage.setItem(input.id, input.value);
+	});
+});
+
+// Lấy giá trị đã lưu trong LocalStorage và hiển thị lại trên các ô input tương ứng
+inputs.forEach(input => {
+	const value = localStorage.getItem(input.id);
+	if (value !== null) {
+		input.value = value;
+	}
+});
+
+const addBtnB32 = document.getElementById("addBtnB32");
+const newDrinkFormB32 = document.getElementById("newDrinkFormB32");
+
+addBtnB32.addEventListener("click", () => {
+	const formDiv = document.createElement("div");
+	formDiv.classList.add("drink-water-add");
+
+	const nameLabel = document.createElement("label");
+	nameLabel.textContent = "Tên loại nước:";
+	formDiv.appendChild(nameLabel);
+
+	const nameInput = document.createElement("input");
+	nameInput.type = "text";
+	nameInput.placeholder = "Nhập tên loại nước...";
+	formDiv.appendChild(nameInput);
+
+	const priceLabel = document.createElement("label");
+	priceLabel.textContent = "Giá:";
+	formDiv.appendChild(priceLabel);
+
+	const priceInput = document.createElement("input");
+	priceInput.type = "number";
+	priceInput.placeholder = "Nhập giá loại nước...";
+	formDiv.appendChild(priceInput);
+
+	const submitBtn = document.createElement("button");
+	submitBtn.textContent = "Đồng ý";
+	submitBtn.addEventListener("click", () => {
+		const newName = nameInput.value;
+		const newPrice = priceInput.value;
+
+		const drinkDiv = document.createElement("div");
+		drinkDiv.classList.add("drink");
+
+		const drinkLabel = document.createElement("label");
+		drinkLabel.textContent = newName + ":";
+		drinkDiv.appendChild(drinkLabel);
+
+		const drinkInput = document.createElement("input");
+		drinkInput.type = "number";
+		drinkInput.placeholder = "0";
+		drinkInput.dataset.price = newPrice;
+		drinkDiv.appendChild(drinkInput);
+
+		const drinkList = document.getElementById("drinkList");
+		if (drinkList) {
+			drinkList.appendChild(drinkDiv);
+		}
+
+		formDiv.remove();
+	});
+
+	formDiv.appendChild(submitBtn);
+	newDrinkForm.appendChild(formDiv);
+});
+
+//B4/2
+
+//B4/2
+function confirmCalculateB42() {
+	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
+		calculateB42()
+	}
+}
+function calculateB42() {
+	const bottleTigerBacB42 = document.getElementById("bottleTigerBacB42").value;
+	const bottleTigerNauB42 = document.getElementById("bottleTigerNauB42").value;
+	const tigerNauB42 = document.getElementById("tigerNauB42").value;
+	const tigerBacB42 = document.getElementById("tigerBacB42").value;
+	const heinekenB42 = document.getElementById("heinekenB42").value;
+	const sevenUpB42 = document.getElementById("sevenUpB42").value;
+	const cokeB42 = document.getElementById("cokeB42").value;
+	const pepsiB42 = document.getElementById("pepsiB42").value;
+	const stingB42 = document.getElementById("stingB42").value;
+	const waterNatureB42 = document.getElementById("waterB42").value;
+	const teaB42 = document.getElementById("teaB42").value;
+	const napkinB42 = document.getElementById("napkinB42").value;
+
+	const products = [
+		{ name: "Chai Tiger Bạc", quantity: bottleTigerBacB42 },
+		{ name: "Chai Tiger Nâu", quantity: bottleTigerNauB42 },
+		{ name: "Bia Tiger Nâu", quantity: tigerNauB42 },
+		{ name: "Bia Tiger Bạc", quantity: tigerBacB42 },
+		{ name: "Bia Heineken", quantity: heinekenB42 },
+		{ name: "Nước 7up", quantity: sevenUpB42 },
+		{ name: "Nước CocaCola", quantity: cokeB42 },
+		{ name: "Nước pepsi", quantity: pepsiB42 },
+		{ name: "Nước Sting", quantity: stingB42 },
+		{ name: "Nước suối", quantity: waterNatureB42 },
+		{ name: "Trà tắc", quantity: teaB42 },
+		{ name: "Khăn giấy", quantity: napkinB42 },
+	];
+
+	const selectedProductsB42 = products.filter((product) => product.quantity > 0);
+
+	// Tạo ra một bill
+	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
+	bill += "<table>";
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
+	for (let i = 0; i < selectedProductsB42.length; i++) {
+		const product = selectedProductsB42[i];
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	}
+	bill += "</table>";
+
+	// Hiển thị bill
+	document.getElementById("orderB42").innerHTML = bill;
+
+
+	localStorage.setItem("tigerNauB42", tigerNauB42);
+	localStorage.setItem("bottleTigerBacB42", bottleTigerBacB42);
+	localStorage.setItem("bottleTigerNauB42", bottleTigerNauB42);
+	localStorage.setItem("tigerBacB42", tigerBacB42);
+	localStorage.setItem("heinekenB42", heinekenB42);
+	localStorage.setItem("sevenUpB42", sevenUpB42);
+	localStorage.setItem("cokeB42", cokeB42);
+	localStorage.setItem("pepsiB42", pepsiB42)
+	localStorage.setItem("stingB42", stingB42);
+	localStorage.setItem("waterB42", waterNatureB42);
+	localStorage.setItem("teaB42", teaB42);
+	localStorage.setItem("napkinB42", napkinB42);
+
+	localStorage.removeItem("bottleTigerBacB42");
+	localStorage.removeItem("bottleTigerNauB42");
+	localStorage.removeItem("tigerNauB42");
+	localStorage.removeItem("tigerBacB42");
+	localStorage.removeItem("heinekenB42");
+	localStorage.removeItem("sevenUpB42");
+	localStorage.removeItem("cokeB42");
+	localStorage.removeItem("pepsiB42");
+	localStorage.removeItem("stingB42");
+	localStorage.removeItem("waterB42");
+	localStorage.removeItem("teaB42");
+	localStorage.removeItem("napkinB42");
+
+	const totalB42 = (bottleTigerBacB42 * 26000) + (bottleTigerNauB42 * 25000) + (tigerNauB42 * 24000) + (tigerBacB42 * 25000) + (heinekenB42 * 26000) + (sevenUpB42 * 18000) + (cokeB42 * 18000) + (pepsiB42 * 18000) + (waterNatureB42 * 14000) + (stingB42 * 18000) + (teaB42 * 10000) + (napkinB42 * 3000);
+
+	const historyB42 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Lấy thời gian hiện tại
+	const currentTime = new Date().getTime();
+	historyB42.push({ time: currentTime, totalB42: totalB42 });
+	localStorage.setItem('totalHistory', JSON.stringify(historyB42));
+
+	// Hiển thị tổng tiền lên trang web
+	document.getElementById("totalB42").innerHTML = "Tổng tiền: " + totalB42 + " đồng";
+
+
+
+}
+
+// Lấy tất cả các ô input của nước
+const drinkInputsB42 = document.querySelectorAll('.drink input[type="number"]');
+
+// Thêm sự kiện onblur cho từng ô input
+drinkInputsB42.forEach(input => {
+	input.addEventListener('blur', checkInput);
+});
+
+// Hàm kiểm tra giá trị của ô input
+function checkInput(event) {
+	const input = event.target;
+	const value = input.value.trim();
+
+	// Kiểm tra nếu ô input chưa có giá trị
+	if (!value) {
+		// Hiển thị thông báo "chưa tính tiền"
+		input.setAttribute('placeholder', 'Chưa nhập giá trị');
+	}
+}
+
+const toggleDrinksButtonB42 = document.getElementById("toggleDrinksB42");
+const drinkElementsB42 = document.querySelectorAll(".drink:nth-child(n+9)");
+
+toggleDrinksButtonB42.addEventListener("click", () => {
+	drinkElementsB42.forEach(drink => drink.classList.toggle("hidden"));
+	const isHidden = toggleDrinksButtonB42.classList.toggle("hidden");
+	toggleDrinksButtonB42.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
+	localStorage.setItem("showDrinks", isHidden ? "1" : "0");
+});
+
+const showDrinksB42 = localStorage.getItem("showDrinks");
+
+if (showDrinksB42 === "1") {
+	drinkElementsB42.forEach(drink => drink.classList.add("hidden"));
+	toggleDrinksButtonB42.textContent = "Hiển thị các loại nước";
+	toggleDrinksButtonB42.classList.add("hidden");
+} else {
+	toggleDrinksButtonB42.textContent = "Hiển thị các loại nước";
+}
+
+// Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
+function showHistoryB42() {
+	const historyB42 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Hiển thị lịch sử tổng tiền lên trang web
+	const historyText = historyB42.map((item, index) => `Lần ${index + 1}: ${item.totalB42} đồng (Thời gian: ${new Date(item.time).toLocaleString()})`).join('<br>');
+	document.getElementById("historyB42").innerHTML = historyText + '<br><button class="delete-history" onclick="clearHistoryB42()">Xoá lịch sử</button>';
+}
+function clearHistoryB42() {
+	localStorage.removeItem('totalHistory');
+	var countdown = 5;
+	var countdownInterval = setInterval(function () {
+		countdown--;
+		document.getElementById("historyB42").innerHTML = "Đã xoá lịch sử tổng tiền, sẽ ẩn sau " + countdown + " giây";
+		if (countdown == 0) {
+			clearInterval(countdownInterval);
+			document.getElementById("historyB42").innerHTML = ""; // Ẩn thông báo sau 5 giây
+		}
+	}, 1000);
+}
+
+
+function confirmResetB42() {
+	if (confirm('Bạn có chắc chắn muốn reset không?')) {
+		resetAllB42();
+	}
+}
+function resetAllB42() {
+	let inputs = {
+		'bottleTigerBacB42': document.getElementById('bottleTigerBacB42').value,
+		'bottleTigerNauB42': document.getElementById('bottleTigerNauB42').value,
+		'tigerNauB42': document.getElementById('tigerNauB42').value,
+		'tigerBacB42': document.getElementById('tigerBacB42').value,
+		'heinekenB42': document.getElementById('heinekenB42').value,
+		'sevenUpB42': document.getElementById('sevenUpB42').value,
+		'cokeB42': document.getElementById('cokeB42').value,
+		'pepsiB42': document.getElementById('pepsiB42').value,
+		'stingB42': document.getElementById('stingB42').value,
+		'waterNatureB42': document.getElementById('waterB42').value,
+		'napkinB42': document.getElementById('napkinB42').value,
+		'teaB42': document.getElementById('teaB42').value
+
+	};
+	localStorage.setItem('inputs', JSON.stringify(inputs));
+	let savedInputs = JSON.parse(localStorage.getItem('inputs'));
+
+	if (savedInputs) {
+		document.getElementById('bottleTigerBacB42').value = savedInputs.bottleTigerBacB42;
+		document.getElementById('bottleTigerNauB42').value = savedInputs.bottleTigerNauB42;
+		document.getElementById('tigerNauB42').value = savedInputs.tigerNauB42;
+		document.getElementById('tigerBacB42').value = savedInputs.tigerBacB42;
+		document.getElementById('heinekenB42').value = savedInputs.heinekenB42;
+		document.getElementById('sevenUpB42').value = savedInputs.sevenUpB42;
+		document.getElementById('cokeB42').value = savedInputs.cokeB42;
+		document.getElementById('pepsiB42').value = savedInputs.pepsiB42;
+		document.getElementById('stingB42').value = savedInputs.stingB42;
+		document.getElementById('waterB42').value = savedInputs.waterB42;
+		document.getElementById('teaB42').value = savedInputs.teaB42;
+		document.getElementById('napkinB42').value = savedInputs.napkinB42;
+	}
+
+	document.getElementById('bottleTigerBacB42').value = '';
+	document.getElementById('bottleTigerNauB42').value = '';
+	document.getElementById('tigerNauB42').value = '';
+	document.getElementById('tigerBacB42').value = '';
+	document.getElementById('heinekenB42').value = '';
+	document.getElementById('sevenUpB42').value = '';
+	document.getElementById('cokeB42').value = '';
+	document.getElementById('pepsiB42').value = '';
+	document.getElementById('stingB42').value = '';
+	document.getElementById('waterB42').value = '';
+	document.getElementById('teaB42').value = '';
+	document.getElementById('napkinB42').value = '';
+
+
+	localStorage.removeItem("bottleTigerBacB42");
+	localStorage.removeItem("bottleTigerNauB42");
+	localStorage.removeItem("tigerNauB42");
+	localStorage.removeItem("tigerBacB42");
+	localStorage.removeItem("heinekenB42");
+	localStorage.removeItem("sevenUpB42");
+	localStorage.removeItem("cokeB42");
+	localStorage.removeItem("pepsiB42");
+	localStorage.removeItem("stingB42");
+	localStorage.removeItem("waterB42");
+	localStorage.removeItem("teaB42");
+	localStorage.removeItem("napkinB42");
+
+}
+
+const inputsB42 = document.querySelectorAll('input[type="number"]');
+inputsB42.forEach(input => {
+	input.addEventListener('input', () => {
+		localStorage.setItem(input.id, input.value);
+	});
+});
+
+// Lấy giá trị đã lưu trong LocalStorage và hiển thị lại trên các ô input tương ứng
+inputs.forEach(input => {
+	const value = localStorage.getItem(input.id);
+	if (value !== null) {
+		input.value = value;
+	}
+});
+
+const addBtnB42 = document.getElementById("addBtnB42");
+const newDrinkFormB42 = document.getElementById("newDrinkFormB42");
+
+addBtnB42.addEventListener("click", () => {
+	const formDiv = document.createElement("div");
+	formDiv.classList.add("drink-water-add");
+
+	const nameLabel = document.createElement("label");
+	nameLabel.textContent = "Tên loại nước:";
+	formDiv.appendChild(nameLabel);
+
+	const nameInput = document.createElement("input");
+	nameInput.type = "text";
+	nameInput.placeholder = "Nhập tên loại nước...";
+	formDiv.appendChild(nameInput);
+
+	const priceLabel = document.createElement("label");
+	priceLabel.textContent = "Giá:";
+	formDiv.appendChild(priceLabel);
+
+	const priceInput = document.createElement("input");
+	priceInput.type = "number";
+	priceInput.placeholder = "Nhập giá loại nước...";
+	formDiv.appendChild(priceInput);
+
+	const submitBtn = document.createElement("button");
+	submitBtn.textContent = "Đồng ý";
+	submitBtn.addEventListener("click", () => {
+		const newName = nameInput.value;
+		const newPrice = priceInput.value;
+
+		const drinkDiv = document.createElement("div");
+		drinkDiv.classList.add("drink");
+
+		const drinkLabel = document.createElement("label");
+		drinkLabel.textContent = newName + ":";
+		drinkDiv.appendChild(drinkLabel);
+
+		const drinkInput = document.createElement("input");
+		drinkInput.type = "number";
+		drinkInput.placeholder = "0";
+		drinkInput.dataset.price = newPrice;
+		drinkDiv.appendChild(drinkInput);
+
+		const drinkList = document.getElementById("drinkList");
+		if (drinkList) {
+			drinkList.appendChild(drinkDiv);
+		}
+
+		formDiv.remove();
+	});
+
+	formDiv.appendChild(submitBtn);
+	newDrinkForm.appendChild(formDiv);
+});
+
+
+//B5/1
+function confirmCalculateB51() {
+	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
+		calculateB51()
+	}
+}
+function calculateB51() {
+	const bottleTigerBacB51 = document.getElementById("bottleTigerBacB51").value;
+	const bottleTigerNauB51 = document.getElementById("bottleTigerNauB51").value;
+	const tigerNauB51 = document.getElementById("tigerNauB51").value;
+	const tigerBacB51 = document.getElementById("tigerBacB51").value;
+	const heinekenB51 = document.getElementById("heinekenB51").value;
+	const sevenUpB51 = document.getElementById("sevenUpB51").value;
+	const cokeB51 = document.getElementById("cokeB51").value;
+	const pepsiB51 = document.getElementById("pepsiB51").value;
+	const stingB51 = document.getElementById("stingB51").value;
+	const waterNatureB51 = document.getElementById("waterB51").value;
+	const teaB51 = document.getElementById("teaB51").value;
+	const napkinB51 = document.getElementById("napkinB51").value;
+
+	const products = [
+		{ name: "Chai Tiger Bạc", quantity: bottleTigerBacB51 },
+		{ name: "Chai Tiger Nâu", quantity: bottleTigerNauB51 },
+		{ name: "Bia Tiger Nâu", quantity: tigerNauB51 },
+		{ name: "Bia Tiger Bạc", quantity: tigerBacB51 },
+		{ name: "Bia Heineken", quantity: heinekenB51 },
+		{ name: "Nước 7up", quantity: sevenUpB51 },
+		{ name: "Nước CocaCola", quantity: cokeB51 },
+		{ name: "Nước pepsi", quantity: pepsiB51 },
+		{ name: "Nước Sting", quantity: stingB51 },
+		{ name: "Nước suối", quantity: waterNatureB51 },
+		{ name: "Trà tắc", quantity: teaB51 },
+		{ name: "Khăn giấy", quantity: napkinB51 },
+	];
+
+	const selectedProductsB51 = products.filter((product) => product.quantity > 0);
+
+	// Tạo ra một bill
+	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
+	bill += "<table>";
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
+	for (let i = 0; i < selectedProductsB51.length; i++) {
+		const product = selectedProductsB51[i];
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	}
+	bill += "</table>";
+
+	// Hiển thị bill
+	document.getElementById("orderB51").innerHTML = bill;
+
+
+	localStorage.setItem("tigerNauB51", tigerNauB51);
+	localStorage.setItem("bottleTigerBacB51", bottleTigerBacB51);
+	localStorage.setItem("bottleTigerNauB51", bottleTigerNauB51);
+	localStorage.setItem("tigerBacB51", tigerBacB51);
+	localStorage.setItem("heinekenB51", heinekenB51);
+	localStorage.setItem("sevenUpB51", sevenUpB51);
+	localStorage.setItem("cokeB51", cokeB51);
+	localStorage.setItem("pepsiB51", pepsiB51)
+	localStorage.setItem("stingB51", stingB51);
+	localStorage.setItem("waterB51", waterNatureB51);
+	localStorage.setItem("teaB51", teaB51);
+	localStorage.setItem("napkinB51", napkinB51);
+
+	localStorage.removeItem("bottleTigerBacB51");
+	localStorage.removeItem("bottleTigerNauB51");
+	localStorage.removeItem("tigerNauB51");
+	localStorage.removeItem("tigerBacB51");
+	localStorage.removeItem("heinekenB51");
+	localStorage.removeItem("sevenUpB51");
+	localStorage.removeItem("cokeB51");
+	localStorage.removeItem("pepsiB51");
+	localStorage.removeItem("stingB51");
+	localStorage.removeItem("waterB51");
+	localStorage.removeItem("teaB51");
+	localStorage.removeItem("napkinB51");
+
+	const totalB51 = (bottleTigerBacB51 * 26000) + (bottleTigerNauB51 * 25000) + (tigerNauB51 * 24000) + (tigerBacB51 * 25000) + (heinekenB51 * 26000) + (sevenUpB51 * 18000) + (cokeB51 * 18000) + (pepsiB51 * 18000) + (waterNatureB51 * 14000) + (stingB51 * 18000) + (teaB51 * 10000) + (napkinB51 * 3000);
+
+	const historyB51 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Lấy thời gian hiện tại
+	const currentTime = new Date().getTime();
+	historyB51.push({ time: currentTime, totalB51: totalB51 });
+	localStorage.setItem('totalHistory', JSON.stringify(historyB51));
+
+	// Hiển thị tổng tiền lên trang web
+	document.getElementById("totalB51").innerHTML = "Tổng tiền: " + totalB51 + " đồng";
+
+
+
+}
+
+// Lấy tất cả các ô input của nước
+const drinkInputsB51 = document.querySelectorAll('.drink input[type="number"]');
+
+// Thêm sự kiện onblur cho từng ô input
+drinkInputsB51.forEach(input => {
+	input.addEventListener('blur', checkInput);
+});
+
+// Hàm kiểm tra giá trị của ô input
+function checkInput(event) {
+	const input = event.target;
+	const value = input.value.trim();
+
+	// Kiểm tra nếu ô input chưa có giá trị
+	if (!value) {
+		// Hiển thị thông báo "chưa tính tiền"
+		input.setAttribute('placeholder', 'Chưa nhập giá trị');
+	}
+}
+
+const toggleDrinksButtonB51 = document.getElementById("toggleDrinksB51");
+const drinkElementsB51 = document.querySelectorAll(".drink:nth-child(n+9)");
+
+toggleDrinksButtonB51.addEventListener("click", () => {
+	drinkElementsB51.forEach(drink => drink.classList.toggle("hidden"));
+	const isHidden = toggleDrinksButtonB51.classList.toggle("hidden");
+	toggleDrinksButtonB51.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
+	localStorage.setItem("showDrinks", isHidden ? "1" : "0");
+});
+
+const showDrinksB51 = localStorage.getItem("showDrinks");
+
+if (showDrinksB51 === "1") {
+	drinkElementsB51.forEach(drink => drink.classList.add("hidden"));
+	toggleDrinksButtonB51.textContent = "Hiển thị các loại nước";
+	toggleDrinksButtonB51.classList.add("hidden");
+} else {
+	toggleDrinksButtonB51.textContent = "Hiển thị các loại nước";
+}
+
+// Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
+function showHistoryB51() {
+	const historyB51 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Hiển thị lịch sử tổng tiền lên trang web
+	const historyText = historyB51.map((item, index) => `Lần ${index + 1}: ${item.totalB51} đồng (Thời gian: ${new Date(item.time).toLocaleString()})`).join('<br>');
+	document.getElementById("historyB51").innerHTML = historyText + '<br><button class="delete-history" onclick="clearHistoryB51()">Xoá lịch sử</button>';
+}
+function clearHistoryB51() {
+	localStorage.removeItem('totalHistory');
+	var countdown = 5;
+	var countdownInterval = setInterval(function () {
+		countdown--;
+		document.getElementById("historyB51").innerHTML = "Đã xoá lịch sử tổng tiền, sẽ ẩn sau " + countdown + " giây";
+		if (countdown == 0) {
+			clearInterval(countdownInterval);
+			document.getElementById("historyB51").innerHTML = ""; // Ẩn thông báo sau 5 giây
+		}
+	}, 1000);
+}
+
+
+function confirmResetB51() {
+	if (confirm('Bạn có chắc chắn muốn reset không?')) {
+		resetAllB51();
+	}
+}
+function resetAllB51() {
+	let inputs = {
+		'bottleTigerBacB51': document.getElementById('bottleTigerBacB51').value,
+		'bottleTigerNauB51': document.getElementById('bottleTigerNauB51').value,
+		'tigerNauB51': document.getElementById('tigerNauB51').value,
+		'tigerBacB51': document.getElementById('tigerBacB51').value,
+		'heinekenB51': document.getElementById('heinekenB51').value,
+		'sevenUpB51': document.getElementById('sevenUpB51').value,
+		'cokeB51': document.getElementById('cokeB51').value,
+		'pepsiB51': document.getElementById('pepsiB51').value,
+		'stingB51': document.getElementById('stingB51').value,
+		'waterNatureB51': document.getElementById('waterB51').value,
+		'napkinB51': document.getElementById('napkinB51').value,
+		'teaB51': document.getElementById('teaB51').value
+
+	};
+	localStorage.setItem('inputs', JSON.stringify(inputs));
+	let savedInputs = JSON.parse(localStorage.getItem('inputs'));
+
+	if (savedInputs) {
+		document.getElementById('bottleTigerBacB51').value = savedInputs.bottleTigerBacB51;
+		document.getElementById('bottleTigerNauB51').value = savedInputs.bottleTigerNauB51;
+		document.getElementById('tigerNauB51').value = savedInputs.tigerNauB51;
+		document.getElementById('tigerBacB51').value = savedInputs.tigerBacB51;
+		document.getElementById('heinekenB51').value = savedInputs.heinekenB51;
+		document.getElementById('sevenUpB51').value = savedInputs.sevenUpB51;
+		document.getElementById('cokeB51').value = savedInputs.cokeB51;
+		document.getElementById('pepsiB51').value = savedInputs.pepsiB51;
+		document.getElementById('stingB51').value = savedInputs.stingB51;
+		document.getElementById('waterB51').value = savedInputs.waterB51;
+		document.getElementById('teaB51').value = savedInputs.teaB51;
+		document.getElementById('napkinB51').value = savedInputs.napkinB51;
+	}
+
+	document.getElementById('bottleTigerBacB51').value = '';
+	document.getElementById('bottleTigerNauB51').value = '';
+	document.getElementById('tigerNauB51').value = '';
+	document.getElementById('tigerBacB51').value = '';
+	document.getElementById('heinekenB51').value = '';
+	document.getElementById('sevenUpB51').value = '';
+	document.getElementById('cokeB51').value = '';
+	document.getElementById('pepsiB51').value = '';
+	document.getElementById('stingB51').value = '';
+	document.getElementById('waterB51').value = '';
+	document.getElementById('teaB51').value = '';
+	document.getElementById('napkinB51').value = '';
+
+
+	localStorage.removeItem("bottleTigerBacB51");
+	localStorage.removeItem("bottleTigerNauB51");
+	localStorage.removeItem("tigerNauB51");
+	localStorage.removeItem("tigerBacB51");
+	localStorage.removeItem("heinekenB51");
+	localStorage.removeItem("sevenUpB51");
+	localStorage.removeItem("cokeB51");
+	localStorage.removeItem("pepsiB51");
+	localStorage.removeItem("stingB51");
+	localStorage.removeItem("waterB51");
+	localStorage.removeItem("teaB51");
+	localStorage.removeItem("napkinB51");
+
+}
+
+const inputsB51 = document.querySelectorAll('input[type="number"]');
+inputsB51.forEach(input => {
+	input.addEventListener('input', () => {
+		localStorage.setItem(input.id, input.value);
+	});
+});
+
+// Lấy giá trị đã lưu trong LocalStorage và hiển thị lại trên các ô input tương ứng
+inputs.forEach(input => {
+	const value = localStorage.getItem(input.id);
+	if (value !== null) {
+		input.value = value;
+	}
+});
+
+const addBtnB51 = document.getElementById("addBtnB51");
+const newDrinkFormB51 = document.getElementById("newDrinkFormB51");
+
+addBtnB51.addEventListener("click", () => {
+	const formDiv = document.createElement("div");
+	formDiv.classList.add("drink-water-add");
+
+	const nameLabel = document.createElement("label");
+	nameLabel.textContent = "Tên loại nước:";
+	formDiv.appendChild(nameLabel);
+
+	const nameInput = document.createElement("input");
+	nameInput.type = "text";
+	nameInput.placeholder = "Nhập tên loại nước...";
+	formDiv.appendChild(nameInput);
+
+	const priceLabel = document.createElement("label");
+	priceLabel.textContent = "Giá:";
+	formDiv.appendChild(priceLabel);
+
+	const priceInput = document.createElement("input");
+	priceInput.type = "number";
+	priceInput.placeholder = "Nhập giá loại nước...";
+	formDiv.appendChild(priceInput);
+
+	const submitBtn = document.createElement("button");
+	submitBtn.textContent = "Đồng ý";
+	submitBtn.addEventListener("click", () => {
+		const newName = nameInput.value;
+		const newPrice = priceInput.value;
+
+		const drinkDiv = document.createElement("div");
+		drinkDiv.classList.add("drink");
+
+		const drinkLabel = document.createElement("label");
+		drinkLabel.textContent = newName + ":";
+		drinkDiv.appendChild(drinkLabel);
+
+		const drinkInput = document.createElement("input");
+		drinkInput.type = "number";
+		drinkInput.placeholder = "0";
+		drinkInput.dataset.price = newPrice;
+		drinkDiv.appendChild(drinkInput);
+
+		const drinkList = document.getElementById("drinkList");
+		if (drinkList) {
+			drinkList.appendChild(drinkDiv);
+		}
+
+		formDiv.remove();
+	});
+
+	formDiv.appendChild(submitBtn);
+	newDrinkForm.appendChild(formDiv);
+});
+
+
+
+//B5/3
+function confirmCalculateB53() {
+	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
+		calculateB53()
+	}
+}
+function calculateB53() {
+	const bottleTigerBacB53 = document.getElementById("bottleTigerBacB53").value;
+	const bottleTigerNauB53 = document.getElementById("bottleTigerNauB53").value;
+	const tigerNauB53 = document.getElementById("tigerNauB53").value;
+	const tigerBacB53 = document.getElementById("tigerBacB53").value;
+	const heinekenB53 = document.getElementById("heinekenB53").value;
+	const sevenUpB53 = document.getElementById("sevenUpB53").value;
+	const cokeB53 = document.getElementById("cokeB53").value;
+	const pepsiB53 = document.getElementById("pepsiB53").value;
+	const stingB53 = document.getElementById("stingB53").value;
+	const waterNatureB53 = document.getElementById("waterB53").value;
+	const teaB53 = document.getElementById("teaB53").value;
+	const napkinB53 = document.getElementById("napkinB53").value;
+
+	const products = [
+		{ name: "Chai Tiger Bạc", quantity: bottleTigerBacB53 },
+		{ name: "Chai Tiger Nâu", quantity: bottleTigerNauB53 },
+		{ name: "Bia Tiger Nâu", quantity: tigerNauB53 },
+		{ name: "Bia Tiger Bạc", quantity: tigerBacB53 },
+		{ name: "Bia Heineken", quantity: heinekenB53 },
+		{ name: "Nước 7up", quantity: sevenUpB53 },
+		{ name: "Nước CocaCola", quantity: cokeB53 },
+		{ name: "Nước pepsi", quantity: pepsiB53 },
+		{ name: "Nước Sting", quantity: stingB53 },
+		{ name: "Nước suối", quantity: waterNatureB53 },
+		{ name: "Trà tắc", quantity: teaB53 },
+		{ name: "Khăn giấy", quantity: napkinB53 },
+	];
+
+	const selectedProductsB53 = products.filter((product) => product.quantity > 0);
+
+	// Tạo ra một bill
+	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
+	bill += "<table>";
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
+	for (let i = 0; i < selectedProductsB53.length; i++) {
+		const product = selectedProductsB53[i];
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	}
+	bill += "</table>";
+
+	// Hiển thị bill
+	document.getElementById("orderB53").innerHTML = bill;
+
+
+	localStorage.setItem("tigerNauB53", tigerNauB53);
+	localStorage.setItem("bottleTigerBacB53", bottleTigerBacB53);
+	localStorage.setItem("bottleTigerNauB53", bottleTigerNauB53);
+	localStorage.setItem("tigerBacB53", tigerBacB53);
+	localStorage.setItem("heinekenB53", heinekenB53);
+	localStorage.setItem("sevenUpB53", sevenUpB53);
+	localStorage.setItem("cokeB53", cokeB53);
+	localStorage.setItem("pepsiB53", pepsiB53)
+	localStorage.setItem("stingB53", stingB53);
+	localStorage.setItem("waterB53", waterNatureB53);
+	localStorage.setItem("teaB53", teaB53);
+	localStorage.setItem("napkinB53", napkinB53);
+
+	localStorage.removeItem("bottleTigerBacB53");
+	localStorage.removeItem("bottleTigerNauB53");
+	localStorage.removeItem("tigerNauB53");
+	localStorage.removeItem("tigerBacB53");
+	localStorage.removeItem("heinekenB53");
+	localStorage.removeItem("sevenUpB53");
+	localStorage.removeItem("cokeB53");
+	localStorage.removeItem("pepsiB53");
+	localStorage.removeItem("stingB53");
+	localStorage.removeItem("waterB53");
+	localStorage.removeItem("teaB53");
+	localStorage.removeItem("napkinB53");
+
+	const totalB53 = (bottleTigerBacB53 * 26000) + (bottleTigerNauB53 * 25000) + (tigerNauB53 * 24000) + (tigerBacB53 * 25000) + (heinekenB53 * 26000) + (sevenUpB53 * 18000) + (cokeB53 * 18000) + (pepsiB53 * 18000) + (waterNatureB53 * 14000) + (stingB53 * 18000) + (teaB53 * 10000) + (napkinB53 * 3000);
+
+	const historyB53 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Lấy thời gian hiện tại
+	const currentTime = new Date().getTime();
+	historyB53.push({ time: currentTime, totalB53: totalB53 });
+	localStorage.setItem('totalHistory', JSON.stringify(historyB53));
+
+	// Hiển thị tổng tiền lên trang web
+	document.getElementById("totalB53").innerHTML = "Tổng tiền: " + totalB53 + " đồng";
+
+
+
+}
+
+// Lấy tất cả các ô input của nước
+const drinkInputsB53 = document.querySelectorAll('.drink input[type="number"]');
+
+// Thêm sự kiện onblur cho từng ô input
+drinkInputsB53.forEach(input => {
+	input.addEventListener('blur', checkInput);
+});
+
+// Hàm kiểm tra giá trị của ô input
+function checkInput(event) {
+	const input = event.target;
+	const value = input.value.trim();
+
+	// Kiểm tra nếu ô input chưa có giá trị
+	if (!value) {
+		// Hiển thị thông báo "chưa tính tiền"
+		input.setAttribute('placeholder', 'Chưa nhập giá trị');
+	}
+}
+
+const toggleDrinksButtonB53 = document.getElementById("toggleDrinksB53");
+const drinkElementsB53 = document.querySelectorAll(".drink:nth-child(n+9)");
+
+toggleDrinksButtonB53.addEventListener("click", () => {
+	drinkElementsB53.forEach(drink => drink.classList.toggle("hidden"));
+	const isHidden = toggleDrinksButtonB53.classList.toggle("hidden");
+	toggleDrinksButtonB53.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
+	localStorage.setItem("showDrinks", isHidden ? "1" : "0");
+});
+
+const showDrinksB53 = localStorage.getItem("showDrinks");
+
+if (showDrinksB53 === "1") {
+	drinkElementsB53.forEach(drink => drink.classList.add("hidden"));
+	toggleDrinksButtonB53.textContent = "Hiển thị các loại nước";
+	toggleDrinksButtonB53.classList.add("hidden");
+} else {
+	toggleDrinksButtonB53.textContent = "Hiển thị các loại nước";
+}
+
+// Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
+function showHistoryB53() {
+	const historyB53 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Hiển thị lịch sử tổng tiền lên trang web
+	const historyText = historyB53.map((item, index) => `Lần ${index + 1}: ${item.totalB53} đồng (Thời gian: ${new Date(item.time).toLocaleString()})`).join('<br>');
+	document.getElementById("historyB53").innerHTML = historyText + '<br><button class="delete-history" onclick="clearHistoryB53()">Xoá lịch sử</button>';
+}
+function clearHistoryB53() {
+	localStorage.removeItem('totalHistory');
+	var countdown = 5;
+	var countdownInterval = setInterval(function () {
+		countdown--;
+		document.getElementById("historyB53").innerHTML = "Đã xoá lịch sử tổng tiền, sẽ ẩn sau " + countdown + " giây";
+		if (countdown == 0) {
+			clearInterval(countdownInterval);
+			document.getElementById("historyB53").innerHTML = ""; // Ẩn thông báo sau 5 giây
+		}
+	}, 1000);
+}
+
+
+function confirmResetB53() {
+	if (confirm('Bạn có chắc chắn muốn reset không?')) {
+		resetAllB53();
+	}
+}
+function resetAllB53() {
+	let inputs = {
+		'bottleTigerBacB53': document.getElementById('bottleTigerBacB53').value,
+		'bottleTigerNauB53': document.getElementById('bottleTigerNauB53').value,
+		'tigerNauB53': document.getElementById('tigerNauB53').value,
+		'tigerBacB53': document.getElementById('tigerBacB53').value,
+		'heinekenB53': document.getElementById('heinekenB53').value,
+		'sevenUpB53': document.getElementById('sevenUpB53').value,
+		'cokeB53': document.getElementById('cokeB53').value,
+		'pepsiB53': document.getElementById('pepsiB53').value,
+		'stingB53': document.getElementById('stingB53').value,
+		'waterNatureB53': document.getElementById('waterB53').value,
+		'napkinB53': document.getElementById('napkinB53').value,
+		'teaB53': document.getElementById('teaB53').value
+
+	};
+	localStorage.setItem('inputs', JSON.stringify(inputs));
+	let savedInputs = JSON.parse(localStorage.getItem('inputs'));
+
+	if (savedInputs) {
+		document.getElementById('bottleTigerBacB53').value = savedInputs.bottleTigerBacB53;
+		document.getElementById('bottleTigerNauB53').value = savedInputs.bottleTigerNauB53;
+		document.getElementById('tigerNauB53').value = savedInputs.tigerNauB53;
+		document.getElementById('tigerBacB53').value = savedInputs.tigerBacB53;
+		document.getElementById('heinekenB53').value = savedInputs.heinekenB53;
+		document.getElementById('sevenUpB53').value = savedInputs.sevenUpB53;
+		document.getElementById('cokeB53').value = savedInputs.cokeB53;
+		document.getElementById('pepsiB53').value = savedInputs.pepsiB53;
+		document.getElementById('stingB53').value = savedInputs.stingB53;
+		document.getElementById('waterB53').value = savedInputs.waterB53;
+		document.getElementById('teaB53').value = savedInputs.teaB53;
+		document.getElementById('napkinB53').value = savedInputs.napkinB53;
+	}
+
+	document.getElementById('bottleTigerBacB53').value = '';
+	document.getElementById('bottleTigerNauB53').value = '';
+	document.getElementById('tigerNauB53').value = '';
+	document.getElementById('tigerBacB53').value = '';
+	document.getElementById('heinekenB53').value = '';
+	document.getElementById('sevenUpB53').value = '';
+	document.getElementById('cokeB53').value = '';
+	document.getElementById('pepsiB53').value = '';
+	document.getElementById('stingB53').value = '';
+	document.getElementById('waterB53').value = '';
+	document.getElementById('teaB53').value = '';
+	document.getElementById('napkinB53').value = '';
+
+
+	localStorage.removeItem("bottleTigerBacB53");
+	localStorage.removeItem("bottleTigerNauB53");
+	localStorage.removeItem("tigerNauB53");
+	localStorage.removeItem("tigerBacB53");
+	localStorage.removeItem("heinekenB53");
+	localStorage.removeItem("sevenUpB53");
+	localStorage.removeItem("cokeB53");
+	localStorage.removeItem("pepsiB53");
+	localStorage.removeItem("stingB53");
+	localStorage.removeItem("waterB53");
+	localStorage.removeItem("teaB53");
+	localStorage.removeItem("napkinB53");
+
+}
+
+const inputsB53 = document.querySelectorAll('input[type="number"]');
+inputsB53.forEach(input => {
+	input.addEventListener('input', () => {
+		localStorage.setItem(input.id, input.value);
+	});
+});
+
+// Lấy giá trị đã lưu trong LocalStorage và hiển thị lại trên các ô input tương ứng
+inputs.forEach(input => {
+	const value = localStorage.getItem(input.id);
+	if (value !== null) {
+		input.value = value;
+	}
+});
+
+const addBtnB53 = document.getElementById("addBtnB53");
+const newDrinkFormB53 = document.getElementById("newDrinkFormB53");
+
+addBtnB53.addEventListener("click", () => {
+	const formDiv = document.createElement("div");
+	formDiv.classList.add("drink-water-add");
+
+	const nameLabel = document.createElement("label");
+	nameLabel.textContent = "Tên loại nước:";
+	formDiv.appendChild(nameLabel);
+
+	const nameInput = document.createElement("input");
+	nameInput.type = "text";
+	nameInput.placeholder = "Nhập tên loại nước...";
+	formDiv.appendChild(nameInput);
+
+	const priceLabel = document.createElement("label");
+	priceLabel.textContent = "Giá:";
+	formDiv.appendChild(priceLabel);
+
+	const priceInput = document.createElement("input");
+	priceInput.type = "number";
+	priceInput.placeholder = "Nhập giá loại nước...";
+	formDiv.appendChild(priceInput);
+
+	const submitBtn = document.createElement("button");
+	submitBtn.textContent = "Đồng ý";
+	submitBtn.addEventListener("click", () => {
+		const newName = nameInput.value;
+		const newPrice = priceInput.value;
+
+		const drinkDiv = document.createElement("div");
+		drinkDiv.classList.add("drink");
+
+		const drinkLabel = document.createElement("label");
+		drinkLabel.textContent = newName + ":";
+		drinkDiv.appendChild(drinkLabel);
+
+		const drinkInput = document.createElement("input");
+		drinkInput.type = "number";
+		drinkInput.placeholder = "0";
+		drinkInput.dataset.price = newPrice;
+		drinkDiv.appendChild(drinkInput);
+
+		const drinkList = document.getElementById("drinkList");
+		if (drinkList) {
+			drinkList.appendChild(drinkDiv);
+		}
+
+		formDiv.remove();
+	});
+
+	formDiv.appendChild(submitBtn);
+	newDrinkForm.appendChild(formDiv);
+});
+
+//B5/2
+function confirmCalculateB52() {
+	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
+		calculateB52()
+	}
+}
+function calculateB52() {
+	const bottleTigerBacB52 = document.getElementById("bottleTigerBacB52").value;
+	const bottleTigerNauB52 = document.getElementById("bottleTigerNauB52").value;
+	const tigerNauB52 = document.getElementById("tigerNauB52").value;
+	const tigerBacB52 = document.getElementById("tigerBacB52").value;
+	const heinekenB52 = document.getElementById("heinekenB52").value;
+	const sevenUpB52 = document.getElementById("sevenUpB52").value;
+	const cokeB52 = document.getElementById("cokeB52").value;
+	const pepsiB52 = document.getElementById("pepsiB52").value;
+	const stingB52 = document.getElementById("stingB52").value;
+	const waterNatureB52 = document.getElementById("waterB52").value;
+	const teaB52 = document.getElementById("teaB52").value;
+	const napkinB52 = document.getElementById("napkinB52").value;
+
+	const products = [
+		{ name: "Chai Tiger Bạc", quantity: bottleTigerBacB52 },
+		{ name: "Chai Tiger Nâu", quantity: bottleTigerNauB52 },
+		{ name: "Bia Tiger Nâu", quantity: tigerNauB52 },
+		{ name: "Bia Tiger Bạc", quantity: tigerBacB52 },
+		{ name: "Bia Heineken", quantity: heinekenB52 },
+		{ name: "Nước 7up", quantity: sevenUpB52 },
+		{ name: "Nước CocaCola", quantity: cokeB52 },
+		{ name: "Nước pepsi", quantity: pepsiB52 },
+		{ name: "Nước Sting", quantity: stingB52 },
+		{ name: "Nước suối", quantity: waterNatureB52 },
+		{ name: "Trà tắc", quantity: teaB52 },
+		{ name: "Khăn giấy", quantity: napkinB52 },
+	];
+
+	const selectedProductsB52 = products.filter((product) => product.quantity > 0);
+
+	// Tạo ra một bill
+	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
+	bill += "<table>";
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
+	for (let i = 0; i < selectedProductsB52.length; i++) {
+		const product = selectedProductsB52[i];
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	}
+	bill += "</table>";
+
+	// Hiển thị bill
+	document.getElementById("orderB52").innerHTML = bill;
+
+
+	localStorage.setItem("tigerNauB52", tigerNauB52);
+	localStorage.setItem("bottleTigerBacB52", bottleTigerBacB52);
+	localStorage.setItem("bottleTigerNauB52", bottleTigerNauB52);
+	localStorage.setItem("tigerBacB52", tigerBacB52);
+	localStorage.setItem("heinekenB52", heinekenB52);
+	localStorage.setItem("sevenUpB52", sevenUpB52);
+	localStorage.setItem("cokeB52", cokeB52);
+	localStorage.setItem("pepsiB52", pepsiB52)
+	localStorage.setItem("stingB52", stingB52);
+	localStorage.setItem("waterB52", waterNatureB52);
+	localStorage.setItem("teaB52", teaB52);
+	localStorage.setItem("napkinB52", napkinB52);
+
+	localStorage.removeItem("bottleTigerBacB52");
+	localStorage.removeItem("bottleTigerNauB52");
+	localStorage.removeItem("tigerNauB52");
+	localStorage.removeItem("tigerBacB52");
+	localStorage.removeItem("heinekenB52");
+	localStorage.removeItem("sevenUpB52");
+	localStorage.removeItem("cokeB52");
+	localStorage.removeItem("pepsiB52");
+	localStorage.removeItem("stingB52");
+	localStorage.removeItem("waterB52");
+	localStorage.removeItem("teaB52");
+	localStorage.removeItem("napkinB52");
+
+	const totalB52 = (bottleTigerBacB52 * 26000) + (bottleTigerNauB52 * 25000) + (tigerNauB52 * 24000) + (tigerBacB52 * 25000) + (heinekenB52 * 26000) + (sevenUpB52 * 18000) + (cokeB52 * 18000) + (pepsiB52 * 18000) + (waterNatureB52 * 14000) + (stingB52 * 18000) + (teaB52 * 10000) + (napkinB52 * 3000);
+
+	const historyB52 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Lấy thời gian hiện tại
+	const currentTime = new Date().getTime();
+	historyB52.push({ time: currentTime, totalB52: totalB52 });
+	localStorage.setItem('totalHistory', JSON.stringify(historyB52));
+
+	// Hiển thị tổng tiền lên trang web
+	document.getElementById("totalB52").innerHTML = "Tổng tiền: " + totalB52 + " đồng";
+
+
+
+}
+
+// Lấy tất cả các ô input của nước
+const drinkInputsB52 = document.querySelectorAll('.drink input[type="number"]');
+
+// Thêm sự kiện onblur cho từng ô input
+drinkInputsB52.forEach(input => {
+	input.addEventListener('blur', checkInput);
+});
+
+// Hàm kiểm tra giá trị của ô input
+function checkInput(event) {
+	const input = event.target;
+	const value = input.value.trim();
+
+	// Kiểm tra nếu ô input chưa có giá trị
+	if (!value) {
+		// Hiển thị thông báo "chưa tính tiền"
+		input.setAttribute('placeholder', 'Chưa nhập giá trị');
+	}
+}
+
+const toggleDrinksButtonB52 = document.getElementById("toggleDrinksB52");
+const drinkElementsB52 = document.querySelectorAll(".drink:nth-child(n+9)");
+
+toggleDrinksButtonB52.addEventListener("click", () => {
+	drinkElementsB52.forEach(drink => drink.classList.toggle("hidden"));
+	const isHidden = toggleDrinksButtonB52.classList.toggle("hidden");
+	toggleDrinksButtonB52.textContent = isHidden ? "Đóng hiển thị" : "Hiển thị các loại nước";
+	localStorage.setItem("showDrinks", isHidden ? "1" : "0");
+});
+
+const showDrinksB52 = localStorage.getItem("showDrinks");
+
+if (showDrinksB52 === "1") {
+	drinkElementsB52.forEach(drink => drink.classList.add("hidden"));
+	toggleDrinksButtonB52.textContent = "Hiển thị các loại nước";
+	toggleDrinksButtonB52.classList.add("hidden");
+} else {
+	toggleDrinksButtonB52.textContent = "Hiển thị các loại nước";
+}
+
+// Hiển thị lịch sử tổng tiền khi bấm nút "Xem lịch sử tổng tiền"
+function showHistoryB52() {
+	const historyB52 = JSON.parse(localStorage.getItem('totalHistory')) || [];
+
+	// Hiển thị lịch sử tổng tiền lên trang web
+	const historyText = historyB52.map((item, index) => `Lần ${index + 1}: ${item.totalB52} đồng (Thời gian: ${new Date(item.time).toLocaleString()})`).join('<br>');
+	document.getElementById("historyB52").innerHTML = historyText + '<br><button class="delete-history" onclick="clearHistoryB52()">Xoá lịch sử</button>';
+}
+function clearHistoryB52() {
+	localStorage.removeItem('totalHistory');
+	var countdown = 5;
+	var countdownInterval = setInterval(function () {
+		countdown--;
+		document.getElementById("historyB52").innerHTML = "Đã xoá lịch sử tổng tiền, sẽ ẩn sau " + countdown + " giây";
+		if (countdown == 0) {
+			clearInterval(countdownInterval);
+			document.getElementById("historyB52").innerHTML = ""; // Ẩn thông báo sau 5 giây
+		}
+	}, 1000);
+}
+
+
+function confirmResetB52() {
+	if (confirm('Bạn có chắc chắn muốn reset không?')) {
+		resetAllB52();
+	}
+}
+function resetAllB52() {
+	let inputs = {
+		'bottleTigerBacB52': document.getElementById('bottleTigerBacB52').value,
+		'bottleTigerNauB52': document.getElementById('bottleTigerNauB52').value,
+		'tigerNauB52': document.getElementById('tigerNauB52').value,
+		'tigerBacB52': document.getElementById('tigerBacB52').value,
+		'heinekenB52': document.getElementById('heinekenB52').value,
+		'sevenUpB52': document.getElementById('sevenUpB52').value,
+		'cokeB52': document.getElementById('cokeB52').value,
+		'pepsiB52': document.getElementById('pepsiB52').value,
+		'stingB52': document.getElementById('stingB52').value,
+		'waterNatureB52': document.getElementById('waterB52').value,
+		'napkinB52': document.getElementById('napkinB52').value,
+		'teaB52': document.getElementById('teaB52').value
+
+	};
+	localStorage.setItem('inputs', JSON.stringify(inputs));
+	let savedInputs = JSON.parse(localStorage.getItem('inputs'));
+
+	if (savedInputs) {
+		document.getElementById('bottleTigerBacB52').value = savedInputs.bottleTigerBacB52;
+		document.getElementById('bottleTigerNauB52').value = savedInputs.bottleTigerNauB52;
+		document.getElementById('tigerNauB52').value = savedInputs.tigerNauB52;
+		document.getElementById('tigerBacB52').value = savedInputs.tigerBacB52;
+		document.getElementById('heinekenB52').value = savedInputs.heinekenB52;
+		document.getElementById('sevenUpB52').value = savedInputs.sevenUpB52;
+		document.getElementById('cokeB52').value = savedInputs.cokeB52;
+		document.getElementById('pepsiB52').value = savedInputs.pepsiB52;
+		document.getElementById('stingB52').value = savedInputs.stingB52;
+		document.getElementById('waterB52').value = savedInputs.waterB52;
+		document.getElementById('teaB52').value = savedInputs.teaB52;
+		document.getElementById('napkinB52').value = savedInputs.napkinB52;
+	}
+
+	document.getElementById('bottleTigerBacB52').value = '';
+	document.getElementById('bottleTigerNauB52').value = '';
+	document.getElementById('tigerNauB52').value = '';
+	document.getElementById('tigerBacB52').value = '';
+	document.getElementById('heinekenB52').value = '';
+	document.getElementById('sevenUpB52').value = '';
+	document.getElementById('cokeB52').value = '';
+	document.getElementById('pepsiB52').value = '';
+	document.getElementById('stingB52').value = '';
+	document.getElementById('waterB52').value = '';
+	document.getElementById('teaB52').value = '';
+	document.getElementById('napkinB52').value = '';
+
+
+	localStorage.removeItem("bottleTigerBacB52");
+	localStorage.removeItem("bottleTigerNauB52");
+	localStorage.removeItem("tigerNauB52");
+	localStorage.removeItem("tigerBacB52");
+	localStorage.removeItem("heinekenB52");
+	localStorage.removeItem("sevenUpB52");
+	localStorage.removeItem("cokeB52");
+	localStorage.removeItem("pepsiB52");
+	localStorage.removeItem("stingB52");
+	localStorage.removeItem("waterB52");
+	localStorage.removeItem("teaB52");
+	localStorage.removeItem("napkinB52");
+
+}
+
+const inputsB52 = document.querySelectorAll('input[type="number"]');
+inputsB52.forEach(input => {
+	input.addEventListener('input', () => {
+		localStorage.setItem(input.id, input.value);
+	});
+});
+
+// Lấy giá trị đã lưu trong LocalStorage và hiển thị lại trên các ô input tương ứng
+inputs.forEach(input => {
+	const value = localStorage.getItem(input.id);
+	if (value !== null) {
+		input.value = value;
+	}
+});
+
+const addBtnB52 = document.getElementById("addBtnB52");
+const newDrinkFormB52 = document.getElementById("newDrinkFormB52");
+
+addBtnB52.addEventListener("click", () => {
+	const formDiv = document.createElement("div");
+	formDiv.classList.add("drink-water-add");
+
+	const nameLabel = document.createElement("label");
+	nameLabel.textContent = "Tên loại nước:";
+	formDiv.appendChild(nameLabel);
+
+	const nameInput = document.createElement("input");
+	nameInput.type = "text";
+	nameInput.placeholder = "Nhập tên loại nước...";
+	formDiv.appendChild(nameInput);
+
+	const priceLabel = document.createElement("label");
+	priceLabel.textContent = "Giá:";
+	formDiv.appendChild(priceLabel);
+
+	const priceInput = document.createElement("input");
+	priceInput.type = "number";
+	priceInput.placeholder = "Nhập giá loại nước...";
+	formDiv.appendChild(priceInput);
+
+	const submitBtn = document.createElement("button");
+	submitBtn.textContent = "Đồng ý";
+	submitBtn.addEventListener("click", () => {
+		const newName = nameInput.value;
+		const newPrice = priceInput.value;
+
+		const drinkDiv = document.createElement("div");
+		drinkDiv.classList.add("drink");
+
+		const drinkLabel = document.createElement("label");
+		drinkLabel.textContent = newName + ":";
+		drinkDiv.appendChild(drinkLabel);
+
+		const drinkInput = document.createElement("input");
+		drinkInput.type = "number";
+		drinkInput.placeholder = "0";
+		drinkInput.dataset.price = newPrice;
+		drinkDiv.appendChild(drinkInput);
+
+		const drinkList = document.getElementById("drinkList");
+		if (drinkList) {
+			drinkList.appendChild(drinkDiv);
+		}
+
+		formDiv.remove();
+	});
+
+	formDiv.appendChild(submitBtn);
+	newDrinkForm.appendChild(formDiv);
+});
+
+
+
+
 
 
 
@@ -3945,24 +5716,71 @@ btnB2.addEventListener("click", function() {
 
 
 
+var btnB3 = document.getElementById("btnB3");
 
+// Tìm đến phần tử <div class="cover-table-B"></div>
+var coverTableB3 = document.querySelector(".cover-table-B3");
 
+// Thêm sự kiện click cho nút Bàn B1
+btnB3.addEventListener("click", function() {
+  // Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+  coverTableB3.classList.toggle("active");
+  
+  // Thay đổi văn bản của nút
+  if (btnB3.innerHTML === "Bàn B3") {
+    btnB3.innerHTML = "Đóng bàn B3";
+	btnB3.style.backgroundColor = 'rgb(222, 59, 59)';
+	btnB3.style.color = 'white';
+  } else {
+    btnB3.innerHTML = "Bàn B3";
+	btnB3.style.backgroundColor = 'yellow';
+	btnB3.style.color = 'black';
+  }
+});
 
+var btnB4 = document.getElementById("btnB4");
 
+// Tìm đến phần tử <div class="cover-table-B"></div>
+var coverTableB4 = document.querySelector(".cover-table-B4");
 
+// Thêm sự kiện click cho nút Bàn B1
+btnB4.addEventListener("click", function() {
+  // Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+  coverTableB4.classList.toggle("active");
+  
+  // Thay đổi văn bản của nút
+  if (btnB4.innerHTML === "Bàn B4") {
+    btnB4.innerHTML = "Đóng bàn B4";
+	btnB4.style.backgroundColor = 'rgb(222, 59, 59)';
+	btnB4.style.color = 'white';
+  } else {
+    btnB4.innerHTML = "Bàn B4";
+	btnB4.style.backgroundColor = 'yellow';
+	btnB4.style.color = 'black';
+  }
+});
 
+var btnB5 = document.getElementById("btnB5");
 
+// Tìm đến phần tử <div class="cover-table-B"></div>
+var coverTableB5 = document.querySelector(".cover-table-B5");
 
-
-
-
-
-
-
-
-
-
-
+// Thêm sự kiện click cho nút Bàn B1
+btnB5.addEventListener("click", function() {
+  // Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+  coverTableB5.classList.toggle("active");
+  
+  // Thay đổi văn bản của nút
+  if (btnB5.innerHTML === "Bàn B5") {
+    btnB5.innerHTML = "Đóng bàn B5";
+	btnB5.style.backgroundColor = 'rgb(222, 59, 59)';
+	btnB5.style.color = 'white';
+  } else {
+    btnB5.innerHTML = "Bàn B5";
+	btnB5.style.backgroundColor = 'yellow';
+	btnB5.style.color = 'black';
+  }
+});
 
 
 

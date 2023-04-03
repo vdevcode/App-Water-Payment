@@ -519,7 +519,24 @@ button:nth-child(3) {
 .cover-table-B2.active{
 	display: block !important;
 }
-
+.cover-table-B3{
+	display: none !important;
+}
+.cover-table-B3.active{
+	display: block !important;
+}
+.cover-table-B4{
+	display: none !important;
+}
+.cover-table-B4.active{
+	display: block !important;
+}
+.cover-table-B5{
+	display: none !important;
+}
+.cover-table-B5.active{
+	display: block !important;
+}
 .cover-button {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
