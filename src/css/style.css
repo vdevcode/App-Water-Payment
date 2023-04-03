@@ -507,25 +507,38 @@ button:nth-child(3) {
 .cover-table.active {
 	display: block;
 }
+.cover-table-B1{
+	display: none !important;
+}
+.cover-table-B1.active{
+	display: block !important;
+}
+.cover-table-B2{
+	display: none !important;
+}
+.cover-table-B2.active{
+	display: block !important;
+}
 
 .cover-button {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 }
 .cover-button-khuB{
 	margin-top: 10px;
 	display: none;
 }
-.button-khuB{
+.button-khuB {
 	display: none;
+	margin-top: 10px;
 }
 .button-khuB{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 }
-.cover-button-khuB button{
+.cover-button-khuB .button-active-area-B{
 	background: yellow;
 	color: black;
 	border: none;
