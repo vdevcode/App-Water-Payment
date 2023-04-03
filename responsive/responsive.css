@@ -74,9 +74,11 @@
     }
 
     .nav-header i {
-        font-size: 2rem;
+        font-size: 1.7rem;
         color: rgb(247, 232, 121);
-
+        padding: 3px;
+        border: 1px solid yellow;
+        border-radius: 4px;
     }
 
     .nav-header img {
@@ -100,8 +102,8 @@
         height: 10px;
         background: rgb(233, 33, 33);
         position: absolute;
-        right: 10px;
-        top: -8px;
+        right: 13px;
+        top: -4px;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 
     }
@@ -408,4 +410,5 @@
     .table-modal{
         border-radius: 4px;
     }
+   
 }
