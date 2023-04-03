@@ -579,6 +579,12 @@ button:nth-child(3) {
 .cover-table-E2.active{
 	display: block !important;
 }
+.cover-table-F1{
+	display: none !important;
+}
+.cover-table-F1.active{
+	display: block !important;
+}
 
 .cover-button {
 	display: grid;
@@ -590,6 +596,10 @@ button:nth-child(3) {
 	display: none;
 }
 .cover-button-khuD{
+	margin-top: 10px;
+	display: none;
+}
+.cover-button-khuF{
 	margin-top: 10px;
 	display: none;
 }
@@ -638,6 +648,19 @@ button:nth-child(3) {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
+}
+.cover-button-khuF .button-active-area-F{
+	background: rgb(154, 99, 4);
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.25s;
+}
+.button-khuF {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
 }
 .button-khuD {
 	display: grid;
