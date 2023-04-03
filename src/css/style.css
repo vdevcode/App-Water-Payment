@@ -567,6 +567,18 @@ button:nth-child(3) {
 .cover-table-C5.active{
 	display: block !important;
 }
+.cover-table-E1{
+	display: none !important;
+}
+.cover-table-E1.active{
+	display: block !important;
+}
+.cover-table-E2{
+	display: none !important;
+}
+.cover-table-E2.active{
+	display: block !important;
+}
 
 .cover-button {
 	display: grid;
@@ -578,6 +590,10 @@ button:nth-child(3) {
 	display: none;
 }
 .cover-button-khuD{
+	margin-top: 10px;
+	display: none;
+}
+.cover-button-khuE{
 	margin-top: 10px;
 	display: none;
 }
@@ -602,11 +618,26 @@ button:nth-child(3) {
 .cover-button-khuC .button-active-area-C{
 	background: rgb(39, 154, 236);
 	color: white;
+	color: rgb(106, 78, 217);
 	border: none;
 	padding: 10px;
 	border-radius: 3px;
 	cursor: pointer;
 	transition: background-color 0.25s;
+}
+.cover-button-khuE .button-active-area-E{
+	background: rgb(177, 35, 213);
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.25s;
+}
+.button-khuE {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
 }
 .button-khuD {
 	display: grid;
