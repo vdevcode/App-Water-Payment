@@ -1,5 +1,6 @@
 
 
+
 //A1
 function confirmCalculate() {
 	if (confirm("bạn chắc chắn tính tiền bàn này chứ")) {
@@ -2122,31 +2123,25 @@ addBtnA7.addEventListener("click", () => {
 //all product same
 //open are 
 const openA = document.getElementById('btnA');
-const allTable = document.querySelector('.cover-table');
+var allTable = document.querySelector('.cover-table');
 var isKhuOpen = false;
 openA.addEventListener('click', () => {
 	allTable.classList.toggle('active')
 	if (isKhuOpen) {
-		openA.innerHTML = 'Đã Đóng Khu A';
-		openA.style.backgroundColor = '#e74c3c';
-		openA.style.color = 'white';
+		openA.innerHTML = 'Khu A';
+		openA.style.backgroundColor ='#2bfea0'
+		openA.style.color = 'black';
 		isKhuOpen = false;
 	}
 	else {
-		openA.innerHTML = 'Đã Mở Khu A';
+		openA.innerHTML = 'Đóng Khu A';
 		isKhuOpen = true;
-		openA.style.backgroundColor = '#2bfea0';
-		openA.style.color = 'black';
+
+		openA.style.backgroundColor = 'rgb(221, 59, 59)';
+		openA.style.color = 'white';
 	}
 })
 
-openA.addEventListener('blur', () => {
-	if (!isKhuOpen) {
-		openA.innerHTML = 'Khu A';
-		openA.style.backgroundColor = '#2bfea0';
-		openA.style.color = 'black';
-	}
-});
 
 
 //open modal
@@ -2334,6 +2329,27 @@ function loadFormKho() {
 
 loadFormKho(); // Load giá trị khi load lại trang
 
+// Lấy tham chiếu đến các phần tử
+var btnB = document.getElementById("btnB");
+var coverButtonKhuB = document.querySelector(".cover-button-khuB");
+// Thêm sự kiện "click" vào nút "Khu B"
+btnB.addEventListener("click", function () {
+	if (coverButtonKhuB.style.display === "block") {
+		// Nếu phần tử ẩn, thì hiển thị phần tử và đổi nội dung của nút thành "Đóng khu B"
+		coverButtonKhuB.style.display = "none";
+		btnB.innerHTML = "Khu B";
+		btnB.style.backgroundColor ='#2bfea0'
+		btnB.style.color = 'black';
+	}
+
+	else {
+		// Ngược lại, ẩn phần tử và đổi nội dung của nút thành "Khu B"
+		coverButtonKhuB.style.display = "block";
+		btnB.innerHTML = "Đóng khu B";
+		btnB.style.backgroundColor = 'rgb(221, 59, 59)';
+		btnB.style.color = 'white';
+	}
+});
 
 
 
