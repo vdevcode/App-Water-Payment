@@ -585,7 +585,24 @@ button:nth-child(3) {
 .cover-table-F1.active{
 	display: block !important;
 }
-
+.cover-table-G1{
+	display: none !important;
+}
+.cover-table-G1.active{
+	display: block !important;
+}
+.cover-table-G2{
+	display: none !important;
+}
+.cover-table-G2.active{
+	display: block !important;
+}
+.cover-table-G3{
+	display: none !important;
+}
+.cover-table-G3.active{
+	display: block !important;
+}
 .cover-button {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -603,6 +620,10 @@ button:nth-child(3) {
 	margin-top: 10px;
 	display: none;
 }
+.cover-button-khuG{
+	margin-top: 10px;
+	display: none;
+}
 .cover-button-khuE{
 	margin-top: 10px;
 	display: none;
@@ -612,6 +633,10 @@ button:nth-child(3) {
 	display: none;
 }
 .button-khuB {
+	display: none;
+	margin-top: 10px;
+}
+.button-khuG {
 	display: none;
 	margin-top: 10px;
 }
@@ -658,6 +683,15 @@ button:nth-child(3) {
 	cursor: pointer;
 	transition: background-color 0.25s;
 }
+.cover-button-khuG .button-active-area-G{
+	background: rgb(31, 193, 29);
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.25s;
+}
 .button-khuF {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -667,8 +701,22 @@ button:nth-child(3) {
 	grid-template-columns: repeat(1, 1fr);
 	gap: 20px;
 }
+.button-khuG {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
 .cover-button-khuD .button-active-area-D{
 	background: rgb(225, 94, 18);
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.25s;
+}
+.cover-button-khuG .button-active-area-G{
+	background: rgb(40, 208, 60);
 	color: white;
 	border: none;
 	padding: 10px;
