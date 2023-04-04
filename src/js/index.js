@@ -12850,6 +12850,23 @@ btnC1.addEventListener("click", function () {
 		btnC1.style.color = 'white';
 	}
 });
+var btnC2 = document.getElementById("btnC2");
+var coverTableC2 = document.querySelector(".cover-table-C2");
+btnC2.addEventListener("click", function () {
+	// Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
+	coverTableC2.classList.toggle("active");
+
+	// Thay đổi văn bản của nút
+	if (btnC2.innerHTML === "Bàn C2") {
+		btnC2.innerHTML = "Đóng bàn C2";
+		btnC2.style.backgroundColor = 'rgb(222, 59, 59)';
+		btnC2.style.color = 'white';
+	} else {
+		btnC2.innerHTML = "Bàn C2";
+		btnC2.style.backgroundColor = 'rgb(39, 154, 236)';
+		btnC2.style.color = 'white';
+	}
+});
 
 
 
