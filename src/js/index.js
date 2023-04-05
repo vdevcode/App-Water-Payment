@@ -15788,11 +15788,11 @@ fsEnter.addEventListener('click', function (e) {
     if (!fullscreen) {
         fullscreen = true;
         document.documentElement.requestFullscreen();
-        fsEnter.innerHTML = "Thoát màn hình";
+        fsEnter.innerText = "Thoát màn hình";
     }
     else {
         fullscreen = false;
         document.exitFullscreen();
-        fsEnter.innerHTML = "Full màn hình";
+        fsEnter.innerText = "Full màn hình";
     }
 });

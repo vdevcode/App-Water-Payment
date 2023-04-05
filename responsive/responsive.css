@@ -98,43 +98,40 @@
 
     }
 
-    .table-modal::before {
-        content: '';
-        width: 10px;
-        height: 10px;
-        background: rgb(233, 33, 33);
-        position: absolute;
-        right: 13px;
-        top: -4px;
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-
-    }
 
     .table-modal.active {
         display: block;
     }
 
-    .table-modal nav {
+    .table-modal{
+        border: 1px solid yellow;
+        display:none;
         padding: 6px 10px;
-        background:rgb(233, 33, 33);
-        display: inline-block;
+        background: rgb(33, 32, 13);
         font-size: .8rem;
-        color: white;
-        border-bottom: 1px solid rgb(233, 33, 33);
+        color: rgb(250, 249, 249);
+       
         width: 150px;
+        height: 130px;
+        text-align: left;
+        position: absolute;
+        right: 10px;
+    }
+    .table-modal div{
+        padding: 6px 10px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid yellow;
+    }
+    .table-modal div i{
+        margin-right:10px;
+        font-size: 1rem;
+        color: rgb(95, 230, 111);
+    }
+    .table-modal div nav{
         text-align: left;
     }
-    .open-fullscreen{
-        padding: 6px 10px;
-        background:rgb(233, 33, 33);
-        display: inline-block;
-        font-size: .8rem;
-        color: white;
-        border-bottom: 1px solid rgb(233, 33, 33);
-        width: 150px;
-        text-align: left;
-    }
-
     .cover-popup-header {
         display: none;
         width: 100%;
