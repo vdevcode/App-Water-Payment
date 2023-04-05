@@ -78,7 +78,7 @@ function calculate() {
 	localStorage.removeItem("tea");
 	localStorage.removeItem("napkin");
 
-	const total = (bottleTigerBac * 26000) + (bottleTigerNau * 25000) + (tigerNau * 24000) + (tigerBac * 25000) + (heineken * 26000) + (sevenUp * 18000) + (coke * 18000) + (pepsi * 18000) + (waterNature * 14000) + (sting * 18000) + (tea * 10000) + (napkin * 3000);
+	const total = (bottleTigerBac * 26000) + (bottleTigerNau * 25000) + (tigerNau * 24000) + (tigerBac * 25000) + (heineken * 26000) + (sevenUp * 16000) + (coke * 16000) + (pepsi * 16000) + (waterNature * 12000) + (sting * 16000) + (tea * 10000) + (napkin * 3000);
 
 	const history = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -392,7 +392,7 @@ function calculateA2() {
 	localStorage.removeItem("teaA2");
 	localStorage.removeItem("napkinA2");
 
-	const totalA2 = (bottleTigerBacA2 * 26000) + (bottleTigerNauA2 * 25000) + (tigerNauA2 * 24000) + (tigerBacA2 * 25000) + (heinekenA2 * 26000) + (sevenUpA2 * 18000) + (cokeA2 * 18000) + (pepsiA2 * 18000) + (waterNatureA2 * 14000) + (stingA2 * 18000) + (teaA2 * 10000) + (napkinA2 * 3000);
+	const totalA2 = (bottleTigerBacA2 * 26000) + (bottleTigerNauA2 * 25000) + (tigerNauA2 * 24000) + (tigerBacA2 * 25000) + (heinekenA2 * 26000) + (sevenUpA2 * 16000) + (cokeA2 * 16000) + (pepsiA2 * 16000) + (waterNatureA2 * 12000) + (stingA2 * 16000) + (teaA2 * 10000) + (napkinA2 * 3000);
 
 	const historyA2 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -694,7 +694,7 @@ function calculateA3() {
 	localStorage.removeItem("teaA3");
 	localStorage.removeItem("napkinA3");
 
-	const totalA3 = (bottleTigerBacA3 * 26000) + (bottleTigerNauA3 * 25000) + (tigerNauA3 * 24000) + (tigerBacA3 * 25000) + (heinekenA3 * 26000) + (sevenUpA3 * 18000) + (cokeA3 * 18000) + (pepsiA3 * 18000) + (waterNatureA3 * 14000) + (stingA3 * 18000) + (teaA3 * 10000) + (napkinA3 * 3000);
+	const totalA3 = (bottleTigerBacA3 * 26000) + (bottleTigerNauA3 * 25000) + (tigerNauA3 * 24000) + (tigerBacA3 * 25000) + (heinekenA3 * 26000) + (sevenUpA3 * 16000) + (cokeA3 * 16000) + (pepsiA3 * 16000) + (waterNatureA3 * 12000) + (stingA3 * 16000) + (teaA3 * 10000) + (napkinA3 * 3000);
 
 	const historyA3 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -991,7 +991,7 @@ function calculateA4() {
 	localStorage.removeItem("teaA4");
 	localStorage.removeItem("napkinA4");
 
-	const totalA4 = (bottleTigerBacA4 * 26000) + (bottleTigerNauA4 * 25000) + (tigerNauA4 * 24000) + (tigerBacA4 * 25000) + (heinekenA4 * 26000) + (sevenUpA4 * 18000) + (cokeA4 * 18000) + (pepsiA4 * 18000) + (waterNatureA4 * 14000) + (stingA4 * 18000) + (teaA4 * 10000) + (napkinA4 * 3000);
+	const totalA4 = (bottleTigerBacA4 * 26000) + (bottleTigerNauA4 * 25000) + (tigerNauA4 * 24000) + (tigerBacA4 * 25000) + (heinekenA4 * 26000) + (sevenUpA4 * 16000) + (cokeA4 * 16000) + (pepsiA4 * 16000) + (waterNatureA4 * 12000) + (stingA4 * 16000) + (teaA4 * 10000) + (napkinA4 * 3000);
 
 	const historyA4 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -1289,7 +1289,7 @@ function calculateA5() {
 	localStorage.removeItem("teaA5");
 	localStorage.removeItem("napkinA5");
 
-	const totalA5 = (bottleTigerBacA5 * 26000) + (bottleTigerNauA5 * 25000) + (tigerNauA5 * 24000) + (tigerBacA5 * 25000) + (heinekenA5 * 26000) + (sevenUpA5 * 18000) + (cokeA5 * 18000) + (pepsiA5 * 18000) + (waterNatureA5 * 14000) + (stingA5 * 18000) + (teaA5 * 10000) + (napkinA5 * 3000);
+	const totalA5 = (bottleTigerBacA5 * 26000) + (bottleTigerNauA5 * 25000) + (tigerNauA5 * 24000) + (tigerBacA5 * 25000) + (heinekenA5 * 26000) + (sevenUpA5 * 16000) + (cokeA5 * 16000) + (pepsiA5 * 16000) + (waterNatureA5 * 12000) + (stingA5 * 16000) + (teaA5 * 10000) + (napkinA5 * 3000);
 
 	const historyA5 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -1586,7 +1586,7 @@ function calculateA6() {
 	localStorage.removeItem("teaA6");
 	localStorage.removeItem("napkinA6");
 
-	const totalA6 = (bottleTigerBacA6 * 26000) + (bottleTigerNauA6 * 25000) + (tigerNauA6 * 24000) + (tigerBacA6 * 25000) + (heinekenA6 * 26000) + (sevenUpA6 * 18000) + (cokeA6 * 18000) + (pepsiA6 * 18000) + (waterNatureA6 * 14000) + (stingA6 * 18000) + (teaA6 * 10000) + (napkinA6 * 3000);
+	const totalA6 = (bottleTigerBacA6 * 26000) + (bottleTigerNauA6 * 25000) + (tigerNauA6 * 24000) + (tigerBacA6 * 25000) + (heinekenA6 * 26000) + (sevenUpA6 * 16000) + (cokeA6 * 16000) + (pepsiA6 * 16000) + (waterNatureA6 * 12000) + (stingA6 * 16000) + (teaA6 * 10000) + (napkinA6 * 3000);
 
 	const historyA6 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -1882,7 +1882,7 @@ function calculateA7() {
 	localStorage.removeItem("teaA7");
 	localStorage.removeItem("napkinA7");
 
-	const totalA7 = (bottleTigerBacA7 * 26000) + (bottleTigerNauA7 * 25000) + (tigerNauA7 * 24000) + (tigerBacA7 * 25000) + (heinekenA7 * 26000) + (sevenUpA7 * 18000) + (cokeA7 * 18000) + (pepsiA7 * 18000) + (waterNatureA7 * 14000) + (stingA7 * 18000) + (teaA7 * 10000) + (napkinA7 * 3000);
+	const totalA7 = (bottleTigerBacA7 * 26000) + (bottleTigerNauA7 * 25000) + (tigerNauA7 * 24000) + (tigerBacA7 * 25000) + (heinekenA7 * 26000) + (sevenUpA7 * 16000) + (cokeA7 * 16000) + (pepsiA7 * 16000) + (waterNatureA7 * 12000) + (stingA7 * 16000) + (teaA7 * 10000) + (napkinA7 * 3000);
 
 	const historyA7 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -2180,7 +2180,7 @@ function calculateB11() {
 	localStorage.removeItem("teaB11");
 	localStorage.removeItem("napkinB11");
 
-	const totalB11 = (bottleTigerBacB11 * 26000) + (bottleTigerNauB11 * 25000) + (tigerNauB11 * 24000) + (tigerBacB11 * 25000) + (heinekenB11 * 26000) + (sevenUpB11 * 18000) + (cokeB11 * 18000) + (pepsiB11 * 18000) + (waterNatureB11 * 14000) + (stingB11 * 18000) + (teaB11 * 10000) + (napkinB11 * 3000);
+	const totalB11 = (bottleTigerBacB11 * 26000) + (bottleTigerNauB11 * 25000) + (tigerNauB11 * 24000) + (tigerBacB11 * 25000) + (heinekenB11 * 26000) + (sevenUpB11 * 16000) + (cokeB11 * 16000) + (pepsiB11 * 16000) + (waterNatureB11 * 12000) + (stingB11 * 16000) + (teaB11 * 10000) + (napkinB11 * 3000);
 
 	const historyB11 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -2477,7 +2477,7 @@ function calculateB12() {
 	localStorage.removeItem("teaB12");
 	localStorage.removeItem("napkinB12");
 
-	const totalB12 = (bottleTigerBacB12 * 26000) + (bottleTigerNauB12 * 25000) + (tigerNauB12 * 24000) + (tigerBacB12 * 25000) + (heinekenB12 * 26000) + (sevenUpB12 * 18000) + (cokeB12 * 18000) + (pepsiB12 * 18000) + (waterNatureB12 * 14000) + (stingB12 * 18000) + (teaB12 * 10000) + (napkinB12 * 3000);
+	const totalB12 = (bottleTigerBacB12 * 26000) + (bottleTigerNauB12 * 25000) + (tigerNauB12 * 24000) + (tigerBacB12 * 25000) + (heinekenB12 * 26000) + (sevenUpB12 * 16000) + (cokeB12 * 16000) + (pepsiB12 * 16000) + (waterNatureB12 * 12000) + (stingB12 * 16000) + (teaB12 * 10000) + (napkinB12 * 3000);
 
 	const historyB12 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -2773,7 +2773,7 @@ function calculateB13() {
 	localStorage.removeItem("teaB13");
 	localStorage.removeItem("napkinB13");
 
-	const totalB13 = (bottleTigerBacB13 * 26000) + (bottleTigerNauB13 * 25000) + (tigerNauB13 * 24000) + (tigerBacB13 * 25000) + (heinekenB13 * 26000) + (sevenUpB13 * 18000) + (cokeB13 * 18000) + (pepsiB13 * 18000) + (waterNatureB13 * 14000) + (stingB13 * 18000) + (teaB13 * 10000) + (napkinB13 * 3000);
+	const totalB13 = (bottleTigerBacB13 * 26000) + (bottleTigerNauB13 * 25000) + (tigerNauB13 * 24000) + (tigerBacB13 * 25000) + (heinekenB13 * 26000) + (sevenUpB13 * 16000) + (cokeB13 * 16000) + (pepsiB13 * 16000) + (waterNatureB13 * 12000) + (stingB13 * 16000) + (teaB13 * 10000) + (napkinB13 * 3000);
 
 	const historyB13 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -3069,7 +3069,7 @@ function calculateB23() {
 	localStorage.removeItem("teaB23");
 	localStorage.removeItem("napkinB23");
 
-	const totalB23 = (bottleTigerBacB23 * 26000) + (bottleTigerNauB23 * 25000) + (tigerNauB23 * 24000) + (tigerBacB23 * 25000) + (heinekenB23 * 26000) + (sevenUpB23 * 18000) + (cokeB23 * 18000) + (pepsiB23 * 18000) + (waterNatureB23 * 14000) + (stingB23 * 18000) + (teaB23 * 10000) + (napkinB23 * 3000);
+	const totalB23 = (bottleTigerBacB23 * 26000) + (bottleTigerNauB23 * 25000) + (tigerNauB23 * 24000) + (tigerBacB23 * 25000) + (heinekenB23 * 26000) + (sevenUpB23 * 16000) + (cokeB23 * 16000) + (pepsiB23 * 16000) + (waterNatureB23 * 12000) + (stingB23 * 16000) + (teaB23 * 10000) + (napkinB23 * 3000);
 
 	const historyB23 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -3364,7 +3364,7 @@ function calculateB22() {
 	localStorage.removeItem("teaB22");
 	localStorage.removeItem("napkinB22");
 
-	const totalB22 = (bottleTigerBacB22 * 26000) + (bottleTigerNauB22 * 25000) + (tigerNauB22 * 24000) + (tigerBacB22 * 25000) + (heinekenB22 * 26000) + (sevenUpB22 * 18000) + (cokeB22 * 18000) + (pepsiB22 * 18000) + (waterNatureB22 * 14000) + (stingB22 * 18000) + (teaB22 * 10000) + (napkinB22 * 3000);
+	const totalB22 = (bottleTigerBacB22 * 26000) + (bottleTigerNauB22 * 25000) + (tigerNauB22 * 24000) + (tigerBacB22 * 25000) + (heinekenB22 * 26000) + (sevenUpB22 * 16000) + (cokeB22 * 16000) + (pepsiB22 * 16000) + (waterNatureB22 * 12000) + (stingB22 * 16000) + (teaB22 * 10000) + (napkinB22 * 3000);
 
 	const historyB22 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -3658,7 +3658,7 @@ function calculateB21() {
 	localStorage.removeItem("teaB21");
 	localStorage.removeItem("napkinB21");
 
-	const totalB21 = (bottleTigerBacB21 * 26000) + (bottleTigerNauB21 * 25000) + (tigerNauB21 * 24000) + (tigerBacB21 * 25000) + (heinekenB21 * 26000) + (sevenUpB21 * 18000) + (cokeB21 * 18000) + (pepsiB21 * 18000) + (waterNatureB21 * 14000) + (stingB21 * 18000) + (teaB21 * 10000) + (napkinB21 * 3000);
+	const totalB21 = (bottleTigerBacB21 * 26000) + (bottleTigerNauB21 * 25000) + (tigerNauB21 * 24000) + (tigerBacB21 * 25000) + (heinekenB21 * 26000) + (sevenUpB21 * 16000) + (cokeB21 * 16000) + (pepsiB21 * 16000) + (waterNatureB21 * 12000) + (stingB21 * 16000) + (teaB21 * 10000) + (napkinB21 * 3000);
 
 	const historyB21 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -3954,7 +3954,7 @@ function calculateB31() {
 	localStorage.removeItem("teaB31");
 	localStorage.removeItem("napkinB31");
 
-	const totalB31 = (bottleTigerBacB31 * 26000) + (bottleTigerNauB31 * 25000) + (tigerNauB31 * 24000) + (tigerBacB31 * 25000) + (heinekenB31 * 26000) + (sevenUpB31 * 18000) + (cokeB31 * 18000) + (pepsiB31 * 18000) + (waterNatureB31 * 14000) + (stingB31 * 18000) + (teaB31 * 10000) + (napkinB31 * 3000);
+	const totalB31 = (bottleTigerBacB31 * 26000) + (bottleTigerNauB31 * 25000) + (tigerNauB31 * 24000) + (tigerBacB31 * 25000) + (heinekenB31 * 26000) + (sevenUpB31 * 16000) + (cokeB31 * 16000) + (pepsiB31 * 16000) + (waterNatureB31 * 12000) + (stingB31 * 16000) + (teaB31 * 10000) + (napkinB31 * 3000);
 
 	const historyB31 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -4249,7 +4249,7 @@ function calculateB32() {
 	localStorage.removeItem("teaB32");
 	localStorage.removeItem("napkinB32");
 
-	const totalB32 = (bottleTigerBacB32 * 26000) + (bottleTigerNauB32 * 25000) + (tigerNauB32 * 24000) + (tigerBacB32 * 25000) + (heinekenB32 * 26000) + (sevenUpB32 * 18000) + (cokeB32 * 18000) + (pepsiB32 * 18000) + (waterNatureB32 * 14000) + (stingB32 * 18000) + (teaB32 * 10000) + (napkinB32 * 3000);
+	const totalB32 = (bottleTigerBacB32 * 26000) + (bottleTigerNauB32 * 25000) + (tigerNauB32 * 24000) + (tigerBacB32 * 25000) + (heinekenB32 * 26000) + (sevenUpB32 * 16000) + (cokeB32 * 16000) + (pepsiB32 * 16000) + (waterNatureB32 * 12000) + (stingB32 * 16000) + (teaB32 * 10000) + (napkinB32 * 3000);
 
 	const historyB32 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -4545,7 +4545,7 @@ function calculateB42() {
 	localStorage.removeItem("teaB42");
 	localStorage.removeItem("napkinB42");
 
-	const totalB42 = (bottleTigerBacB42 * 26000) + (bottleTigerNauB42 * 25000) + (tigerNauB42 * 24000) + (tigerBacB42 * 25000) + (heinekenB42 * 26000) + (sevenUpB42 * 18000) + (cokeB42 * 18000) + (pepsiB42 * 18000) + (waterNatureB42 * 14000) + (stingB42 * 18000) + (teaB42 * 10000) + (napkinB42 * 3000);
+	const totalB42 = (bottleTigerBacB42 * 26000) + (bottleTigerNauB42 * 25000) + (tigerNauB42 * 24000) + (tigerBacB42 * 25000) + (heinekenB42 * 26000) + (sevenUpB42 * 16000) + (cokeB42 * 16000) + (pepsiB42 * 16000) + (waterNatureB42 * 12000) + (stingB42 * 16000) + (teaB42 * 10000) + (napkinB42 * 3000);
 
 	const historyB42 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -4840,7 +4840,7 @@ function calculateB51() {
 	localStorage.removeItem("teaB51");
 	localStorage.removeItem("napkinB51");
 
-	const totalB51 = (bottleTigerBacB51 * 26000) + (bottleTigerNauB51 * 25000) + (tigerNauB51 * 24000) + (tigerBacB51 * 25000) + (heinekenB51 * 26000) + (sevenUpB51 * 18000) + (cokeB51 * 18000) + (pepsiB51 * 18000) + (waterNatureB51 * 14000) + (stingB51 * 18000) + (teaB51 * 10000) + (napkinB51 * 3000);
+	const totalB51 = (bottleTigerBacB51 * 26000) + (bottleTigerNauB51 * 25000) + (tigerNauB51 * 24000) + (tigerBacB51 * 25000) + (heinekenB51 * 26000) + (sevenUpB51 * 16000) + (cokeB51 * 16000) + (pepsiB51 * 16000) + (waterNatureB51 * 12000) + (stingB51 * 16000) + (teaB51 * 10000) + (napkinB51 * 3000);
 
 	const historyB51 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -5136,7 +5136,7 @@ function calculateB53() {
 	localStorage.removeItem("teaB53");
 	localStorage.removeItem("napkinB53");
 
-	const totalB53 = (bottleTigerBacB53 * 26000) + (bottleTigerNauB53 * 25000) + (tigerNauB53 * 24000) + (tigerBacB53 * 25000) + (heinekenB53 * 26000) + (sevenUpB53 * 18000) + (cokeB53 * 18000) + (pepsiB53 * 18000) + (waterNatureB53 * 14000) + (stingB53 * 18000) + (teaB53 * 10000) + (napkinB53 * 3000);
+	const totalB53 = (bottleTigerBacB53 * 26000) + (bottleTigerNauB53 * 25000) + (tigerNauB53 * 24000) + (tigerBacB53 * 25000) + (heinekenB53 * 26000) + (sevenUpB53 * 16000) + (cokeB53 * 16000) + (pepsiB53 * 16000) + (waterNatureB53 * 12000) + (stingB53 * 16000) + (teaB53 * 10000) + (napkinB53 * 3000);
 
 	const historyB53 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -5431,7 +5431,7 @@ function calculateB52() {
 	localStorage.removeItem("teaB52");
 	localStorage.removeItem("napkinB52");
 
-	const totalB52 = (bottleTigerBacB52 * 26000) + (bottleTigerNauB52 * 25000) + (tigerNauB52 * 24000) + (tigerBacB52 * 25000) + (heinekenB52 * 26000) + (sevenUpB52 * 18000) + (cokeB52 * 18000) + (pepsiB52 * 18000) + (waterNatureB52 * 14000) + (stingB52 * 18000) + (teaB52 * 10000) + (napkinB52 * 3000);
+	const totalB52 = (bottleTigerBacB52 * 26000) + (bottleTigerNauB52 * 25000) + (tigerNauB52 * 24000) + (tigerBacB52 * 25000) + (heinekenB52 * 26000) + (sevenUpB52 * 16000) + (cokeB52 * 16000) + (pepsiB52 * 16000) + (waterNatureB52 * 12000) + (stingB52 * 16000) + (teaB52 * 10000) + (napkinB52 * 3000);
 
 	const historyB52 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -5727,7 +5727,7 @@ function calculateC11() {
 	localStorage.removeItem("teaC11");
 	localStorage.removeItem("napkinC11");
 
-	const totalC11 = (bottleTigerBacC11 * 26000) + (bottleTigerNauC11 * 25000) + (tigerNauC11 * 24000) + (tigerBacC11 * 25000) + (heinekenC11 * 26000) + (sevenUpC11 * 18000) + (cokeC11 * 18000) + (pepsiC11 * 18000) + (waterNatureC11 * 14000) + (stingC11 * 18000) + (teaC11 * 10000) + (napkinC11 * 3000);
+	const totalC11 = (bottleTigerBacC11 * 26000) + (bottleTigerNauC11 * 25000) + (tigerNauC11 * 24000) + (tigerBacC11 * 25000) + (heinekenC11 * 26000) + (sevenUpC11 * 16000) + (cokeC11 * 16000) + (pepsiC11 * 16000) + (waterNatureC11 * 12000) + (stingC11 * 16000) + (teaC11 * 10000) + (napkinC11 * 3000);
 
 	const historyC11 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -6022,7 +6022,7 @@ function calculateC12() {
 	localStorage.removeItem("teaC12");
 	localStorage.removeItem("napkinC12");
 
-	const totalC12 = (bottleTigerBacC12 * 26000) + (bottleTigerNauC12 * 25000) + (tigerNauC12 * 24000) + (tigerBacC12 * 25000) + (heinekenC12 * 26000) + (sevenUpC12 * 18000) + (cokeC12 * 18000) + (pepsiC12 * 18000) + (waterNatureC12 * 14000) + (stingC12 * 18000) + (teaC12 * 10000) + (napkinC12 * 3000);
+	const totalC12 = (bottleTigerBacC12 * 26000) + (bottleTigerNauC12 * 25000) + (tigerNauC12 * 24000) + (tigerBacC12 * 25000) + (heinekenC12 * 26000) + (sevenUpC12 * 16000) + (cokeC12 * 16000) + (pepsiC12 * 16000) + (waterNatureC12 * 12000) + (stingC12 * 16000) + (teaC12 * 10000) + (napkinC12 * 3000);
 
 	const historyC12 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -6315,7 +6315,7 @@ function calculateC13() {
 	localStorage.removeItem("teaC13");
 	localStorage.removeItem("napkinC13");
 
-	const totalC13 = (bottleTigerBacC13 * 26000) + (bottleTigerNauC13 * 25000) + (tigerNauC13 * 24000) + (tigerBacC13 * 25000) + (heinekenC13 * 26000) + (sevenUpC13 * 18000) + (cokeC13 * 18000) + (pepsiC13 * 18000) + (waterNatureC13 * 14000) + (stingC13 * 18000) + (teaC13 * 10000) + (napkinC13 * 3000);
+	const totalC13 = (bottleTigerBacC13 * 26000) + (bottleTigerNauC13 * 25000) + (tigerNauC13 * 24000) + (tigerBacC13 * 25000) + (heinekenC13 * 26000) + (sevenUpC13 * 16000) + (cokeC13 * 16000) + (pepsiC13 * 16000) + (waterNatureC13 * 12000) + (stingC13 * 16000) + (teaC13 * 10000) + (napkinC13 * 3000);
 
 	const historyC13 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -6610,7 +6610,7 @@ function calculateC21() {
 	localStorage.removeItem("teaC21");
 	localStorage.removeItem("napkinC21");
 
-	const totalC21 = (bottleTigerBacC21 * 26000) + (bottleTigerNauC21 * 25000) + (tigerNauC21 * 24000) + (tigerBacC21 * 25000) + (heinekenC21 * 26000) + (sevenUpC21 * 18000) + (cokeC21 * 18000) + (pepsiC21 * 18000) + (waterNatureC21 * 14000) + (stingC21 * 18000) + (teaC21 * 10000) + (napkinC21 * 3000);
+	const totalC21 = (bottleTigerBacC21 * 26000) + (bottleTigerNauC21 * 25000) + (tigerNauC21 * 24000) + (tigerBacC21 * 25000) + (heinekenC21 * 26000) + (sevenUpC21 * 16000) + (cokeC21 * 16000) + (pepsiC21 * 16000) + (waterNatureC21 * 12000) + (stingC21 * 16000) + (teaC21 * 10000) + (napkinC21 * 3000);
 
 	const historyC21 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -6904,7 +6904,7 @@ function calculateC22() {
 	localStorage.removeItem("teaC22");
 	localStorage.removeItem("napkinC22");
 
-	const totalC22 = (bottleTigerBacC22 * 26000) + (bottleTigerNauC22 * 25000) + (tigerNauC22 * 24000) + (tigerBacC22 * 25000) + (heinekenC22 * 26000) + (sevenUpC22 * 18000) + (cokeC22 * 18000) + (pepsiC22 * 18000) + (waterNatureC22 * 14000) + (stingC22 * 18000) + (teaC22 * 10000) + (napkinC22 * 3000);
+	const totalC22 = (bottleTigerBacC22 * 26000) + (bottleTigerNauC22 * 25000) + (tigerNauC22 * 24000) + (tigerBacC22 * 25000) + (heinekenC22 * 26000) + (sevenUpC22 * 16000) + (cokeC22 * 16000) + (pepsiC22 * 16000) + (waterNatureC22 * 12000) + (stingC22 * 16000) + (teaC22 * 10000) + (napkinC22 * 3000);
 
 	const historyC22 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -7197,7 +7197,7 @@ function calculateC23() {
 	localStorage.removeItem("teaC23");
 	localStorage.removeItem("napkinC23");
 
-	const totalC23 = (bottleTigerBacC23 * 26000) + (bottleTigerNauC23 * 25000) + (tigerNauC23 * 24000) + (tigerBacC23 * 25000) + (heinekenC23 * 26000) + (sevenUpC23 * 18000) + (cokeC23 * 18000) + (pepsiC23 * 18000) + (waterNatureC23 * 14000) + (stingC23 * 18000) + (teaC23 * 10000) + (napkinC23 * 3000);
+	const totalC23 = (bottleTigerBacC23 * 26000) + (bottleTigerNauC23 * 25000) + (tigerNauC23 * 24000) + (tigerBacC23 * 25000) + (heinekenC23 * 26000) + (sevenUpC23 * 16000) + (cokeC23 * 16000) + (pepsiC23 * 16000) + (waterNatureC23 * 12000) + (stingC23 * 16000) + (teaC23 * 10000) + (napkinC23 * 3000);
 
 	const historyC23 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -7491,7 +7491,7 @@ function calculateC31() {
 	localStorage.removeItem("teaC31");
 	localStorage.removeItem("napkinC31");
 
-	const totalC31 = (bottleTigerBacC31 * 26000) + (bottleTigerNauC31 * 25000) + (tigerNauC31 * 24000) + (tigerBacC31 * 25000) + (heinekenC31 * 26000) + (sevenUpC31 * 18000) + (cokeC31 * 18000) + (pepsiC31 * 18000) + (waterNatureC31 * 14000) + (stingC31 * 18000) + (teaC31 * 10000) + (napkinC31 * 3000);
+	const totalC31 = (bottleTigerBacC31 * 26000) + (bottleTigerNauC31 * 25000) + (tigerNauC31 * 24000) + (tigerBacC31 * 25000) + (heinekenC31 * 26000) + (sevenUpC31 * 16000) + (cokeC31 * 16000) + (pepsiC31 * 16000) + (waterNatureC31 * 12000) + (stingC31 * 16000) + (teaC31 * 10000) + (napkinC31 * 3000);
 
 	const historyC31 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -7786,7 +7786,7 @@ function calculateC32() {
 	localStorage.removeItem("teaC32");
 	localStorage.removeItem("napkinC32");
 
-	const totalC32 = (bottleTigerBacC32 * 26000) + (bottleTigerNauC32 * 25000) + (tigerNauC32 * 24000) + (tigerBacC32 * 25000) + (heinekenC32 * 26000) + (sevenUpC32 * 18000) + (cokeC32 * 18000) + (pepsiC32 * 18000) + (waterNatureC32 * 14000) + (stingC32 * 18000) + (teaC32 * 10000) + (napkinC32 * 3000);
+	const totalC32 = (bottleTigerBacC32 * 26000) + (bottleTigerNauC32 * 25000) + (tigerNauC32 * 24000) + (tigerBacC32 * 25000) + (heinekenC32 * 26000) + (sevenUpC32 * 16000) + (cokeC32 * 16000) + (pepsiC32 * 16000) + (waterNatureC32 * 12000) + (stingC32 * 16000) + (teaC32 * 10000) + (napkinC32 * 3000);
 
 	const historyC32 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -8081,7 +8081,7 @@ function calculateC33() {
 	localStorage.removeItem("teaC33");
 	localStorage.removeItem("napkinC33");
 
-	const totalC33 = (bottleTigerBacC33 * 26000) + (bottleTigerNauC33 * 25000) + (tigerNauC33 * 24000) + (tigerBacC33 * 25000) + (heinekenC33 * 26000) + (sevenUpC33 * 18000) + (cokeC33 * 18000) + (pepsiC33 * 18000) + (waterNatureC33 * 14000) + (stingC33 * 18000) + (teaC33 * 10000) + (napkinC33 * 3000);
+	const totalC33 = (bottleTigerBacC33 * 26000) + (bottleTigerNauC33 * 25000) + (tigerNauC33 * 24000) + (tigerBacC33 * 25000) + (heinekenC33 * 26000) + (sevenUpC33 * 16000) + (cokeC33 * 16000) + (pepsiC33 * 16000) + (waterNatureC33 * 12000) + (stingC33 * 16000) + (teaC33 * 10000) + (napkinC33 * 3000);
 
 	const historyC33 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -8374,7 +8374,7 @@ function calculateC41() {
 	localStorage.removeItem("teaC41");
 	localStorage.removeItem("napkinC41");
 
-	const totalC41 = (bottleTigerBacC41 * 26000) + (bottleTigerNauC41 * 25000) + (tigerNauC41 * 24000) + (tigerBacC41 * 25000) + (heinekenC41 * 26000) + (sevenUpC41 * 18000) + (cokeC41 * 18000) + (pepsiC41 * 18000) + (waterNatureC41 * 14000) + (stingC41 * 18000) + (teaC41 * 10000) + (napkinC41 * 3000);
+	const totalC41 = (bottleTigerBacC41 * 26000) + (bottleTigerNauC41 * 25000) + (tigerNauC41 * 24000) + (tigerBacC41 * 25000) + (heinekenC41 * 26000) + (sevenUpC41 * 16000) + (cokeC41 * 16000) + (pepsiC41 * 16000) + (waterNatureC41 * 12000) + (stingC41 * 16000) + (teaC41 * 10000) + (napkinC41 * 3000);
 
 	const historyC41 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -8668,7 +8668,7 @@ function calculateC42() {
 	localStorage.removeItem("teaC42");
 	localStorage.removeItem("napkinC42");
 
-	const totalC42 = (bottleTigerBacC42 * 26000) + (bottleTigerNauC42 * 25000) + (tigerNauC42 * 24000) + (tigerBacC42 * 25000) + (heinekenC42 * 26000) + (sevenUpC42 * 18000) + (cokeC42 * 18000) + (pepsiC42 * 18000) + (waterNatureC42 * 14000) + (stingC42 * 18000) + (teaC42 * 10000) + (napkinC42 * 3000);
+	const totalC42 = (bottleTigerBacC42 * 26000) + (bottleTigerNauC42 * 25000) + (tigerNauC42 * 24000) + (tigerBacC42 * 25000) + (heinekenC42 * 26000) + (sevenUpC42 * 16000) + (cokeC42 * 16000) + (pepsiC42 * 16000) + (waterNatureC42 * 12000) + (stingC42 * 16000) + (teaC42 * 10000) + (napkinC42 * 3000);
 
 	const historyC42 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -8962,7 +8962,7 @@ function calculateC43() {
 	localStorage.removeItem("teaC43");
 	localStorage.removeItem("napkinC43");
 
-	const totalC43 = (bottleTigerBacC43 * 26000) + (bottleTigerNauC43 * 25000) + (tigerNauC43 * 24000) + (tigerBacC43 * 25000) + (heinekenC43 * 26000) + (sevenUpC43 * 18000) + (cokeC43 * 18000) + (pepsiC43 * 18000) + (waterNatureC43 * 14000) + (stingC43 * 18000) + (teaC43 * 10000) + (napkinC43 * 3000);
+	const totalC43 = (bottleTigerBacC43 * 26000) + (bottleTigerNauC43 * 25000) + (tigerNauC43 * 24000) + (tigerBacC43 * 25000) + (heinekenC43 * 26000) + (sevenUpC43 * 16000) + (cokeC43 * 16000) + (pepsiC43 * 16000) + (waterNatureC43 * 12000) + (stingC43 * 16000) + (teaC43 * 10000) + (napkinC43 * 3000);
 
 	const historyC43 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -9257,7 +9257,7 @@ function calculateC51() {
 	localStorage.removeItem("teaC51");
 	localStorage.removeItem("napkinC51");
 
-	const totalC51 = (bottleTigerBacC51 * 26000) + (bottleTigerNauC51 * 25000) + (tigerNauC51 * 24000) + (tigerBacC51 * 25000) + (heinekenC51 * 26000) + (sevenUpC51 * 18000) + (cokeC51 * 18000) + (pepsiC51 * 18000) + (waterNatureC51 * 14000) + (stingC51 * 18000) + (teaC51 * 10000) + (napkinC51 * 3000);
+	const totalC51 = (bottleTigerBacC51 * 26000) + (bottleTigerNauC51 * 25000) + (tigerNauC51 * 24000) + (tigerBacC51 * 25000) + (heinekenC51 * 26000) + (sevenUpC51 * 16000) + (cokeC51 * 16000) + (pepsiC51 * 16000) + (waterNatureC51 * 12000) + (stingC51 * 16000) + (teaC51 * 10000) + (napkinC51 * 3000);
 
 	const historyC51 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -9550,7 +9550,7 @@ function calculateC52() {
 	localStorage.removeItem("teaC52");
 	localStorage.removeItem("napkinC52");
 
-	const totalC52 = (bottleTigerBacC52 * 26000) + (bottleTigerNauC52 * 25000) + (tigerNauC52 * 24000) + (tigerBacC52 * 25000) + (heinekenC52 * 26000) + (sevenUpC52 * 18000) + (cokeC52 * 18000) + (pepsiC52 * 18000) + (waterNatureC52 * 14000) + (stingC52 * 18000) + (teaC52 * 10000) + (napkinC52 * 3000);
+	const totalC52 = (bottleTigerBacC52 * 26000) + (bottleTigerNauC52 * 25000) + (tigerNauC52 * 24000) + (tigerBacC52 * 25000) + (heinekenC52 * 26000) + (sevenUpC52 * 16000) + (cokeC52 * 16000) + (pepsiC52 * 16000) + (waterNatureC52 * 12000) + (stingC52 * 16000) + (teaC52 * 10000) + (napkinC52 * 3000);
 
 	const historyC52 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -9844,7 +9844,7 @@ function calculateE11() {
 	localStorage.removeItem("teaE11");
 	localStorage.removeItem("napkinE11");
 
-	const totalE11 = (bottleTigerBacE11 * 26000) + (bottleTigerNauE11 * 25000) + (tigerNauE11 * 24000) + (tigerBacE11 * 25000) + (heinekenE11 * 26000) + (sevenUpE11 * 18000) + (cokeE11 * 18000) + (pepsiE11 * 18000) + (waterNatureE11 * 14000) + (stingE11 * 18000) + (teaE11 * 10000) + (napkinE11 * 3000);
+	const totalE11 = (bottleTigerBacE11 * 26000) + (bottleTigerNauE11 * 25000) + (tigerNauE11 * 24000) + (tigerBacE11 * 25000) + (heinekenE11 * 26000) + (sevenUpE11 * 16000) + (cokeE11 * 16000) + (pepsiE11 * 16000) + (waterNatureE11 * 12000) + (stingE11 * 16000) + (teaE11 * 10000) + (napkinE11 * 3000);
 
 	const historyE11 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -10138,7 +10138,7 @@ function calculateE12() {
 	localStorage.removeItem("teaE12");
 	localStorage.removeItem("napkinE12");
 
-	const totalE12 = (bottleTigerBacE12 * 26000) + (bottleTigerNauE12 * 25000) + (tigerNauE12 * 24000) + (tigerBacE12 * 25000) + (heinekenE12 * 26000) + (sevenUpE12 * 18000) + (cokeE12 * 18000) + (pepsiE12 * 18000) + (waterNatureE12 * 14000) + (stingE12 * 18000) + (teaE12 * 10000) + (napkinE12 * 3000);
+	const totalE12 = (bottleTigerBacE12 * 26000) + (bottleTigerNauE12 * 25000) + (tigerNauE12 * 24000) + (tigerBacE12 * 25000) + (heinekenE12 * 26000) + (sevenUpE12 * 16000) + (cokeE12 * 16000) + (pepsiE12 * 16000) + (waterNatureE12 * 12000) + (stingE12 * 16000) + (teaE12 * 10000) + (napkinE12 * 3000);
 
 	const historyE12 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -10432,7 +10432,7 @@ function calculateE13() {
 	localStorage.removeItem("teaE13");
 	localStorage.removeItem("napkinE13");
 
-	const totalE13 = (bottleTigerBacE13 * 26000) + (bottleTigerNauE13 * 25000) + (tigerNauE13 * 24000) + (tigerBacE13 * 25000) + (heinekenE13 * 26000) + (sevenUpE13 * 18000) + (cokeE13 * 18000) + (pepsiE13 * 18000) + (waterNatureE13 * 14000) + (stingE13 * 18000) + (teaE13 * 10000) + (napkinE13 * 3000);
+	const totalE13 = (bottleTigerBacE13 * 26000) + (bottleTigerNauE13 * 25000) + (tigerNauE13 * 24000) + (tigerBacE13 * 25000) + (heinekenE13 * 26000) + (sevenUpE13 * 16000) + (cokeE13 * 16000) + (pepsiE13 * 16000) + (waterNatureE13 * 12000) + (stingE13 * 16000) + (teaE13 * 10000) + (napkinE13 * 3000);
 
 	const historyE13 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -10726,7 +10726,7 @@ function calculateE14() {
 	localStorage.removeItem("teaE14");
 	localStorage.removeItem("napkinE14");
 
-	const totalE14 = (bottleTigerBacE14 * 26000) + (bottleTigerNauE14 * 25000) + (tigerNauE14 * 24000) + (tigerBacE14 * 25000) + (heinekenE14 * 26000) + (sevenUpE14 * 18000) + (cokeE14 * 18000) + (pepsiE14 * 18000) + (waterNatureE14 * 14000) + (stingE14 * 18000) + (teaE14 * 10000) + (napkinE14 * 3000);
+	const totalE14 = (bottleTigerBacE14 * 26000) + (bottleTigerNauE14 * 25000) + (tigerNauE14 * 24000) + (tigerBacE14 * 25000) + (heinekenE14 * 26000) + (sevenUpE14 * 16000) + (cokeE14 * 16000) + (pepsiE14 * 16000) + (waterNatureE14 * 12000) + (stingE14 * 16000) + (teaE14 * 10000) + (napkinE14 * 3000);
 
 	const historyE14 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -11020,7 +11020,7 @@ function calculateE21() {
 	localStorage.removeItem("teaE21");
 	localStorage.removeItem("napkinE21");
 
-	const totalE21 = (bottleTigerBacE21 * 26000) + (bottleTigerNauE21 * 25000) + (tigerNauE21 * 24000) + (tigerBacE21 * 25000) + (heinekenE21 * 26000) + (sevenUpE21 * 18000) + (cokeE21 * 18000) + (pepsiE21 * 18000) + (waterNatureE21 * 14000) + (stingE21 * 18000) + (teaE21 * 10000) + (napkinE21 * 3000);
+	const totalE21 = (bottleTigerBacE21 * 26000) + (bottleTigerNauE21 * 25000) + (tigerNauE21 * 24000) + (tigerBacE21 * 25000) + (heinekenE21 * 26000) + (sevenUpE21 * 16000) + (cokeE21 * 16000) + (pepsiE21 * 16000) + (waterNatureE21 * 12000) + (stingE21 * 16000) + (teaE21 * 10000) + (napkinE21 * 3000);
 
 	const historyE21 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -11314,7 +11314,7 @@ function calculateE22() {
 	localStorage.removeItem("teaE22");
 	localStorage.removeItem("napkinE22");
 
-	const totalE22 = (bottleTigerBacE22 * 26000) + (bottleTigerNauE22 * 25000) + (tigerNauE22 * 24000) + (tigerBacE22 * 25000) + (heinekenE22 * 26000) + (sevenUpE22 * 18000) + (cokeE22 * 18000) + (pepsiE22 * 18000) + (waterNatureE22 * 14000) + (stingE22 * 18000) + (teaE22 * 10000) + (napkinE22 * 3000);
+	const totalE22 = (bottleTigerBacE22 * 26000) + (bottleTigerNauE22 * 25000) + (tigerNauE22 * 24000) + (tigerBacE22 * 25000) + (heinekenE22 * 26000) + (sevenUpE22 * 16000) + (cokeE22 * 16000) + (pepsiE22 * 16000) + (waterNatureE22 * 12000) + (stingE22 * 16000) + (teaE22 * 10000) + (napkinE22 * 3000);
 
 	const historyE22 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -11609,7 +11609,7 @@ function calculateF11() {
 	localStorage.removeItem("teaF11");
 	localStorage.removeItem("napkinF11");
 
-	const totalF11 = (bottleTigerBacF11 * 26000) + (bottleTigerNauF11 * 25000) + (tigerNauF11 * 24000) + (tigerBacF11 * 25000) + (heinekenF11 * 26000) + (sevenUpF11 * 18000) + (cokeF11 * 18000) + (pepsiF11 * 18000) + (waterNatureF11 * 14000) + (stingF11 * 18000) + (teaF11 * 10000) + (napkinF11 * 3000);
+	const totalF11 = (bottleTigerBacF11 * 26000) + (bottleTigerNauF11 * 25000) + (tigerNauF11 * 24000) + (tigerBacF11 * 25000) + (heinekenF11 * 26000) + (sevenUpF11 * 16000) + (cokeF11 * 16000) + (pepsiF11 * 16000) + (waterNatureF11 * 12000) + (stingF11 * 16000) + (teaF11 * 10000) + (napkinF11 * 3000);
 
 	const historyF11 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -11904,7 +11904,7 @@ function calculateF12() {
 	localStorage.removeItem("teaF12");
 	localStorage.removeItem("napkinF12");
 
-	const totalF12 = (bottleTigerBacF12 * 26000) + (bottleTigerNauF12 * 25000) + (tigerNauF12 * 24000) + (tigerBacF12 * 25000) + (heinekenF12 * 26000) + (sevenUpF12 * 18000) + (cokeF12 * 18000) + (pepsiF12 * 18000) + (waterNatureF12 * 14000) + (stingF12 * 18000) + (teaF12 * 10000) + (napkinF12 * 3000);
+	const totalF12 = (bottleTigerBacF12 * 26000) + (bottleTigerNauF12 * 25000) + (tigerNauF12 * 24000) + (tigerBacF12 * 25000) + (heinekenF12 * 26000) + (sevenUpF12 * 16000) + (cokeF12 * 16000) + (pepsiF12 * 16000) + (waterNatureF12 * 12000) + (stingF12 * 16000) + (teaF12 * 10000) + (napkinF12 * 3000);
 
 	const historyF12 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -12200,7 +12200,7 @@ function calculateF13() {
 	localStorage.removeItem("teaF13");
 	localStorage.removeItem("napkinF13");
 
-	const totalF13 = (bottleTigerBacF13 * 26000) + (bottleTigerNauF13 * 25000) + (tigerNauF13 * 24000) + (tigerBacF13 * 25000) + (heinekenF13 * 26000) + (sevenUpF13 * 18000) + (cokeF13 * 18000) + (pepsiF13 * 18000) + (waterNatureF13 * 14000) + (stingF13 * 18000) + (teaF13 * 10000) + (napkinF13 * 3000);
+	const totalF13 = (bottleTigerBacF13 * 26000) + (bottleTigerNauF13 * 25000) + (tigerNauF13 * 24000) + (tigerBacF13 * 25000) + (heinekenF13 * 26000) + (sevenUpF13 * 16000) + (cokeF13 * 16000) + (pepsiF13 * 16000) + (waterNatureF13 * 12000) + (stingF13 * 16000) + (teaF13 * 10000) + (napkinF13 * 3000);
 
 	const historyF13 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -12493,7 +12493,7 @@ function calculateF14() {
 	localStorage.removeItem("teaF14");
 	localStorage.removeItem("napkinF14");
 
-	const totalF14 = (bottleTigerBacF14 * 26000) + (bottleTigerNauF14 * 25000) + (tigerNauF14 * 24000) + (tigerBacF14 * 25000) + (heinekenF14 * 26000) + (sevenUpF14 * 18000) + (cokeF14 * 18000) + (pepsiF14 * 18000) + (waterNatureF14 * 14000) + (stingF14 * 18000) + (teaF14 * 10000) + (napkinF14 * 3000);
+	const totalF14 = (bottleTigerBacF14 * 26000) + (bottleTigerNauF14 * 25000) + (tigerNauF14 * 24000) + (tigerBacF14 * 25000) + (heinekenF14 * 26000) + (sevenUpF14 * 16000) + (cokeF14 * 16000) + (pepsiF14 * 16000) + (waterNatureF14 * 12000) + (stingF14 * 16000) + (teaF14 * 10000) + (napkinF14 * 3000);
 
 	const historyF14 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -12789,7 +12789,7 @@ function calculateG11() {
 	localStorage.removeItem("teaG11");
 	localStorage.removeItem("napkinG11");
 
-	const totalG11 = (bottleTigerBacG11 * 26000) + (bottleTigerNauG11 * 25000) + (tigerNauG11 * 24000) + (tigerBacG11 * 25000) + (heinekenG11 * 26000) + (sevenUpG11 * 18000) + (cokeG11 * 18000) + (pepsiG11 * 18000) + (waterNatureG11 * 14000) + (stingG11 * 18000) + (teaG11 * 10000) + (napkinG11 * 3000);
+	const totalG11 = (bottleTigerBacG11 * 26000) + (bottleTigerNauG11 * 25000) + (tigerNauG11 * 24000) + (tigerBacG11 * 25000) + (heinekenG11 * 26000) + (sevenUpG11 * 16000) + (cokeG11 * 16000) + (pepsiG11 * 16000) + (waterNatureG11 * 12000) + (stingG11 * 16000) + (teaG11 * 10000) + (napkinG11 * 3000);
 
 	const historyG11 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -13084,7 +13084,7 @@ function calculateG12() {
 	localStorage.removeItem("teaG12");
 	localStorage.removeItem("napkinG12");
 
-	const totalG12 = (bottleTigerBacG12 * 26000) + (bottleTigerNauG12 * 25000) + (tigerNauG12 * 24000) + (tigerBacG12 * 25000) + (heinekenG12 * 26000) + (sevenUpG12 * 18000) + (cokeG12 * 18000) + (pepsiG12 * 18000) + (waterNatureG12 * 14000) + (stingG12 * 18000) + (teaG12 * 10000) + (napkinG12 * 3000);
+	const totalG12 = (bottleTigerBacG12 * 26000) + (bottleTigerNauG12 * 25000) + (tigerNauG12 * 24000) + (tigerBacG12 * 25000) + (heinekenG12 * 26000) + (sevenUpG12 * 16000) + (cokeG12 * 16000) + (pepsiG12 * 16000) + (waterNatureG12 * 12000) + (stingG12 * 16000) + (teaG12 * 10000) + (napkinG12 * 3000);
 
 	const historyG12 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -13379,7 +13379,7 @@ function calculateG31() {
 	localStorage.removeItem("teaG31");
 	localStorage.removeItem("napkinG31");
 
-	const totalG31 = (bottleTigerBacG31 * 26000) + (bottleTigerNauG31 * 25000) + (tigerNauG31 * 24000) + (tigerBacG31 * 25000) + (heinekenG31 * 26000) + (sevenUpG31 * 18000) + (cokeG31 * 18000) + (pepsiG31 * 18000) + (waterNatureG31 * 14000) + (stingG31 * 18000) + (teaG31 * 10000) + (napkinG31 * 3000);
+	const totalG31 = (bottleTigerBacG31 * 26000) + (bottleTigerNauG31 * 25000) + (tigerNauG31 * 24000) + (tigerBacG31 * 25000) + (heinekenG31 * 26000) + (sevenUpG31 * 16000) + (cokeG31 * 16000) + (pepsiG31 * 16000) + (waterNatureG31 * 12000) + (stingG31 * 16000) + (teaG31 * 10000) + (napkinG31 * 3000);
 
 	const historyG31 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -13675,7 +13675,7 @@ function calculateG21() {
 	localStorage.removeItem("teaG21");
 	localStorage.removeItem("napkinG21");
 
-	const totalG21 = (bottleTigerBacG21 * 26000) + (bottleTigerNauG21 * 25000) + (tigerNauG21 * 24000) + (tigerBacG21 * 25000) + (heinekenG21 * 26000) + (sevenUpG21 * 18000) + (cokeG21 * 18000) + (pepsiG21 * 18000) + (waterNatureG21 * 14000) + (stingG21 * 18000) + (teaG21 * 10000) + (napkinG21 * 3000);
+	const totalG21 = (bottleTigerBacG21 * 26000) + (bottleTigerNauG21 * 25000) + (tigerNauG21 * 24000) + (tigerBacG21 * 25000) + (heinekenG21 * 26000) + (sevenUpG21 * 16000) + (cokeG21 * 16000) + (pepsiG21 * 16000) + (waterNatureG21 * 12000) + (stingG21 * 16000) + (teaG21 * 10000) + (napkinG21 * 3000);
 
 	const historyG21 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -13971,7 +13971,7 @@ function calculateG23() {
 	localStorage.removeItem("teaG23");
 	localStorage.removeItem("napkinG23");
 
-	const totalG23 = (bottleTigerBacG23 * 26000) + (bottleTigerNauG23 * 25000) + (tigerNauG23 * 24000) + (tigerBacG23 * 25000) + (heinekenG23 * 26000) + (sevenUpG23 * 18000) + (cokeG23 * 18000) + (pepsiG23 * 18000) + (waterNatureG23 * 14000) + (stingG23 * 18000) + (teaG23 * 10000) + (napkinG23 * 3000);
+	const totalG23 = (bottleTigerBacG23 * 26000) + (bottleTigerNauG23 * 25000) + (tigerNauG23 * 24000) + (tigerBacG23 * 25000) + (heinekenG23 * 26000) + (sevenUpG23 * 16000) + (cokeG23 * 16000) + (pepsiG23 * 16000) + (waterNatureG23 * 12000) + (stingG23 * 16000) + (teaG23 * 10000) + (napkinG23 * 3000);
 
 	const historyG23 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -14265,7 +14265,7 @@ function calculateG22() {
 	localStorage.removeItem("teaG22");
 	localStorage.removeItem("napkinG22");
 
-	const totalG22 = (bottleTigerBacG22 * 26000) + (bottleTigerNauG22 * 25000) + (tigerNauG22 * 24000) + (tigerBacG22 * 25000) + (heinekenG22 * 26000) + (sevenUpG22 * 18000) + (cokeG22 * 18000) + (pepsiG22 * 18000) + (waterNatureG22 * 14000) + (stingG22 * 18000) + (teaG22 * 10000) + (napkinG22 * 3000);
+	const totalG22 = (bottleTigerBacG22 * 26000) + (bottleTigerNauG22 * 25000) + (tigerNauG22 * 24000) + (tigerBacG22 * 25000) + (heinekenG22 * 26000) + (sevenUpG22 * 16000) + (cokeG22 * 16000) + (pepsiG22 * 16000) + (waterNatureG22 * 12000) + (stingG22 * 16000) + (teaG22 * 10000) + (napkinG22 * 3000);
 
 	const historyG22 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -14560,7 +14560,7 @@ function calculateG32() {
 	localStorage.removeItem("teaG32");
 	localStorage.removeItem("napkinG32");
 
-	const totalG32 = (bottleTigerBacG32 * 26000) + (bottleTigerNauG32 * 25000) + (tigerNauG32 * 24000) + (tigerBacG32 * 25000) + (heinekenG32 * 26000) + (sevenUpG32 * 18000) + (cokeG32 * 18000) + (pepsiG32 * 18000) + (waterNatureG32 * 14000) + (stingG32 * 18000) + (teaG32 * 10000) + (napkinG32 * 3000);
+	const totalG32 = (bottleTigerBacG32 * 26000) + (bottleTigerNauG32 * 25000) + (tigerNauG32 * 24000) + (tigerBacG32 * 25000) + (heinekenG32 * 26000) + (sevenUpG32 * 16000) + (cokeG32 * 16000) + (pepsiG32 * 16000) + (waterNatureG32 * 12000) + (stingG32 * 16000) + (teaG32 * 10000) + (napkinG32 * 3000);
 
 	const historyG32 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -14856,7 +14856,7 @@ function calculateG33() {
 	localStorage.removeItem("teaG33");
 	localStorage.removeItem("napkinG33");
 
-	const totalG33 = (bottleTigerBacG33 * 26000) + (bottleTigerNauG33 * 25000) + (tigerNauG33 * 24000) + (tigerBacG33 * 25000) + (heinekenG33 * 26000) + (sevenUpG33 * 18000) + (cokeG33 * 18000) + (pepsiG33 * 18000) + (waterNatureG33 * 14000) + (stingG33 * 18000) + (teaG33 * 10000) + (napkinG33 * 3000);
+	const totalG33 = (bottleTigerBacG33 * 26000) + (bottleTigerNauG33 * 25000) + (tigerNauG33 * 24000) + (tigerBacG33 * 25000) + (heinekenG33 * 26000) + (sevenUpG33 * 16000) + (cokeG33 * 16000) + (pepsiG33 * 16000) + (waterNatureG33 * 12000) + (stingG33 * 16000) + (teaG33 * 10000) + (napkinG33 * 3000);
 
 	const historyG33 = JSON.parse(localStorage.getItem('totalHistory')) || [];
 
@@ -15793,6 +15793,7 @@ fsEnter.addEventListener('click', function (e) {
     else {
         fullscreen = false;
         document.exitFullscreen();
-        fsEnter.innerText = "Full màn hình";
+        fsEnter.innerHTML = `<i class='bx bx-fullscreen' ></i>
+		<nav class="full-screen-display">Full màn hình</nav>`;
     }
 });

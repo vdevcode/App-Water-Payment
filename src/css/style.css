@@ -605,7 +605,7 @@ button:nth-child(3) {
 }
 .cover-button {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 20px;
 }
 .cover-button-khuB{
