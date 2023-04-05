@@ -124,6 +124,16 @@
         width: 150px;
         text-align: left;
     }
+    .open-fullscreen{
+        padding: 6px 10px;
+        background:rgb(233, 33, 33);
+        display: inline-block;
+        font-size: .8rem;
+        color: white;
+        border-bottom: 1px solid rgb(233, 33, 33);
+        width: 150px;
+        text-align: left;
+    }
 
     .cover-popup-header {
         display: none;
@@ -398,6 +408,23 @@
         display: flex;
         align-items: center;
     }
+    #nuoc-nhap-container {
+        display: flex ;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    #nuoc-nhap-container .cover-nuoc-item{
+        font-size: .8rem !important;
+        color: rgb(2, 2, 2) !important;
+        font-weight: 300;
+        padding: 5px 10px;
+        background: rgb(234, 228, 48);
+        margin: 7px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    }
     .delete-nuoc-kho{
         font-size: .8rem !important;
         color: rgb(247, 244, 244) !important;
@@ -409,6 +436,19 @@
         display: flex;
         align-items: center;
     }
+
+    .delete-nuoc-nhap{
+        font-size: .8rem !important;
+        color: rgb(247, 244, 244) !important;
+        font-weight: 300;
+        padding: 10px 10px;
+        background: rgb(228, 214, 27);
+        margin: 7px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    }
+
     .table-modal{
         border-radius: 4px;
     }

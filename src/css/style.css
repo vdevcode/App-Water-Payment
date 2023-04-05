@@ -801,6 +801,7 @@ button:nth-child(3) {
 }
 
 .table-modal {
+	overflow-x: hidden;
 	display: none;
 }
 

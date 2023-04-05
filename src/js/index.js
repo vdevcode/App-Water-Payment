@@ -14863,6 +14863,7 @@ function calculateG33() {
 	// Lấy thời gian hiện tại
 	const currentTime = new Date().getTime();
 	historyG33.push({ time: currentTime, totalG33: totalG33 });
+	
 	localStorage.setItem('totalHistory', JSON.stringify(historyG33));
 
 	// Hiển thị tổng tiền lên trang web
@@ -15778,3 +15779,20 @@ btnG.addEventListener("click", function () {
 });
 
 
+
+
+let fullscreen;
+let fsEnter = document.getElementById('fullscr');
+fsEnter.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (!fullscreen) {
+        fullscreen = true;
+        document.documentElement.requestFullscreen();
+        fsEnter.innerHTML = "Thoát màn hình";
+    }
+    else {
+        fullscreen = false;
+        document.exitFullscreen();
+        fsEnter.innerHTML = "Full màn hình";
+    }
+});
