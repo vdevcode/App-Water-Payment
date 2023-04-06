@@ -115,7 +115,6 @@ td {
 	border-radius: 5px;
 	width: 300px;
 	float: left;
-	height: 100%;
 
 }
 
@@ -500,7 +499,6 @@ button:nth-child(3) {
 }
 
 .cover-table {
-	margin-top: 10px;
 	display: none;
 }
 

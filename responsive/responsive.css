@@ -24,7 +24,7 @@
 
     .cover-table {
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 30px;
+
     }
 
     .content__container__list__item {
@@ -98,40 +98,43 @@
 
     }
 
-
     .table-modal.active {
         display: block;
     }
 
-    .table-modal{
+    .table-modal {
         border: 1px solid yellow;
-        display:none;
+        display: none;
         padding: 6px 10px;
         background: rgb(33, 32, 13);
         font-size: .8rem;
         color: rgb(250, 249, 249);
-       
+
         width: 150px;
         height: 140px;
         text-align: left;
         position: absolute;
         right: 10px;
     }
-    .table-modal div{
+
+    .table-modal div {
         padding: 6px 10px;
         right: 0;
         display: flex;
         align-items: center;
         border-bottom: 1px solid yellow;
     }
-    .table-modal div i{
-        margin-right:10px;
+
+    .table-modal div i {
+        margin-right: 10px;
         font-size: 1rem;
         color: rgb(95, 230, 111);
     }
-    .table-modal div nav{
+
+    .table-modal div nav {
         text-align: left;
     }
+
     .cover-popup-header {
         display: none;
         width: 100%;
@@ -165,7 +168,7 @@
     }
 
     .popup-modal-header {
-        position: absolute; 
+        position: absolute;
         left: 0;
         width: 90%;
         background-color: rgb(247, 248, 245);
@@ -208,14 +211,17 @@
         top: 10px;
         border-radius: 4px;
     }
-   
+
 
     .flex-button button {
-        padding: 8px ;
+        padding: 8px;
         font-weight: 300;
     }
+
     .order h2,
-    .order tr,td,th{
+    .order tr,
+    td,
+    th {
         font-size: .8rem;
         color: white;
     }
@@ -231,41 +237,52 @@
     .drink input {
         font-size: .8rem;
     }
-    .are-one{
+
+    .are-one {
         text-align: center;
     }
-    .are-one button{
+
+    .are-one button {
         font-size: .9rem;
         padding: 10px 20px;
         background-color: #e73c7e;
         color: white;
+        margin-top: 50px;
+        cursor: pointer;
     }
-    #image-container{
+
+    #image-container {
         margin: 10px 0;
     }
-    #image-container img{
+
+    #image-container img {
         width: 100%;
         height: 100%;
         border: 2px solid rgb(230, 243, 88);
         border-radius: 3px;
     }
-    .table-price{
+
+    .table-price {
         border: 1px solid black;
     }
-    .title-product-popup{
-        color: red !important;
+
+    .title-product-popup {
+        color: rgb(12, 203, 25) !important;
     }
+
     td,
-    th{
+    th {
         border: 1px solid rgb(246, 243, 243);
     }
-    .drink-water-add{
+
+    .drink-water-add {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
     }
-    .drink-water-add input{
+
+    .drink-water-add input {
         border: 1px solid rgb(11, 212, 212);
         border-radius: 2px;
         padding: 4px 8px;
@@ -274,11 +291,13 @@
         font-size: .8rem;
         color: white;
     }
-    .drink-water-add label{
+
+    .drink-water-add label {
         color: wheat;
         font-size: .8rem;
     }
-    .drink-water-add button{
+
+    .drink-water-add button {
         border: 1px solid aquamarine;
         color: white;
         border-radius: 2px;
@@ -286,7 +305,8 @@
         font-size: .8rem;
         padding: 6px 8px;
     }
-    .cover-popup-payment{
+
+    .cover-popup-payment {
         background: black;
         width: 100%;
         height: 100%;
@@ -301,21 +321,25 @@
         margin: -100%;
         transition: .5s;
     }
-    .cover-popup-payment.active{
+
+    .cover-popup-payment.active {
         display: block;
         margin: 0;
     }
-    .popup-modal-payment{
+
+    .popup-modal-payment {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .number-items-payment{
+
+    .number-items-payment {
         display: flex;
         justify-content: space-between;
         align-self: center;
     }
-    .close-btn-payment{
+
+    .close-btn-payment {
         position: absolute;
         right: 10px;
         padding: 9px;
@@ -326,75 +350,87 @@
         border-radius: 3px;
         z-index: 2;
     }
+
     #div1 {
         margin-top: 20px;
     }
-    #div1 h2{
+
+    #div1 h2 {
         font-size: 1.1rem;
         font-weight: 300;
         padding: 4px 10px;
-        border:1px solid #0aabba;
+        border: 1px solid #0aabba;
         font-family: var(--fonts-primary);
         display: inline-block;
         border-radius: 4px;
         color: white;
     }
-    #div2 h2{
+
+    #div2 h2 {
         font-size: 1.1rem;
         font-weight: 300;
         padding: 4px 10px;
-        border:1px solid #b70aba;
+        border: 1px solid #b70aba;
         font-family: var(--fonts-primary);
         display: inline-block;
         border-radius: 4px;
         color: white;
         margin-top: 10px;
     }
-    #div2 label{
+
+    #div2 label {
         color: rgb(219, 230, 15);
         font-family: var(--fonts-primary);
         font-size: .9rem;
     }
-    #div3 h2{
+
+    #div3 h2 {
         font-size: 1.1rem;
         font-weight: 300;
         padding: 4px 10px;
-        border:1px solid #d60419;
+        border: 1px solid #d60419;
         font-family: var(--fonts-primary);
         display: inline-block;
         border-radius: 4px;
         color: white;
-    }#div3 label{
+    }
+
+    #div3 label {
         color: rgb(209, 124, 67);
         font-family: var(--fonts-primary);
         font-size: .9rem;
     }
-    #div1 label{
+
+    #div1 label {
         color: rgb(15, 230, 65);
         font-family: var(--fonts-primary);
         font-size: .9rem;
     }
-    .number-items-payment{
+
+    .number-items-payment {
         margin: 10px 0;
         display: flex;
         align-items: center;
     }
-    .number-items-payment input{
+
+    .number-items-payment input {
         outline: none;
         border: 1px solid rgb(11, 212, 212);
-        background:none;
+        background: none;
         padding: 5px 10px;
         font-size: .8rem;
         color: white;
         border-radius: 2px;
     }
-    #nuoc-kho-container{
-        display: flex ;
+
+    #nuoc-kho-container {
+        display: flex;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
-    #nuoc-kho-container .cover-nuoc-item{
+
+    #nuoc-kho-container .cover-nuoc-item {
         font-size: .8rem !important;
         color: rgb(247, 244, 244) !important;
         font-weight: 300;
@@ -405,13 +441,15 @@
         display: flex;
         align-items: center;
     }
+
     #nuoc-nhap-container {
-        display: flex ;
+        display: flex;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
-    #nuoc-nhap-container .cover-nuoc-item{
+
+    #nuoc-nhap-container .cover-nuoc-item {
         font-size: .8rem !important;
         color: rgb(2, 2, 2) !important;
         font-weight: 300;
@@ -422,7 +460,8 @@
         display: flex;
         align-items: center;
     }
-    .delete-nuoc-kho{
+
+    .delete-nuoc-kho {
         font-size: .8rem !important;
         color: rgb(247, 244, 244) !important;
         font-weight: 300;
@@ -434,7 +473,7 @@
         align-items: center;
     }
 
-    .delete-nuoc-nhap{
+    .delete-nuoc-nhap {
         font-size: .8rem !important;
         color: rgb(247, 244, 244) !important;
         font-weight: 300;
@@ -446,11 +485,133 @@
         align-items: center;
     }
 
-    .table-modal{
+    .table-modal {
         border-radius: 4px;
     }
-   .cover-table-B{
-       display: grid;
-       grid-template-columns: repeat(1,1fr);
-   }
+
+    .cover-table-B {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .same-table {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+        padding: 10px 20px;
+        z-index: 3;
+        background-image: url(https://4kwallpapers.com/images/wallpapers/outrun-neon-dark-background-purple-2560x1440-4523.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .2s;
+        margin-top: 200%;
+    }
+
+    .cover-button-khuB.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-B1.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-B2.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-B3.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-B4.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-B5.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-button-khuC.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-C1.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-C2.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-C3.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-C4.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table-C5.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-button-khuE.active,
+    .cover-table-E1.active,
+    .cover-table-E2.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-button-khuD.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-button-khuF.active,
+    .cover-table-F1.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-button-khuG.active,
+    .cover-table-G1.active,
+    .cover-table-G2.active,
+    .cover-table-G3.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .cover-table.active {
+        margin-top: 0;
+        display: block;
+    }
+
+    .same-close-table {
+        font-size: 1.4rem;
+        right: 20px;
+        position: absolute;
+        margin-top: 4px;
+        padding: 5px;
+        border-radius: 4px;
+        background: red;
+        color: white;
+
+    }
 }
