@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -710,7 +711,8 @@ button:nth-child(3) {
 	gap: 20px;
 }
 .cover-button-khuD .button-active-area-D{
-	background: rgb(225, 94, 18);
+	border:1px solid rgb(225, 94, 18) !important;
+	background: transparent;
 	color: white;
 	border: none;
 	padding: 10px;

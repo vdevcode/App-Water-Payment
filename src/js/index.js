@@ -15154,7 +15154,7 @@ function calculateG33() {
 	// Lấy thời gian hiện tại
 	const currentTime = new Date().getTime();
 	historyG33.push({ time: currentTime, totalG33: totalG33 });
-	
+
 	localStorage.setItem('totalHistory', JSON.stringify(historyG33));
 
 	// Hiển thị tổng tiền lên trang web
@@ -15390,7 +15390,7 @@ btnB2.addEventListener("click", function () {
 	// Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
 	coverTableB2.classList.add("active");
 
-	
+
 });
 
 
@@ -15442,7 +15442,7 @@ btnC1.addEventListener("click", function () {
 	// Thay đổi thuộc tính display của phần tử <div class="cover-table-B"></div>
 	coverTableC1.classList.add("active");
 
-	
+
 });
 var btnC2 = document.getElementById("btnC2");
 var coverTableC2 = document.querySelector(".cover-table-C2");
@@ -15773,11 +15773,11 @@ var allTable = document.querySelector('.cover-table');
 var isKhuOpen = false;
 openA.addEventListener('click', () => {
 	allTable.classList.add('active')
-	
+
 })
 
 const closeTableA = document.querySelector(".close-table-A")
-closeTableA.addEventListener("click",()=>{
+closeTableA.addEventListener("click", () => {
 	allTable.classList.remove("active")
 })
 
@@ -15792,34 +15792,34 @@ btnB.addEventListener("click", function () {
 });
 
 const closeTableB = document.querySelector(".close-table-B")
-closeTableB.addEventListener("click",()=>{
+closeTableB.addEventListener("click", () => {
 	coverButtonKhuB.classList.remove("active")
 })
 var coverButtonKhuB1 = document.querySelector(".cover-table-B1");
 const closeTableB1 = document.querySelector(".close-table-B1")
-closeTableB1.addEventListener("click",()=>{
+closeTableB1.addEventListener("click", () => {
 	coverButtonKhuB1.classList.remove("active")
 })
 
 var coverButtonKhuB2 = document.querySelector(".cover-table-B2");
 const closeTableB2 = document.querySelector(".close-table-B2")
-closeTableB2.addEventListener("click",()=>{
+closeTableB2.addEventListener("click", () => {
 	coverButtonKhuB2.classList.remove("active")
 })
 var coverButtonKhuB3 = document.querySelector(".cover-table-B3");
 const closeTableB3 = document.querySelector(".close-table-B3")
-closeTableB3.addEventListener("click",()=>{
+closeTableB3.addEventListener("click", () => {
 	coverButtonKhuB3.classList.remove("active")
 })
 var coverButtonKhuB4 = document.querySelector(".cover-table-B4");
 const closeTableB4 = document.querySelector(".close-table-B4")
-closeTableB4.addEventListener("click",()=>{
+closeTableB4.addEventListener("click", () => {
 	coverButtonKhuB4.classList.remove("active")
 })
 
 var coverButtonKhuB5 = document.querySelector(".cover-table-B5");
 const closeTableB5 = document.querySelector(".close-table-B5")
-closeTableB5.addEventListener("click",()=>{
+closeTableB5.addEventListener("click", () => {
 	coverButtonKhuB5.classList.remove("active")
 })
 
@@ -15829,33 +15829,33 @@ btnC.addEventListener("click", function () {
 	coverButtonKhuC.classList.add('active')
 });
 const closeTableC = document.querySelector(".close-table-C")
-closeTableC.addEventListener("click",()=>{
+closeTableC.addEventListener("click", () => {
 	coverButtonKhuC.classList.remove("active")
 })
 
 var coverButtonKhuC1 = document.querySelector(".cover-table-C1");
 const closeTableC1 = document.querySelector(".close-table-C1")
-closeTableC1.addEventListener("click",()=>{
+closeTableC1.addEventListener("click", () => {
 	coverButtonKhuC1.classList.remove("active")
 })
 var coverButtonKhuC2 = document.querySelector(".cover-table-C2");
 const closeTableC2 = document.querySelector(".close-table-C2")
-closeTableC2.addEventListener("click",()=>{
+closeTableC2.addEventListener("click", () => {
 	coverButtonKhuC2.classList.remove("active")
 })
 var coverButtonKhuC3 = document.querySelector(".cover-table-C3");
 const closeTableC3 = document.querySelector(".close-table-C3")
-closeTableC3.addEventListener("click",()=>{
+closeTableC3.addEventListener("click", () => {
 	coverButtonKhuC3.classList.remove("active")
 })
 var coverButtonKhuC4 = document.querySelector(".cover-table-C4");
 const closeTableC4 = document.querySelector(".close-table-C4")
-closeTableC4.addEventListener("click",()=>{
+closeTableC4.addEventListener("click", () => {
 	coverButtonKhuC4.classList.remove("active")
 })
 var coverButtonKhuC5 = document.querySelector(".cover-table-C5");
 const closeTableC5 = document.querySelector(".close-table-C5")
-closeTableC5.addEventListener("click",()=>{
+closeTableC5.addEventListener("click", () => {
 	coverButtonKhuC5.classList.remove("active")
 })
 
@@ -15867,7 +15867,7 @@ btnD.addEventListener("click", function () {
 });
 
 const closeTableD = document.querySelector(".close-table-D")
-closeTableD.addEventListener("click",()=>{
+closeTableD.addEventListener("click", () => {
 	coverButtonKhuD.classList.remove("active")
 })
 
@@ -15879,17 +15879,17 @@ btnE.addEventListener("click", function () {
 });
 
 const closeTableE = document.querySelector(".close-table-E")
-closeTableE.addEventListener("click",()=>{
+closeTableE.addEventListener("click", () => {
 	coverButtonKhuE.classList.remove("active")
 })
 var coverButtonKhuE1 = document.querySelector(".cover-table-E1");
 const closeTableE1 = document.querySelector(".close-table-E1")
-closeTableE1.addEventListener("click",()=>{
+closeTableE1.addEventListener("click", () => {
 	coverButtonKhuE1.classList.remove("active")
 })
 var coverButtonKhuE2 = document.querySelector(".cover-table-E2");
 const closeTableE2 = document.querySelector(".close-table-E2")
-closeTableE2.addEventListener("click",()=>{
+closeTableE2.addEventListener("click", () => {
 	coverButtonKhuE2.classList.remove("active")
 })
 
@@ -15898,34 +15898,34 @@ closeTableE2.addEventListener("click",()=>{
 
 var coverButtonKhuF1 = document.querySelector(".cover-table-F1");
 const closeTableF1 = document.querySelector(".close-table-F1")
-closeTableF1.addEventListener("click",()=>{
+closeTableF1.addEventListener("click", () => {
 	coverButtonKhuF1.classList.remove("active")
 })
 
 
 const closeTableF = document.querySelector(".close-table-F")
-closeTableF.addEventListener("click",()=>{
+closeTableF.addEventListener("click", () => {
 	coverButtonKhuF.classList.remove("active")
 })
 
 
 const closeTableG = document.querySelector(".close-table-G")
-closeTableG.addEventListener("click",()=>{
+closeTableG.addEventListener("click", () => {
 	coverButtonKhuG.classList.remove("active")
 })
 var coverButtonKhuG1 = document.querySelector(".cover-table-G1");
 const closeTableG1 = document.querySelector(".close-table-G1")
-closeTableG1.addEventListener("click",()=>{
+closeTableG1.addEventListener("click", () => {
 	coverButtonKhuG1.classList.remove("active")
 })
 var coverButtonKhuG2 = document.querySelector(".cover-table-G2");
 const closeTableG2 = document.querySelector(".close-table-G2")
-closeTableG2.addEventListener("click",()=>{
+closeTableG2.addEventListener("click", () => {
 	coverButtonKhuG2.classList.remove("active")
 })
 var coverButtonKhuG3 = document.querySelector(".cover-table-G3");
 const closeTableG3 = document.querySelector(".close-table-G3")
-closeTableG3.addEventListener("click",()=>{
+closeTableG3.addEventListener("click", () => {
 	coverButtonKhuG3.classList.remove("active")
 })
 // Lấy tham chiếu đến các phần tử
@@ -15971,34 +15971,109 @@ btnG.addEventListener("click", function () {
 let fullscreen;
 let fsEnter = document.getElementById('fullscr');
 fsEnter.addEventListener('click', function (e) {
-    e.preventDefault();
-    if (!fullscreen) {
-        fullscreen = true;
-        document.documentElement.requestFullscreen();
-        fsEnter.innerText = "Thoát màn hình";
-    }
-    else {
-        fullscreen = false;
-        document.exitFullscreen();
-        fsEnter.innerHTML = `<i class='bx bx-fullscreen' ></i>
+	e.preventDefault();
+	if (!fullscreen) {
+		fullscreen = true;
+		document.documentElement.requestFullscreen();
+		fsEnter.innerText = "Thoát màn hình";
+	}
+	else {
+		fullscreen = false;
+		document.exitFullscreen();
+		fsEnter.innerHTML = `<i class='bx bx-fullscreen' ></i>
 		<nav class="full-screen-display">Full màn hình</nav>`;
-    }
+	}
 });
 
+const openShowPrices = document.querySelector('.not-pay-price')
+const ShowPrices = document.querySelector(".open-not-price")
+openShowPrices.addEventListener("click", () => {
+	ShowPrices.classList.add("active")
+})
 
+const closeShowPrices = document.querySelector(".close-table-not-price")
+closeShowPrices.addEventListener("click", () => {
+	ShowPrices.classList.remove("active")
+})
+// Hàm lưu trữ thông tin bàn chưa tính tiền vào localStorage
+function saveNotPaidTables(table) {
+	var notPaidTables = [];
 
-// const drinkElementss = document.querySelectorAll('.drink');
+	// Lấy giá trị của các ô input
+	var bottleTigerBac = document.getElementById('bottleTigerBac').value;
+	var bottleTigerNau = document.getElementById('bottleTigerNau').value;
+	var tigerNau = document.getElementById('tigerNau').value;
+	var tigerBac = document.getElementById('tigerBac').value;
+	var heineken = document.getElementById('heineken').value;
+	var sevenUp = document.getElementById('sevenUp').value;
+	var coke = document.getElementById('coke').value;
+	var pepsi = document.getElementById('pepsi').value;
+	var sting = document.getElementById('sting').value;
+	var water = document.getElementById('water').value;
+	var tea = document.getElementById('tea').value;
+	var napkin = document.getElementById('napkin').value;
 
+	// Kiểm tra nếu có ít nhất một ô input có giá trị lớn hơn 0
+	if (
+		bottleTigerBac > 0 ||
+		bottleTigerNau > 0 ||
+		tigerNau > 0 ||
+		tigerBac > 0 ||
+		heineken > 0 ||
+		sevenUp > 0 ||
+		coke > 0 ||
+		pepsi > 0 ||
+		sting > 0 ||
+		water > 0 ||
+		tea > 0 ||
+		napkin > 0
+	) {
+		// Lưu thông tin của bàn vào mảng notPaidTables
+		notPaidTables.push('Bàn ' + table + ' (chưa tính tiền)');
+	}
 
-// drinkElementss.forEach(drink => {
-//   const inputElement = drink.querySelector('input');
-//   inputElement.addEventListener('input', () => {
-   
-//     if (inputElement.value > 0) {
-//       drink.querySelector('label').innerText = 'Bàn chưa tính tiền';
-// 	  console.log(drink);
-//     } else {
-//       drink.querySelector('label').innerText = inputElement.previousElementSibling.innerText;
-//     }
-//   });
-// });
+	// Lưu mảng notPaidTables vào localStorage
+	localStorage.setItem('notPaidTables', JSON.stringify(notPaidTables));
+}
+
+// Hàm kiểm tra và hiển thị tên bàn chưa tính tiền
+function checkDrink(table) {
+	// Gọi hàm lưu trữ thông tin bàn chưa tính tiền vào localStorage
+	saveNotPaidTables(table);
+
+	// Kiểm tra nếu có thông tin về bàn chưa tính tiền trong localStorage
+	var notPaidTables = JSON.parse(localStorage.getItem('notPaidTables')) || [];
+
+	// Kiểm tra nếu bàn hiện tại có trong danh sách bàn chưa tính tiền
+	if (notPaidTables.includes('Bàn ' + table + ' (chưa tính tiền)')) {
+		// Hiển thị tên bàn đang tính tiền
+		document.getElementById('title-table-' + table).innerText = 'Bàn ' + table + ' (chưa tính tiền)';
+	} else {
+		// Ẩn tên bàn nếu không có thông tin trong localStorage
+		document.getElementById('title-table-' + table).innerText = 'Bàn ' + table;
+	}
+}
+
+// Hàm để lấy dữ liệu từ localStorage và cập nhật giao diện
+function updateNotPaidTables() {
+	// Lấy dữ liệu từ localStorage
+	var notPaidTables = JSON.parse(localStorage.getItem('notPaidTables'));
+
+	// Kiểm tra xem dữ liệu có tồn tại không
+	if (notPaidTables && notPaidTables.length > 0) {
+		// Lặp qua từng phần tử trong dữ liệu và cập nhật giao diện
+		for (var i = 0; i < notPaidTables.length; i++) {
+			var tableId = notPaidTables[i];
+			var tableElement = document.getElementById('title-table-' + tableId);
+			if (tableElement) {
+				tableElement.textContent = 'Bàn ' + tableId + ' chưa thanh toán tiền';
+			}
+		}
+	}
+}
+
+// Gọi hàm để cập nhật giao diện sau khi trang được tải lại
+window.onload = function () {
+	updateNotPaidTables();
+};
+
