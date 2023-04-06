@@ -242,7 +242,7 @@ button:hover:after {
 	text-transform: uppercase;
 	width: 100%;
 	background: rgb(30, 232, 195);
-	border-radius: 2px;
+	border-radius: 4px;
 	padding: 2px;
 	color: black;
 	text-transform: capitalize;
@@ -649,9 +649,9 @@ button:nth-child(3) {
 	gap: 20px;
 }
 .cover-button-khuC .button-active-area-C{
-	background: rgb(39, 154, 236);
+	border: 1px solid rgb(39, 154, 236) !important;
 	color: white;
-	
+	background: transparent;
 	border: none;
 	padding: 10px;
 	border-radius: 3px;
@@ -659,7 +659,8 @@ button:nth-child(3) {
 	transition: background-color 0.25s;
 }
 .cover-button-khuE .button-active-area-E{
-	background: rgb(177, 35, 213);
+	border:1px solid rgb(177, 35, 213) !important;
+	background: transparent;
 	color: white;
 	border: none;
 	padding: 10px;
@@ -673,16 +674,20 @@ button:nth-child(3) {
 	gap: 20px;
 }
 .cover-button-khuF .button-active-area-F{
-	background: rgb(154, 99, 4);
+	border: 2px solid rgb(222, 13, 13) !important;
 	color: white;
+	background: transparent;
 	border: none;
 	padding: 10px;
 	border-radius: 3px;
 	cursor: pointer;
 	transition: background-color 0.25s;
+
+
 }
 .cover-button-khuG .button-active-area-G{
-	background: rgb(31, 193, 29);
+	border: 1px solid  rgb(219, 152, 9) !important;
+	background: transparent !important;
 	color: white;
 	border: none;
 	padding: 10px;
@@ -723,10 +728,11 @@ button:nth-child(3) {
 	transition: background-color 0.25s;
 }
 .cover-button-khuB .button-active-area-B{
-	background: yellow;
-	color: black;
+	border: 1px solid yellow !important;
+	color: rgb(248, 244, 244);
 	border: none;
 	padding: 10px;
+	background: transparent;
 	border-radius: 3px;
 	cursor: pointer;
 	transition: background-color 0.25s;
