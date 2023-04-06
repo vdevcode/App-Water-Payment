@@ -138,8 +138,10 @@
     .cover-popup-header {
         display: none;
         width: 100%;
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
+        background:url(https://png.pngtree.com/background/20210716/original/pngtree-red-blue-neon-background-picture-image_1343840.jpg);
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
         animation: gradient 15s ease infinite;
         position: fixed;
         top: 0;
@@ -149,20 +151,7 @@
         overflow-y: scroll;
     }
 
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
+   
     .cover-popup-header.active {
         display: block;
     }
@@ -264,10 +253,11 @@
 
     .table-price {
         border: 1px solid black;
+        background: url(https://image.slidesdocs.com/responsive-images/background/neon-lights-neon-light-technology-business-blue-powerpoint-background_18b510d2ae__960_540.jpg);
     }
 
     .title-product-popup {
-        color: rgb(12, 203, 25) !important;
+        color: rgb(135, 228, 206) !important;
     }
 
     td,
@@ -307,7 +297,9 @@
     }
 
     .cover-popup-payment {
-        background: black;
+        background: url(https://watermark.lovepik.com/photo/40115/1049.jpg_wh1200.jpg);
+        background-position: center;
+        background-size: cover;
         width: 100%;
         height: 100%;
         overflow-y: auto;
