@@ -15737,6 +15737,7 @@ function resetFormKho() {
 	document.getElementById("so-luong-heineken-chai").value = '';
 	saveFormKho()
 }
+
 function saveFormKho() {
 	localStorage.setItem("so-luong-khan-giay", document.getElementById("so-luong-khan-giay").value);
 	localStorage.setItem("so-luong-nuoc-suoi", document.getElementById("so-luong-nuoc-suoi").value);
@@ -15749,6 +15750,7 @@ function saveFormKho() {
 	localStorage.setItem("so-luong-tiger-nau-chai", document.getElementById("so-luong-tiger-nau-chai").value);
 	localStorage.setItem("so-luong-heineken-chai", document.getElementById("so-luong-heineken-chai").value);
 }
+
 function loadFormKho() {
 	document.getElementById("so-luong-khan-giay").value = localStorage.getItem("so-luong-khan-giay");
 	document.getElementById("so-luong-nuoc-suoi").value = localStorage.getItem("so-luong-nuoc-suoi");
@@ -15764,7 +15766,102 @@ function loadFormKho() {
 
 loadFormKho(); // Load giá trị khi load lại trang
 
+function confirmResetFormNhap() {
+	if (confirm('Bạn có chắc chắn muốn reset nước nhập không?')) {
+		resetFormNhap();
+	}
+}
+function resetFormNhap() {
+	document.getElementById("so-luong-khan-giay-nhap").value = '';
+	document.getElementById("so-luong-nuoc-suoi-nhap").value = '';
+	document.getElementById("so-luong-ly-nuoc-nhap").value = '';
+	document.getElementById("so-luong-ngot-nhap").value = '';
+	document.getElementById("so-luong-tiger-bac-nhap").value = '';
+	document.getElementById("so-luong-tiger-nau-nhap").value = '';
+	document.getElementById("so-luong-heineken-nhap").value = '';
+	document.getElementById("so-luong-tiger-bac-chai-nhap").value = '';
+	document.getElementById("so-luong-tiger-nau-chai-nhap").value = '';
+	document.getElementById("so-luong-heineken-chai-nhap").value = '';
+	saveFormNhap()
+}
 
+
+function saveFormNhap() {
+	localStorage.setItem("so-luong-khan-giay-nhap", document.getElementById("so-luong-khan-giay-nhap").value);
+	localStorage.setItem("so-luong-nuoc-suoi-nhap", document.getElementById("so-luong-nuoc-suoi-nhap").value);
+	localStorage.setItem("so-luong-ly-nuoc-nhap", document.getElementById("so-luong-ly-nuoc-nhap").value);
+	localStorage.setItem("so-luong-ngot-nhap", document.getElementById("so-luong-ngot-nhap").value);
+	localStorage.setItem("so-luong-tiger-bac-nhap", document.getElementById("so-luong-tiger-bac-nhap").value);
+	localStorage.setItem("so-luong-tiger-nau-nhap", document.getElementById("so-luong-tiger-nau-nhap").value);
+	localStorage.setItem("so-luong-heineken-nhap", document.getElementById("so-luong-heineken-nhap").value);
+	localStorage.setItem("so-luong-tiger-bac-chai-nhap", document.getElementById("so-luong-tiger-bac-chai-nhap").value);
+	localStorage.setItem("so-luong-tiger-nau-chai-nhap", document.getElementById("so-luong-tiger-nau-chai-nhap").value);
+	localStorage.setItem("so-luong-heineken-chai-nhap", document.getElementById("so-luong-heineken-chai-nhap").value);
+}
+
+function loadFormNhap() {
+	document.getElementById("so-luong-khan-giay-nhap").value = localStorage.getItem("so-luong-khan-giay-nhap");
+	document.getElementById("so-luong-nuoc-suoi-nhap").value = localStorage.getItem("so-luong-nuoc-suoi-nhap");
+	document.getElementById("so-luong-ly-nuoc-nhap").value = localStorage.getItem("so-luong-ly-nuoc-nhap");
+	document.getElementById("so-luong-ngot-nhap").value = localStorage.getItem("so-luong-ngot-nhap");
+	document.getElementById("so-luong-tiger-bac-nhap").value = localStorage.getItem("so-luong-tiger-bac-nhap");
+	document.getElementById("so-luong-tiger-nau-nhap").value = localStorage.getItem("so-luong-tiger-nau-nhap");
+	document.getElementById("so-luong-heineken-nhap").value = localStorage.getItem("so-luong-heineken-nhap");
+	document.getElementById("so-luong-tiger-bac-chai-nhap").value = localStorage.getItem("so-luong-tiger-bac-chai-nhap");
+	document.getElementById("so-luong-tiger-nau-chai-nhap").value = localStorage.getItem("so-luong-tiger-nau-chai-nhap");
+	document.getElementById("so-luong-heineken-chai-nhap").value = localStorage.getItem("so-luong-heineken-chai-nhap");
+}
+
+loadFormNhap(); // Load giá trị khi load lại trang
+
+
+function confirmResetFormXuat() {
+	if (confirm('Bạn có chắc chắn muốn reset nước nhập không?')) {
+		resetFormXuat();
+	}
+}
+function resetFormXuat() {
+	document.getElementById("so-luong-khan-giay-xuat").value = '';
+	document.getElementById("so-luong-nuoc-suoi-xuat").value = '';
+	document.getElementById("so-luong-ly-nuoc-xuat").value = '';
+	document.getElementById("so-luong-ngot-xuat").value = '';
+	document.getElementById("so-luong-tiger-bac-xuat").value = '';
+	document.getElementById("so-luong-tiger-nau-xuat").value = '';
+	document.getElementById("so-luong-heineken-xuat").value = '';
+	document.getElementById("so-luong-tiger-bac-chai-xuat").value = '';
+	document.getElementById("so-luong-tiger-nau-chai-xuat").value = '';
+	document.getElementById("so-luong-heineken-chai-xuat").value = '';
+	saveFormXuat()
+}
+
+
+function saveFormXuat() {
+	localStorage.setItem("so-luong-khan-giay-xuat", document.getElementById("so-luong-khan-giay-xuat").value);
+	localStorage.setItem("so-luong-nuoc-suoi-xuat", document.getElementById("so-luong-nuoc-suoi-xuat").value);
+	localStorage.setItem("so-luong-ly-nuoc-xuat", document.getElementById("so-luong-ly-nuoc-xuat").value);
+	localStorage.setItem("so-luong-ngot-xuat", document.getElementById("so-luong-ngot-xuat").value);
+	localStorage.setItem("so-luong-tiger-bac-xuat", document.getElementById("so-luong-tiger-bac-xuat").value);
+	localStorage.setItem("so-luong-tiger-nau-xuat", document.getElementById("so-luong-tiger-nau-xuat").value);
+	localStorage.setItem("so-luong-heineken-xuat", document.getElementById("so-luong-heineken-xuat").value);
+	localStorage.setItem("so-luong-tiger-bac-chai-xuat", document.getElementById("so-luong-tiger-bac-chai-xuat").value);
+	localStorage.setItem("so-luong-tiger-nau-chai-xuat", document.getElementById("so-luong-tiger-nau-chai-xuat").value);
+	localStorage.setItem("so-luong-heineken-chai-xuat", document.getElementById("so-luong-heineken-chai-xuat").value);
+}
+
+function loadFormXuat() {
+	document.getElementById("so-luong-khan-giay-xuat").value = localStorage.getItem("so-luong-khan-giay-xuat");
+	document.getElementById("so-luong-nuoc-suoi-xuat").value = localStorage.getItem("so-luong-nuoc-suoi-xuat");
+	document.getElementById("so-luong-ly-nuoc-xuat").value = localStorage.getItem("so-luong-ly-nuoc-xuat");
+	document.getElementById("so-luong-ngot-xuat").value = localStorage.getItem("so-luong-ngot-xuat");
+	document.getElementById("so-luong-tiger-bac-xuat").value = localStorage.getItem("so-luong-tiger-bac-xuat");
+	document.getElementById("so-luong-tiger-nau-xuat").value = localStorage.getItem("so-luong-tiger-nau-xuat");
+	document.getElementById("so-luong-heineken-xuat").value = localStorage.getItem("so-luong-heineken-xuat");
+	document.getElementById("so-luong-tiger-bac-chai-xuat").value = localStorage.getItem("so-luong-tiger-bac-chai-xuat");
+	document.getElementById("so-luong-tiger-nau-chai-xuat").value = localStorage.getItem("so-luong-tiger-nau-chai-xuat");
+	document.getElementById("so-luong-heineken-chai-xuat").value = localStorage.getItem("so-luong-heineken-chai-xuat");
+}
+
+loadFormXuat(); // Load giá trị khi load lại trang
 
 //all product same
 //open are 
@@ -16056,7 +16153,7 @@ function checkDrink(table) {
 		document.getElementById('title-table-' + table).innerText = 'Bàn ' + table + ' (chưa tính tiền)';
 	} else {
 		// Ẩn tên bàn nếu không có thông tin trong localStorage
-		document.getElemexntById('title-table-' + table).innerText = 'Bàn ' + table + ' (chưa tính tiền)';
+		document.getElementById('title-table-' + table).innerText = 'Bàn ' + table + ' (chưa tính tiền)';
 	}
 }
 

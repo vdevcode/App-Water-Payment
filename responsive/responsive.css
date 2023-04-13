@@ -465,13 +465,31 @@
         display: flex;
         align-items: center;
     }
+    #nuoc-xuat-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    #nuoc-xuat-container .cover-nuoc-item {
+        font-size: .8rem !important;
+        color: rgb(251, 247, 247) !important;
+        font-weight: 300;
+        padding: 5px 10px;
+        background: rgb(241, 101, 41);
+        margin: 7px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    }
 
     .delete-nuoc-kho {
         font-size: .8rem !important;
         color: rgb(247, 244, 244) !important;
         font-weight: 300;
         padding: 10px 10px;
-        background: rgb(185, 82, 13);
+        background: rgb(17, 122, 36);
         margin: 7px;
         border-radius: 4px;
         display: flex;
@@ -480,14 +498,25 @@
 
     .delete-nuoc-nhap {
         font-size: .8rem !important;
-        color: rgb(247, 244, 244) !important;
+        color: black !important;
         font-weight: 300;
         padding: 10px 10px;
-        background: rgb(228, 214, 27);
+        background: rgb(228, 214, 27) !important;
         margin: 7px;
         border-radius: 4px;
-        display: flex;
-        align-items: center;
+        display: block;
+       
+    }
+    .delete-nuoc-xuat{
+        font-size: .8rem !important;
+        color: rgb(246, 244, 244) !important;
+        font-weight: 300;
+        padding: 10px 10px;
+        background: #ed5b17!important;
+        margin: 7px;
+        border-radius: 4px;
+        display: block;
+       
     }
 
     .table-modal {

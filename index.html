@@ -131,6 +131,7 @@
       </div>
 
       <div id="div2">
+
         <h2>Nhập</h2>
         <div class="number-items-payment">
           <label for="so-luong-khan-giay">Số lượng khăn giấy:</label>
@@ -172,51 +173,52 @@
           <label for="so-luong-heineken-chai">Số lượng Heineken chai:</label>
           <input placeholder="0" type="number" id="so-luong-heineken-chai-nhap" name="so-luong-heineken-chai">
         </div>
+        <div id="nuoc-nhap-container">
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">khăn giấy: </div>
+            <div class="nuoc-item" data-name="khan-giay"> 0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">nước suối: </div>
+            <div class="nuoc-item" data-name="nuoc-suoi"> 0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">ly: </div>
+            <div class="nuoc-item" data-name="ly-nuoc"> 0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">nước ngọt: </div>
+            <div class="nuoc-item" data-name="ngot"> 0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">tiger bạc: </div>
+            <div class="nuoc-item" data-name="tiger-bac">0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">tiger nâu: </div>
+            <div class="nuoc-item" data-name="tiger-nau"> 0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">heineken: </div>
+            <div class="nuoc-item" data-name="heineken"> 0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">chai tiger bạc: </div>
+            <div class="nuoc-item" data-name="tiger-bac-chai"> 0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">chai tiger nâu: </div>
+            <div class="nuoc-item" data-name="tiger-nau-chai"> 0</div>
+          </div>
+          <div class="cover-nuoc-item">
+            <div class="text-title-nuoc">chai heineken: </div>
+            <div class="nuoc-item" data-name="heineken-chai"> 0</div>
+          </div>
+        </div>
+        <button class="delete-nuoc-nhap" onclick="confirmResetFormNhap()">Xoá toàn bộ dữ liệu nhập</button>
+  
       </div>
-      <div id="nuoc-nhap-container">
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">khăn giấy: </div>
-          <div class="nuoc-item" data-name="khan-giay"> 0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">nước suối: </div>
-          <div class="nuoc-item" data-name="nuoc-suoi"> 0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">ly: </div>
-          <div class="nuoc-item" data-name="ly-nuoc"> 0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">nước ngọt: </div>
-          <div class="nuoc-item" data-name="ngot"> 0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">tiger bạc: </div>
-          <div class="nuoc-item" data-name="tiger-bac">0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">tiger nâu: </div>
-          <div class="nuoc-item" data-name="tiger-nau"> 0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">heineken: </div>
-          <div class="nuoc-item" data-name="heineken"> 0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">chai tiger bạc: </div>
-          <div class="nuoc-item" data-name="tiger-bac-chai"> 0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">chai tiger nâu: </div>
-          <div class="nuoc-item" data-name="tiger-nau-chai"> 0</div>
-        </div>
-        <div class="cover-nuoc-item">
-          <div class="text-title-nuoc">chai heineken: </div>
-          <div class="nuoc-item" data-name="heineken-chai"> 0</div>
-        </div>
-      </div>
-      <button class="delete-nuoc-nhap" onclick="confirmResetFormNhap()">Xoá toàn bộ dữ liệu kho</button>
-
+     
     </div>
     <div id="div3">
       <h2>Xuất</h2>
@@ -260,6 +262,50 @@
         <label for="so-luong-heineken-chai">Số lượng Heineken chai:</label>
         <input placeholder="0" type="number" id="so-luong-heineken-chai-xuat" name="so-luong-heineken-chai">
       </div>
+      <div id="nuoc-xuat-container">
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">khăn giấy: </div>
+          <div class="nuoc-item" data-name="khan-giay"> 0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">nước suối: </div>
+          <div class="nuoc-item" data-name="nuoc-suoi"> 0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">ly: </div>
+          <div class="nuoc-item" data-name="ly-nuoc"> 0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">nước ngọt: </div>
+          <div class="nuoc-item" data-name="ngot"> 0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">tiger bạc: </div>
+          <div class="nuoc-item" data-name="tiger-bac">0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">tiger nâu: </div>
+          <div class="nuoc-item" data-name="tiger-nau"> 0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">heineken: </div>
+          <div class="nuoc-item" data-name="heineken"> 0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">chai tiger bạc: </div>
+          <div class="nuoc-item" data-name="tiger-bac-chai"> 0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">chai tiger nâu: </div>
+          <div class="nuoc-item" data-name="tiger-nau-chai"> 0</div>
+        </div>
+        <div class="cover-nuoc-item">
+          <div class="text-title-nuoc">chai heineken: </div>
+          <div class="nuoc-item" data-name="heineken-chai"> 0</div>
+        </div>
+        <button class="delete-nuoc-xuat" onclick="confirmResetFormXuat()">Xoá toàn bộ dữ liệu nhập</button>
+      </div>
+
     </div>
 
   </div>
