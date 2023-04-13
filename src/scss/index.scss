@@ -1,4 +1,23 @@
-.table-price{
+.table-price {
     background: black !important;
     color: white !important;
+}
+
+.speech-result {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #d71616;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.speech-result.hidden {
+    opacity: 0;
 }

@@ -16181,44 +16181,54 @@ window.onload = function () {
 };
 // Hàm xử lý sự kiện khi click vào nút lắng nghe
 function startListening() {
-    // Kiểm tra xem trình duyệt hỗ trợ công nghệ nhận dạng giọng nói
-    if ('webkitSpeechRecognition' in window) {
-      // Tạo đối tượng nhận dạng giọng nói
-      var recognition = new webkitSpeechRecognition();
-      // Thiết lập ngôn ngữ cho công nghệ nhận dạng giọng nói (nếu cần)
-      recognition.lang = 'vi-VN';
-      // Bắt đầu lắng nghe
-      recognition.start();
+	// Kiểm tra xem trình duyệt hỗ trợ công nghệ nhận dạng giọng nói
+	if ('webkitSpeechRecognition' in window) {
+		// Tạo đối tượng nhận dạng giọng nói
+		var recognition = new webkitSpeechRecognition();
+		// Thiết lập ngôn ngữ cho công nghệ nhận dạng giọng nói (nếu cần)
+		recognition.lang = 'vi-VN';
+		// Bắt đầu lắng nghe
+		recognition.start();
 
-      // Xử lý kết quả khi nhận dạng thành công
-      recognition.onresult = function(event) {
-        var result = event.results[0][0].transcript;
-        console.log('Chuỗi giọng nói: ', result); // In ra chuỗi giọng nói
-        // Xử lý kết quả nhận dạng giọng nói
-        handleVoiceResult(result);
+		// Xử lý kết quả khi nhận dạng thành công
+		recognition.onresult = function (event) {
+			var result = event.results[0][0].transcript;
+			console.log('Chuỗi giọng nói: ', result); // In ra chuỗi giọng nói
+			// Xử lý kết quả nhận dạng giọng nói
+			handleVoiceResult(result);
 
-        // Sử dụng Text-to-Speech của Google để đọc lại giọng nói vừa nói
-		var speechSynthesis = window.speechSynthesis;
-		var utterance = new SpeechSynthesisUtterance(result);
-		utterance.lang = 'vi-VN'; // Chuyển đổi sang giọng nói tiếng Việt
-		speechSynthesis.speak(utterance);
-      };
+			// Sử dụng Text-to-Speech của Google để đọc lại giọng nói vừa nói
+			var speechSynthesis = window.speechSynthesis;
+			var utterance = new SpeechSynthesisUtterance(result);
+			utterance.lang = 'vi-VN'; // Chuyển đổi sang giọng nói tiếng Việt
+			speechSynthesis.speak(utterance);
 
-      // Xử lý lỗi khi nhận dạng thất bại
-      recognition.onerror = function(event) {
-        console.error('Lỗi nhận dạng giọng nói: ', event.error);
-      };
-    } else {
-      console.error('Trình duyệt không hỗ trợ công nghệ nhận dạng giọng nói.');
-    }
-  }
+			// Hiển thị nội dung giọng nói trong thẻ div
+			// var speechResultDiv = document.getElementById('speech-result');
+			// speechResultDiv.textContent = result;
+			// speechResultDiv.classList.remove('hidden');
 
-  // Hàm xử lý kết quả nhận dạng giọng nói
-  function handleVoiceResult(result) {
-    // Kiểm tra xem kết quả nhận dạng giọng nói có chứa từ "Coca bàn A1" không
-    if (result.toLowerCase().includes('coca bàn a1')) {
-      // Tăng giá trị của input có id "coke" lên 1
-      var cokeInput = document.getElementById('coke');
-      cokeInput.value = parseInt(cokeInput.value) + 1;
-    }
-  }
+			// Thiết lập thời gian tự động ẩn div sau 4 giây
+			// setTimeout(function () {
+			// 	speechResultDiv.classList.add('hidden');
+			// }, 4000);
+		};
+
+		// Xử lý lỗi khi nhận dạng thất bại
+		recognition.onerror = function (event) {
+			console.error('Lỗi nhận dạng giọng nói: ', event.error);
+		};
+	} else {
+		console.error('Trình duyệt không hỗ trợ công nghệ nhận dạng giọng nói.');
+	}
+}
+
+// Hàm xử lý kết quả nhận dạng giọng nói
+function handleVoiceResult(result) {
+	// Kiểm tra xem kết quả nhận dạng giọng nói có chứa từ "Coca bàn A1" không
+	if (result.toLowerCase().includes('coca bàn a1')) {
+		// Tăng giá trị của input có id "coke" lên 1
+		var cokeInput = document.getElementById('coke');
+		cokeInput.value = parseInt(cokeInput.value) + 1;
+	}
+}

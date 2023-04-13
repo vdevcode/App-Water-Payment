@@ -4,3 +4,19 @@
 }
 
 /*# sourceMappingURL=index.css.map */
+.speech-result {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.speech-result.hidden {
+  opacity: 0;
+}
