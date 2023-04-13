@@ -15970,20 +15970,21 @@ btnG.addEventListener("click", function () {
 
 let fullscreen;
 let fsEnter = document.getElementById('fullscr');
-fsEnter.addEventListener('click', function (e) {
-	e.preventDefault();
-	if (!fullscreen) {
-		fullscreen = true;
-		document.documentElement.requestFullscreen();
-		fsEnter.innerText = "Thoát màn hình";
-	}
-	else {
-		fullscreen = false;
-		document.exitFullscreen();
-		fsEnter.innerHTML = `<i class='bx bx-fullscreen' ></i>
-		<nav class="full-screen-display">Full màn hình</nav>`;
-	}
-});
+	fsEnter.addEventListener('click', function (e) {
+		e.preventDefault();
+		if (!fullscreen) {
+			fullscreen = true;
+			document.documentElement.requestFullscreen();
+			fsEnter.innerText = "Thoát màn hình";
+		}
+		else {
+			fullscreen = false;
+			document.exitFullscreen();
+			fsEnter.innerHTML = `<i class='bx bx-fullscreen' ></i>
+			<nav class="full-screen-display">Full màn hình</nav>`;
+		}
+	});
+
 
 const openShowPrices = document.querySelector('.not-pay-price')
 const ShowPrices = document.querySelector(".open-not-price")
@@ -16038,6 +16039,9 @@ function saveNotPaidTables(table) {
 
 // Hàm kiểm tra và hiển thị tên bàn chưa tính tiền
 function checkDrink(table) {
+
+	const titleTable = document.getElementById("title-table-")
+	
 	// Gọi hàm lưu trữ thông tin bàn chưa tính tiền vào localStorage
 	saveNotPaidTables(table);
 
@@ -16046,11 +16050,13 @@ function checkDrink(table) {
 
 	// Kiểm tra nếu bàn hiện tại có trong danh sách bàn chưa tính tiền
 	if (notPaidTables.includes('Bàn ' + table + ' (chưa tính tiền)')) {
+		console.log(notPaidTables);
 		// Hiển thị tên bàn đang tính tiền
+
 		document.getElementById('title-table-' + table).innerText = 'Bàn ' + table + ' (chưa tính tiền)';
 	} else {
 		// Ẩn tên bàn nếu không có thông tin trong localStorage
-		document.getElementById('title-table-' + table).innerText = 'Bàn ' + table;
+		document.getElemexntById('title-table-' + table).innerText = 'Bàn ' + table + ' (chưa tính tiền)';
 	}
 }
 
