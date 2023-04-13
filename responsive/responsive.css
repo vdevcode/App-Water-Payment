@@ -111,7 +111,7 @@
         color: rgb(250, 249, 249);
 
         width: 150px;
-        height: 140px;
+        height: 180px;
         text-align: left;
         position: absolute;
         right: 10px;
@@ -124,7 +124,7 @@
         align-items: center;
         border-bottom: 1px solid yellow;
     }
-    .table-modal div:nth-child(3){
+    .table-modal div:nth-child(4){
         border-bottom: none;
     }
 
@@ -672,6 +672,7 @@
         top: 0;
         left: 0;
         display: none;
+
     }
     .open-not-price.active{
         display: block;
@@ -681,15 +682,17 @@
         color: yellow;
         font-size: 1rem;
         text-align: center;
+        padding: 10px 0;
         text-transform: capitalize;
         border-bottom: 1px solid yellow;
       
     }
     .open-not-price p{
-        color: rgb(46, 244, 217);
-        font-size: .8rem;
+        color: rgb(239, 74, 74);
+        font-size: .9rem;
         margin: 10px;
-       
+        
+        
        
     }
 }

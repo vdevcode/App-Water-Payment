@@ -31,6 +31,11 @@
       <i class='bx bx-money-withdraw'></i>
       <nav class="payment-total">Thanh toán </nav>
     </div>
+    <div class="open-listening">
+      <i class='bx bx-microphone'></i>
+      <!-- Thêm nút lắng nghe -->
+      <nav onclick="startListening()">Giọng nói</nav>
+    </div>
     <div id="fullscr" class="open-fullscreen">
       <i class='bx bx-fullscreen'></i>
       <nav class="full-screen-display">Full màn hình</nav>
@@ -216,9 +221,9 @@
           </div>
         </div>
         <button class="delete-nuoc-nhap" onclick="confirmResetFormNhap()">Xoá toàn bộ dữ liệu nhập</button>
-  
+
       </div>
-     
+
     </div>
     <div id="div3">
       <h2>Xuất</h2>
@@ -303,7 +308,7 @@
           <div class="text-title-nuoc">chai heineken: </div>
           <div class="nuoc-item" data-name="heineken-chai"> 0</div>
         </div>
-       
+
       </div>
       <button class="delete-nuoc-xuat" onclick="confirmResetFormXuat()">Xoá toàn bộ dữ liệu nhập</button>
     </div>
@@ -1374,6 +1379,8 @@
     <p for="" id="title-table-C33"></p>
   </div>
 
+
+
   <div class="cover-button">
     <button id="btnA">Khu A</button>
     <button id="btnB">Khu B</button>
@@ -1382,8 +1389,10 @@
     <button id="btnE">Khu E</button>
     <button id="btnF">Khu F</button>
     <button id="btnG">Khu G</button>
-
+ 
   </div>
+
+
 
   <!--Khu A-->
   <div class="cover-table same-table">
@@ -3435,35 +3444,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C21')" type="number" id="bottleTigerBacC21" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C21')" type="number" id="bottleTigerNauC21" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C21')" type="number" id="tigerNauC21" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C21')" type="number" id="tigerBacC21" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C21')" type="number" id="heinekenC21" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C21')" type="number" id="sevenUpC21" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C21')" type="number" id="cokeC21" placeholder="0">
@@ -3488,26 +3497,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C21')" type="number" id="napkinC21" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC21()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC21">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC21()">Reset tất cả</button>
         <button onclick="showHistoryC21()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC21">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC21" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC21"></div>
-    
+
       <div id="orderC21" class="order"></div>
       <div class="total" id="totalC21"></div>
     </div>
@@ -3520,35 +3529,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C22')" type="number" id="bottleTigerBacC22" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C22')" type="number" id="bottleTigerNauC22" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C22')" type="number" id="tigerNauC22" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C22')" type="number" id="tigerBacC22" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C22')" type="number" id="heinekenC22" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C22')" type="number" id="sevenUpC22" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C22')" type="number" id="cokeC22" placeholder="0">
@@ -3573,26 +3582,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C22')" type="number" id="napkinC22" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC22()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC22">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC22()">Reset tất cả</button>
         <button onclick="showHistoryC22()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC22">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC22" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC22"></div>
-    
+
       <div id="orderC22" class="order"></div>
       <div class="total" id="totalC22"></div>
     </div>
@@ -3605,35 +3614,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C23')" type="number" id="bottleTigerBacC23" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C23')" type="number" id="bottleTigerNauC23" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C23')" type="number" id="tigerNauC23" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C23')" type="number" id="tigerBacC23" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C23')" type="number" id="heinekenC23" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C23')" type="number" id="sevenUpC23" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C23')" type="number" id="cokeC23" placeholder="0">
@@ -3658,26 +3667,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C23')" type="number" id="napkinC23" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC23()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC23">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC23()">Reset tất cả</button>
         <button onclick="showHistoryC23()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC23">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC23" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC23"></div>
-    
+
       <div id="orderC23" class="order"></div>
       <div class="total" id="totalC23"></div>
     </div>
@@ -3697,35 +3706,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C31')" type="number" id="bottleTigerBacC31" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C31')" type="number" id="bottleTigerNauC31" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C31')" type="number" id="tigerNauC31" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C31')" type="number" id="tigerBacC31" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C31')" type="number" id="heinekenC31" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C31')" type="number" id="sevenUpC31" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C31')" type="number" id="cokeC31" placeholder="0">
@@ -3750,26 +3759,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C31')" type="number" id="napkinC31" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC31()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC31">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC31()">Reset tất cả</button>
         <button onclick="showHistoryC31()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC31">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC31" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC31"></div>
-    
+
       <div id="orderC31" class="order"></div>
       <div class="total" id="totalC31"></div>
     </div>
@@ -3782,35 +3791,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C32')" type="number" id="bottleTigerBacC32" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C32')" type="number" id="bottleTigerNauC32" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C32')" type="number" id="tigerNauC32" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C32')" type="number" id="tigerBacC32" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C32')" type="number" id="heinekenC32" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C32')" type="number" id="sevenUpC32" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C32')" type="number" id="cokeC32" placeholder="0">
@@ -3835,26 +3844,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C32')" type="number" id="napkinC32" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC32()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC32">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC32()">Reset tất cả</button>
         <button onclick="showHistoryC32()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC32">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC32" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC32"></div>
-    
+
       <div id="orderC32" class="order"></div>
       <div class="total" id="totalC32"></div>
     </div>
@@ -3867,35 +3876,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C33')" type="number" id="bottleTigerBacC33" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C33')" type="number" id="bottleTigerNauC33" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C33')" type="number" id="tigerNauC33" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C33')" type="number" id="tigerBacC33" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C33')" type="number" id="heinekenC33" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C33')" type="number" id="sevenUpC33" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C33')" type="number" id="cokeC33" placeholder="0">
@@ -3920,26 +3929,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C33')" type="number" id="napkinC33" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC33()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC33">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC33()">Reset tất cả</button>
         <button onclick="showHistoryC33()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC33">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC33" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC33"></div>
-    
+
       <div id="orderC33" class="order"></div>
       <div class="total" id="totalC33"></div>
     </div>
@@ -3959,35 +3968,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C41')" type="number" id="bottleTigerBacC41" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C41')" type="number" id="bottleTigerNauC41" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C41')" type="number" id="tigerNauC41" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C41')" type="number" id="tigerBacC41" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C41')" type="number" id="heinekenC41" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C41')" type="number" id="sevenUpC41" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C41')" type="number" id="cokeC41" placeholder="0">
@@ -4012,26 +4021,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C41')" type="number" id="napkinC41" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC41()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC41">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC41()">Reset tất cả</button>
         <button onclick="showHistoryC41()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC41">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC41" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC41"></div>
-    
+
       <div id="orderC41" class="order"></div>
       <div class="total" id="totalC41"></div>
     </div>
@@ -4044,35 +4053,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C42')" type="number" id="bottleTigerBacC42" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C42')" type="number" id="bottleTigerNauC42" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C42')" type="number" id="tigerNauC42" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C42')" type="number" id="tigerBacC42" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C42')" type="number" id="heinekenC42" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C42')" type="number" id="sevenUpC42" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C42')" type="number" id="cokeC42" placeholder="0">
@@ -4097,26 +4106,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C42')" type="number" id="napkinC42" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC42()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC42">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC42()">Reset tất cả</button>
         <button onclick="showHistoryC42()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC42">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC42" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC42"></div>
-    
+
       <div id="orderC42" class="order"></div>
       <div class="total" id="totalC42"></div>
     </div>
@@ -4129,35 +4138,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C43')" type="number" id="bottleTigerBacC43" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C43')" type="number" id="bottleTigerNauC43" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C43')" type="number" id="tigerNauC43" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C43')" type="number" id="tigerBacC43" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C43')" type="number" id="heinekenC43" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C43')" type="number" id="sevenUpC43" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C43')" type="number" id="cokeC43" placeholder="0">
@@ -4182,26 +4191,26 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C43')" type="number" id="napkinC43" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC43()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC43">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC43()">Reset tất cả</button>
         <button onclick="showHistoryC43()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC43">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC43" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC43"></div>
-    
+
       <div id="orderC43" class="order"></div>
       <div class="total" id="totalC43"></div>
     </div>
@@ -4221,35 +4230,35 @@
       <div class="drink">
         <label>Chai Tiger Bạc:</label>
         <input onchange="checkDrink('C51')" type="number" id="bottleTigerBacC51" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Chai Tiger Nâu:</label>
         <input onchange="checkDrink('C51')" type="number" id="bottleTigerNauC51" placeholder="0">
-    
+
       </div>
       <div class="drink">
         <label>Bia Tiger Nâu:</label>
         <input onchange="checkDrink('C51')" type="number" id="tigerNauC51" placeholder="0">
-    
+
       </div>
-    
+
       <div class="drink">
-    
+
         <label>Bia Tiger Bạc:</label>
         <input onchange="checkDrink('C51')" type="number" id="tigerBacC51" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Bia Heineken:</label>
         <input onchange="checkDrink('C51')" type="number" id="heinekenC51" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước 7up:</label>
         <input onchange="checkDrink('C51')" type="number" id="sevenUpC51" placeholder="0">
       </div>
-    
+
       <div class="drink">
         <label>Nước CocaCola:</label>
         <input onchange="checkDrink('C51')" type="number" id="cokeC51" placeholder="0">
@@ -4274,114 +4283,114 @@
         <label>Khăn giấy:</label>
         <input onchange="checkDrink('C51')" type="number" id="napkinC51" placeholder="0">
       </div>
-    
+
       <div class="flex-button">
         <!-- <button onclick="resetTigerNau()">Reset</button> -->
         <button class="first" onclick="confirmCalculateC51()">Tính tiền</button>
-    
+
         <button id="toggleDrinksC51">Hiển thị các loại nước</button>
-    
+
         <button onclick="confirmResetC51()">Reset tất cả</button>
         <button onclick="showHistoryC51()">Xem lịch sử tính tiền</button>
-    
+
         <button id="addBtnC51">Thêm loại nước</button>
-    
+
       </div>
-    
+
       <div>
         <p id="historyC51" class="history"></p>
-    
+
       </div>
       <div id="newDrinkFormC51"></div>
-    
+
       <div id="orderC51" class="order"></div>
       <div class="total" id="totalC51"></div>
     </div>
 
 
     <!-- Mã HTML cho Bàn C5/2 -->
-   <div class="table">
+    <div class="table">
 
-  <h2 class="title-table">Bàn C5/2</h2>
-  <div class="drink">
-    <label>Chai Tiger Bạc:</label>
-    <input onchange="checkDrink('C52')" type="number" id="bottleTigerBacC52" placeholder="0">
+      <h2 class="title-table">Bàn C5/2</h2>
+      <div class="drink">
+        <label>Chai Tiger Bạc:</label>
+        <input onchange="checkDrink('C52')" type="number" id="bottleTigerBacC52" placeholder="0">
 
-  </div>
-  <div class="drink">
-    <label>Chai Tiger Nâu:</label>
-    <input onchange="checkDrink('C52')" type="number" id="bottleTigerNauC52" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Chai Tiger Nâu:</label>
+        <input onchange="checkDrink('C52')" type="number" id="bottleTigerNauC52" placeholder="0">
 
-  </div>
-  <div class="drink">
-    <label>Bia Tiger Nâu:</label>
-    <input onchange="checkDrink('C52')" type="number" id="tigerNauC52" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Bia Tiger Nâu:</label>
+        <input onchange="checkDrink('C52')" type="number" id="tigerNauC52" placeholder="0">
 
-  </div>
+      </div>
 
-  <div class="drink">
+      <div class="drink">
 
-    <label>Bia Tiger Bạc:</label>
-    <input onchange="checkDrink('C52')" type="number" id="tigerBacC52" placeholder="0">
-  </div>
+        <label>Bia Tiger Bạc:</label>
+        <input onchange="checkDrink('C52')" type="number" id="tigerBacC52" placeholder="0">
+      </div>
 
-  <div class="drink">
-    <label>Bia Heineken:</label>
-    <input onchange="checkDrink('C52')" type="number" id="heinekenC52" placeholder="0">
-  </div>
+      <div class="drink">
+        <label>Bia Heineken:</label>
+        <input onchange="checkDrink('C52')" type="number" id="heinekenC52" placeholder="0">
+      </div>
 
-  <div class="drink">
-    <label>Nước 7up:</label>
-    <input onchange="checkDrink('C52')" type="number" id="sevenUpC52" placeholder="0">
-  </div>
+      <div class="drink">
+        <label>Nước 7up:</label>
+        <input onchange="checkDrink('C52')" type="number" id="sevenUpC52" placeholder="0">
+      </div>
 
-  <div class="drink">
-    <label>Nước CocaCola:</label>
-    <input onchange="checkDrink('C52')" type="number" id="cokeC52" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Nước pepsi:</label>
-    <input onchange="checkDrink('C52')" type="number" id="pepsiC52" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Nước Sting:</label>
-    <input onchange="checkDrink('C52')" type="number" id="stingC52" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Nước suối:</label>
-    <input onchange="checkDrink('C52')" type="number" id="waterC52" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Trà tắc:</label>
-    <input onchange="checkDrink('C52')" type="number" id="teaC52" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Khăn giấy:</label>
-    <input onchange="checkDrink('C52')" type="number" id="napkinC52" placeholder="0">
-  </div>
+      <div class="drink">
+        <label>Nước CocaCola:</label>
+        <input onchange="checkDrink('C52')" type="number" id="cokeC52" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Nước pepsi:</label>
+        <input onchange="checkDrink('C52')" type="number" id="pepsiC52" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Nước Sting:</label>
+        <input onchange="checkDrink('C52')" type="number" id="stingC52" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Nước suối:</label>
+        <input onchange="checkDrink('C52')" type="number" id="waterC52" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Trà tắc:</label>
+        <input onchange="checkDrink('C52')" type="number" id="teaC52" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Khăn giấy:</label>
+        <input onchange="checkDrink('C52')" type="number" id="napkinC52" placeholder="0">
+      </div>
 
-  <div class="flex-button">
-    <!-- <button onclick="resetTigerNau()">Reset</button> -->
-    <button class="first" onclick="confirmCalculateC52()">Tính tiền</button>
+      <div class="flex-button">
+        <!-- <button onclick="resetTigerNau()">Reset</button> -->
+        <button class="first" onclick="confirmCalculateC52()">Tính tiền</button>
 
-    <button id="toggleDrinksC52">Hiển thị các loại nước</button>
+        <button id="toggleDrinksC52">Hiển thị các loại nước</button>
 
-    <button onclick="confirmResetC52()">Reset tất cả</button>
-    <button onclick="showHistoryC52()">Xem lịch sử tính tiền</button>
+        <button onclick="confirmResetC52()">Reset tất cả</button>
+        <button onclick="showHistoryC52()">Xem lịch sử tính tiền</button>
 
-    <button id="addBtnC52">Thêm loại nước</button>
+        <button id="addBtnC52">Thêm loại nước</button>
 
-  </div>
+      </div>
 
-  <div>
-    <p id="historyC52" class="history"></p>
+      <div>
+        <p id="historyC52" class="history"></p>
 
-  </div>
-  <div id="newDrinkFormC52"></div>
+      </div>
+      <div id="newDrinkFormC52"></div>
 
-  <div id="orderC52" class="order"></div>
-  <div class="total" id="totalC52"></div>
-</div>
+      <div id="orderC52" class="order"></div>
+      <div class="total" id="totalC52"></div>
+    </div>
 
   </div>
 
@@ -4419,88 +4428,88 @@
 
     </div>
     <!-- Mã HTML cho Bàn E1/1 -->
-   <div class="table">
+    <div class="table">
 
-  <h2 class="title-table">Bàn E1/1</h2>
-  <div class="drink">
-    <label>Chai Tiger Bạc:</label>
-    <input onchange="checkDrink('E11')" type="number" id="bottleTigerBacE11" placeholder="0">
+      <h2 class="title-table">Bàn E1/1</h2>
+      <div class="drink">
+        <label>Chai Tiger Bạc:</label>
+        <input onchange="checkDrink('E11')" type="number" id="bottleTigerBacE11" placeholder="0">
 
-  </div>
-  <div class="drink">
-    <label>Chai Tiger Nâu:</label>
-    <input onchange="checkDrink('E11')" type="number" id="bottleTigerNauE11" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Chai Tiger Nâu:</label>
+        <input onchange="checkDrink('E11')" type="number" id="bottleTigerNauE11" placeholder="0">
 
-  </div>
-  <div class="drink">
-    <label>Bia Tiger Nâu:</label>
-    <input onchange="checkDrink('E11')" type="number" id="tigerNauE11" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Bia Tiger Nâu:</label>
+        <input onchange="checkDrink('E11')" type="number" id="tigerNauE11" placeholder="0">
 
-  </div>
+      </div>
 
-  <div class="drink">
+      <div class="drink">
 
-    <label>Bia Tiger Bạc:</label>
-    <input onchange="checkDrink('E11')" type="number" id="tigerBacE11" placeholder="0">
-  </div>
+        <label>Bia Tiger Bạc:</label>
+        <input onchange="checkDrink('E11')" type="number" id="tigerBacE11" placeholder="0">
+      </div>
 
-  <div class="drink">
-    <label>Bia Heineken:</label>
-    <input onchange="checkDrink('E11')" type="number" id="heinekenE11" placeholder="0">
-  </div>
+      <div class="drink">
+        <label>Bia Heineken:</label>
+        <input onchange="checkDrink('E11')" type="number" id="heinekenE11" placeholder="0">
+      </div>
 
-  <div class="drink">
-    <label>Nước 7up:</label>
-    <input onchange="checkDrink('E11')" type="number" id="sevenUpE11" placeholder="0">
-  </div>
+      <div class="drink">
+        <label>Nước 7up:</label>
+        <input onchange="checkDrink('E11')" type="number" id="sevenUpE11" placeholder="0">
+      </div>
 
-  <div class="drink">
-    <label>Nước CocaCola:</label>
-    <input onchange="checkDrink('E11')" type="number" id="cokeE11" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Nước pepsi:</label>
-    <input onchange="checkDrink('E11')" type="number" id="pepsiE11" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Nước Sting:</label>
-    <input onchange="checkDrink('E11')" type="number" id="stingE11" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Nước suối:</label>
-    <input onchange="checkDrink('E11')" type="number" id="waterE11" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Trà tắc:</label>
-    <input onchange="checkDrink('E11')" type="number" id="teaE11" placeholder="0">
-  </div>
-  <div class="drink">
-    <label>Khăn giấy:</label>
-    <input onchange="checkDrink('E11')" type="number" id="napkinE11" placeholder="0">
-  </div>
+      <div class="drink">
+        <label>Nước CocaCola:</label>
+        <input onchange="checkDrink('E11')" type="number" id="cokeE11" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Nước pepsi:</label>
+        <input onchange="checkDrink('E11')" type="number" id="pepsiE11" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Nước Sting:</label>
+        <input onchange="checkDrink('E11')" type="number" id="stingE11" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Nước suối:</label>
+        <input onchange="checkDrink('E11')" type="number" id="waterE11" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Trà tắc:</label>
+        <input onchange="checkDrink('E11')" type="number" id="teaE11" placeholder="0">
+      </div>
+      <div class="drink">
+        <label>Khăn giấy:</label>
+        <input onchange="checkDrink('E11')" type="number" id="napkinE11" placeholder="0">
+      </div>
 
-  <div class="flex-button">
-    <!-- <button onclick="resetTigerNau()">Reset</button> -->
-    <button class="first" onclick="confirmCalculateE11()">Tính tiền</button>
+      <div class="flex-button">
+        <!-- <button onclick="resetTigerNau()">Reset</button> -->
+        <button class="first" onclick="confirmCalculateE11()">Tính tiền</button>
 
-    <button id="toggleDrinksE11">Hiển thị các loại nước</button>
+        <button id="toggleDrinksE11">Hiển thị các loại nước</button>
 
-    <button onclick="confirmResetE11()">Reset tất cả</button>
-    <button onclick="showHistoryE11()">Xem lịch sử tính tiền</button>
+        <button onclick="confirmResetE11()">Reset tất cả</button>
+        <button onclick="showHistoryE11()">Xem lịch sử tính tiền</button>
 
-    <button id="addBtnE11">Thêm loại nước</button>
+        <button id="addBtnE11">Thêm loại nước</button>
 
-  </div>
+      </div>
 
-  <div>
-    <p id="historyE11" class="history"></p>
+      <div>
+        <p id="historyE11" class="history"></p>
 
-  </div>
-  <div id="newDrinkFormE11"></div>
+      </div>
+      <div id="newDrinkFormE11"></div>
 
-  <div id="orderE11" class="order"></div>
-  <div class="total" id="totalE11"></div>
-</div>
+      <div id="orderE11" class="order"></div>
+      <div class="total" id="totalE11"></div>
+    </div>
 
     <!-- Mã HTML cho Bàn E1/2 -->
     <div class="table">
@@ -6008,7 +6017,7 @@
 
   </div>
 
-  
+
 
 </body>
 
