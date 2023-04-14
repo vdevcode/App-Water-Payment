@@ -16231,4 +16231,131 @@ function handleVoiceResult(result) {
 		var cokeInput = document.getElementById('coke');
 		cokeInput.value = parseInt(cokeInput.value) + 1;
 	}
-}
+}// Khi DOM được load hoàn chỉnh
+document.addEventListener('DOMContentLoaded', function() {
+	const addNoteBtn = document.getElementById('addNoteBtn');
+	const noteList = document.getElementById('noteList');
+  
+	addNoteBtn.addEventListener('click', function() {
+	  const note = document.createElement('div');
+	  note.className = 'note';
+  
+	  const input = document.createElement('input');
+	  input.type = 'text';
+	  input.placeholder = 'Nhập nội dung ghi chú';
+	  note.appendChild(input);
+  
+	  const saveBtn = document.createElement('button');
+	  saveBtn.textContent = 'Lưu';
+	  note.appendChild(saveBtn);
+  
+	  saveBtn.addEventListener('click', function() {
+		const content = input.value;
+		if (content.trim() !== '') {
+		  const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+		  savedNotes.push(content);
+		  localStorage.setItem('notes', JSON.stringify(savedNotes));
+		  alert('Đã lưu ghi chú: ' + content);
+		  const noteItem = document.createElement('p');
+		  noteItem.textContent = content;
+		  noteList.appendChild(noteItem);
+		  // Thêm sự kiện click vào phần tử p để xóa
+		  noteItem.addEventListener('click', function() {
+			const index = savedNotes.indexOf(content);
+			if (index !== -1) {
+			  savedNotes.splice(index, 1);
+			  localStorage.setItem('notes', JSON.stringify(savedNotes));
+			  alert('Đã xoá ghi chú: ' + content);
+			  noteItem.remove();
+			  note.remove(); // Xoá class "note" của phần tử div
+			}
+		  });
+		} else {
+		  alert('Vui lòng nhập nội dung ghi chú');
+		}
+	  });
+  
+	  const noteContainer = document.querySelector('.note-list-items');
+	  noteContainer.appendChild(note);
+	});
+  
+	const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+	savedNotes.forEach(function(content) {
+	  const noteItem = document.createElement('p');
+	  noteItem.textContent = content;
+	  noteList.appendChild(noteItem);
+	  // Thêm sự kiện click vào phần tử p để xóa
+	  noteItem.addEventListener('click', function() {
+		const index = savedNotes.indexOf(content);
+		if (index !== -1) {
+		  savedNotes.splice(index, 1);
+		  localStorage.setItem('notes', JSON.stringify(savedNotes));
+		  alert('Đã xoá ghi chú: ' + content);
+		  noteItem.remove();
+		}
+	  });
+	});
+  });// Khi DOM được load hoàn chỉnh
+  document.addEventListener('DOMContentLoaded', function() {
+	const addNoteBtn = document.getElementById('addNoteBtn');
+	const noteList = document.getElementById('noteList');
+  
+	addNoteBtn.addEventListener('click', function() {
+	  const note = document.createElement('div');
+	  note.className = 'note';
+  
+	  const input = document.createElement('input');
+	  input.type = 'text';
+	  input.placeholder = 'Nhập nội dung ghi chú';
+	  note.appendChild(input);
+  
+	  const saveBtn = document.createElement('button');
+	  saveBtn.textContent = 'Lưu';
+	  note.appendChild(saveBtn);
+  
+	  saveBtn.addEventListener('click', function() {
+		const content = input.value;
+		if (content.trim() !== '') {
+		  const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+		  savedNotes.push(content);
+		  localStorage.setItem('notes', JSON.stringify(savedNotes));
+		  alert('Đã lưu ghi chú: ' + content);
+		  const noteItem = document.createElement('p');
+		  noteItem.textContent = content;
+		  noteList.appendChild(noteItem);
+		  // Thêm sự kiện click vào phần tử p để xóa
+		  noteItem.addEventListener('click', function() {
+			const index = savedNotes.indexOf(content);
+			if (index !== -1) {
+			  savedNotes.splice(index, 1);
+			  localStorage.setItem('notes', JSON.stringify(savedNotes));
+			  alert('Đã xoá ghi chú: ' + content);
+			  noteItem.remove();
+			}
+		  });
+		} else {
+		  alert('Vui lòng nhập nội dung ghi chú');
+		}
+	  });
+  
+	  const noteContainer = document.querySelector('.note-container');
+	  noteContainer.appendChild(note);
+	});
+  
+	const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+	savedNotes.forEach(function(content) {
+	  const noteItem = document.createElement('p');
+	  noteItem.textContent = content;
+	  noteList.appendChild(noteItem);
+	  // Thêm sự kiện click vào phần tử p để xóa
+	  noteItem.addEventListener('click', function() {
+		const index = savedNotes.indexOf(content);
+		if (index !== -1) {
+		  savedNotes.splice(index, 1);
+		  localStorage.setItem('notes', JSON.stringify(savedNotes));
+		  alert('Đã xoá ghi chú: ' + content);
+		  noteItem.remove();
+		}
+	  });
+	});
+  });

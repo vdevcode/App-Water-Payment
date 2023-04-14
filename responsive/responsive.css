@@ -125,7 +125,7 @@
         align-items: center;
         border-bottom: 1px solid yellow;
     }
-    .table-modal div:nth-child(4){
+    .table-modal div:nth-child(5){
         border-bottom: none;
     }
 
@@ -694,8 +694,34 @@
         color: rgb(239, 74, 74);
         font-size: .9rem;
         margin: 10px;
-        
-        
-       
+    }
+    .cover-popup-note{
+        display: none;
+        position: fixed;
+        top: 0;right: 0;left: 0;
+        width: 100%;   
+        height: 100%;
+        background: black;
+        z-index: 10;
+    }
+    .note-list-items{
+        padding: 10px;
+        margin-top: 40px;
+    }.note-list-items h1{
+        text-align: center;
+        font-weight: 300;
+        color: greenyellow;
+        font-size: 1rem;
+    }
+    .note-container{
+        border-radius: 6px;
+   
+    }
+    #addNoteBtn{
+        padding: 6px 12px;
+        font-weight: 300;
+        background: rgb(15, 117, 158);
+        font-size: .9rem;
+        color: white;
     }
 }

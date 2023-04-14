@@ -837,3 +837,6 @@ button:nth-child(3) {
 .cover-popup-payment{
 	display: none;
 }
+.cover-popup-note{
+	display: none;
+}
