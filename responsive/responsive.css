@@ -125,7 +125,8 @@
         align-items: center;
         border-bottom: 1px solid yellow;
     }
-    .table-modal div:nth-child(5){
+
+    .table-modal div:nth-child(5) {
         border-bottom: none;
     }
 
@@ -142,7 +143,7 @@
     .cover-popup-header {
         display: none;
         width: 100%;
-        background:url(https://png.pngtree.com/background/20210716/original/pngtree-red-blue-neon-background-picture-image_1343840.jpg);
+        background: url(https://png.pngtree.com/background/20210716/original/pngtree-red-blue-neon-background-picture-image_1343840.jpg);
         background-position: center;
         background-size: cover;
         object-fit: cover;
@@ -154,10 +155,11 @@
         height: 100%;
         overflow-y: scroll;
     }
-    .cover-popup-header::-webkit-scrollbar{
+
+    .cover-popup-header::-webkit-scrollbar {
         display: none;
     }
-   
+
     .cover-popup-header.active {
         display: block;
     }
@@ -466,6 +468,7 @@
         display: flex;
         align-items: center;
     }
+
     #nuoc-xuat-container {
         display: flex;
         align-items: center;
@@ -506,18 +509,19 @@
         margin: 7px;
         border-radius: 4px;
         display: block;
-       
+
     }
-    .delete-nuoc-xuat{
+
+    .delete-nuoc-xuat {
         font-size: .8rem !important;
         color: rgb(246, 244, 244) !important;
         font-weight: 300;
         padding: 10px 10px;
-        background: #ed5b17!important;
+        background: #ed5b17 !important;
         margin: 7px;
         border-radius: 4px;
         display: block;
-       
+
     }
 
     .table-modal {
@@ -649,7 +653,8 @@
         color: white;
 
     }
-    .not-pay-price{
+
+    .not-pay-price {
         padding: 10px;
         text-align: center;
         margin-top: 20px;
@@ -662,9 +667,10 @@
         color: #000;
         text-transform: capitalize;
         font-size: 1rem;
-        
+
     }
-    .open-not-price{
+
+    .open-not-price {
         width: 100%;
         height: 100%;
         padding: 20px;
@@ -677,10 +683,12 @@
         display: none;
 
     }
-    .open-not-price.active{
+
+    .open-not-price.active {
         display: block;
     }
-    .open-not-price h1{
+
+    .open-not-price h1 {
         margin: 40px 0 0 0;
         color: yellow;
         font-size: 1rem;
@@ -688,40 +696,56 @@
         padding: 10px 0;
         text-transform: capitalize;
         border-bottom: 1px solid yellow;
-      
+
     }
-    .open-not-price p{
+
+    .open-not-price p {
         color: rgb(239, 74, 74);
         font-size: .9rem;
         margin: 10px;
     }
-    .cover-popup-note{
+
+    .cover-popup-note {
         display: none;
         position: fixed;
-        top: 0;right: 0;left: 0;
-        width: 100%;   
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
         height: 100%;
         background: black;
         z-index: 10;
     }
-    .note-list-items{
+
+    .note-list-items {
         padding: 10px;
         margin-top: 40px;
-    }.note-list-items h1{
+    }
+
+    .note-list-items h1 {
         text-align: center;
         font-weight: 300;
         color: greenyellow;
         font-size: 1rem;
     }
-    .note-container{
+
+    .note-container {
         border-radius: 6px;
-   
+
     }
-    #addNoteBtn{
+
+    #addNoteBtn {
         padding: 6px 12px;
         font-weight: 300;
         background: rgb(15, 117, 158);
         font-size: .9rem;
         color: white;
+    }
+
+    .clock {
+        color: #17D4FE;
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 10px;
     }
 }
