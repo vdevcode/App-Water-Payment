@@ -143,7 +143,7 @@
     .cover-popup-header {
         display: none;
         width: 100%;
-        background: url(https://png.pngtree.com/background/20210716/original/pngtree-red-blue-neon-background-picture-image_1343840.jpg);
+        background: url(https://i.pinimg.com/736x/a5/6d/e1/a56de1f48b042127a16397682a1997e1.jpg);
         background-position: center;
         background-size: cover;
         object-fit: cover;
@@ -312,7 +312,7 @@
     }
 
     .cover-popup-payment {
-        background: url(https://watermark.lovepik.com/photo/40115/1049.jpg_wh1200.jpg);
+        background: url(https://i.pinimg.com/736x/a5/6d/e1/a56de1f48b042127a16397682a1997e1.jpg);
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -675,7 +675,7 @@
         height: 100%;
         padding: 20px;
         position: fixed;
-        background: url(https://wallpapercave.com/wp/wp9002574.jpg);
+        background: url(https://i.pinimg.com/736x/a5/6d/e1/a56de1f48b042127a16397682a1997e1.jpg);
         background-position: center;
         background-size: cover;
         top: 0;
@@ -715,7 +715,7 @@
         height: 100%;
         background-position: center;
         background-size: cover;
-        background: url('https://wallpapers-clan.com/wp-content/uploads/2023/02/galaxy-aesthetic-wallpaper.jpg');
+        background: url(https://i.pinimg.com/736x/a5/6d/e1/a56de1f48b042127a16397682a1997e1.jpg);
         z-index: 10;
     }
     .cover-popup-note.active{
