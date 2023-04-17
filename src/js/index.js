@@ -16391,3 +16391,15 @@ function showTime(){
 }
 
 showTime();
+
+
+
+const openNote = document.querySelector('.open-note')
+const showOpenNote = document.querySelector('.cover-popup-note')
+const closeNote = document.querySelector('.close-btn-note')
+openNote.addEventListener("click",()=>{
+	showOpenNote.classList.add('active')
+})
+closeNote.addEventListener('click',()=>{
+	showOpenNote.classList.remove("active")
+})
