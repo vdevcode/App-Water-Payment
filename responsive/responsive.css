@@ -774,4 +774,17 @@
         margin-left: 10px;
         font-size: .8rem !important;
     }
+    #loader-website{
+        background-size: 30%;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background:#000 url(/image/loading_animation.gif) no-repeat center center;
+        z-index: 100;
+        position: fixed;
+    
+    }
 }

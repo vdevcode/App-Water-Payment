@@ -16403,3 +16403,8 @@ openNote.addEventListener("click",()=>{
 closeNote.addEventListener('click',()=>{
 	showOpenNote.classList.remove("active")
 })
+
+var loader = document.getElementById('loader-website')
+window.addEventListener('load',function(){
+    loader.style.display = 'none'
+})
