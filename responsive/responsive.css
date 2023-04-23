@@ -787,4 +787,7 @@
         position: fixed;
     
     }
+    #total{
+        margin-top: 10px;
+    }
 }

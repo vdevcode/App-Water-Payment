@@ -22,18 +22,18 @@ function calculate() {
 	const napkin = document.getElementById("napkin").value;
 
 	const products = [
-		{ name: "Chai Tiger Bạc", quantity: bottleTigerBac },
-		{ name: "Chai Tiger Nâu", quantity: bottleTigerNau },
-		{ name: "Bia Tiger Nâu", quantity: tigerNau },
-		{ name: "Bia Tiger Bạc", quantity: tigerBac },
-		{ name: "Bia Heineken", quantity: heineken },
-		{ name: "Nước 7up", quantity: sevenUp },
-		{ name: "Nước CocaCola", quantity: coke },
-		{ name: "Nước pepsi", quantity: pepsi },
-		{ name: "Nước Sting", quantity: sting },
-		{ name: "Nước suối", quantity: waterNature },
-		{ name: "Trà tắc", quantity: tea },
-		{ name: "Khăn giấy", quantity: napkin },
+		{ name: "Chai Tiger Bạc (26.000vnd)", quantity: bottleTigerBac },
+		{ name: "Chai Tiger Nâu (25.000vnd)", quantity: bottleTigerNau },
+		{ name: "Bia Tiger Nâu (24.000vnd)", quantity: tigerNau },
+		{ name: "Bia Tiger Bạc (25.000vnd)", quantity: tigerBac },
+		{ name: "Bia Heineken (26.000vnd)", quantity: heineken },
+		{ name: "Nước 7up (16.000vnd)", quantity: sevenUp },
+		{ name: "Nước CocaCola (16.000vnd)", quantity: coke },
+		{ name: "Nước pepsi (16.000vnd)", quantity: pepsi },
+		{ name: "Nước Sting (16.000vnd)", quantity: sting },
+		{ name: "Nước suối (12.000vnd)", quantity: waterNature },
+		{ name: "Trà tắc (10.000vnd)", quantity: tea },
+		{ name: "Khăn giấy (3.000vnd)", quantity: napkin },
 	];
 
 	const selectedProducts = products.filter((product) => product.quantity > 0);
