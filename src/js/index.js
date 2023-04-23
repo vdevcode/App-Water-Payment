@@ -22,18 +22,18 @@ function calculate() {
 	const napkin = document.getElementById("napkin").value;
 
 	const products = [
-		{ name: "Chai Tiger Bạc (26.000vnd)", quantity: bottleTigerBac },
-		{ name: "Chai Tiger Nâu (25.000vnd)", quantity: bottleTigerNau },
-		{ name: "Bia Tiger Nâu (24.000vnd)", quantity: tigerNau },
-		{ name: "Bia Tiger Bạc (25.000vnd)", quantity: tigerBac },
-		{ name: "Bia Heineken (26.000vnd)", quantity: heineken },
-		{ name: "Nước 7up (16.000vnd)", quantity: sevenUp },
-		{ name: "Nước CocaCola (16.000vnd)", quantity: coke },
-		{ name: "Nước pepsi (16.000vnd)", quantity: pepsi },
-		{ name: "Nước Sting (16.000vnd)", quantity: sting },
-		{ name: "Nước suối (12.000vnd)", quantity: waterNature },
-		{ name: "Trà tắc (10.000vnd)", quantity: tea },
-		{ name: "Khăn giấy (3.000vnd)", quantity: napkin },
+		{ name: "Chai Tiger Bạc", quantity: bottleTigerBac },
+		{ name: "Chai Tiger Nâu", quantity: bottleTigerNau },
+		{ name: "Bia Tiger Nâu", quantity: tigerNau },
+		{ name: "Bia Tiger Bạc", quantity: tigerBac },
+		{ name: "Bia Heineken", quantity: heineken },
+		{ name: "Nước 7up", quantity: sevenUp },
+		{ name: "Nước CocaCola", quantity: coke },
+		{ name: "Nước pepsi", quantity: pepsi },
+		{ name: "Nước Sting", quantity: sting },
+		{ name: "Nước suối", quantity: waterNature },
+		{ name: "Trà tắc", quantity: tea },
+		{ name: "Khăn giấy", quantity: napkin },
 	];
 
 	const selectedProducts = products.filter((product) => product.quantity > 0);
@@ -41,11 +41,51 @@ function calculate() {
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProducts.length; i++) {
-		const product = selectedProducts[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
-	}
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+for (let i = 0; i < selectedProducts.length; i++) {
+  const product = selectedProducts[i];
+  let price = 0;
+  switch (product.name) {
+    case "Chai Tiger Bạc":
+      price = 26000 ;
+      break;
+    case "Chai Tiger Nâu":
+      price = 25000;
+      break;
+    case "Bia Tiger Nâu":
+      price = 24000;
+      break;
+    case "Bia Tiger Bạc":
+      price = 25000;
+      break;
+    case "Bia Heineken":
+      price = 26000;
+      break;
+    case "Nước 7up":
+      price = 16000;
+      break;
+    case "Nước CocaCola":
+      price = 16000;
+      break;
+    case "Nước pepsi":
+      price = 16000;
+      break;
+    case "Nước Sting":
+      price = 16000;
+      break;
+    case "Nước suối":
+      price = 12000;
+      break;
+    case "Trà tắc":
+      price = 10000;
+      break;
+    case "Khăn giấy":
+      price = 3000;
+      break;
+  }
+  bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
+}
+
 	bill += "</table>";
 
 	// Hiển thị bill
