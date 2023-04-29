@@ -42,49 +42,49 @@ function calculate() {
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
 	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
-for (let i = 0; i < selectedProducts.length; i++) {
-  const product = selectedProducts[i];
-  let price = 0;
-  switch (product.name) {
-    case "Chai Tiger Bạc":
-      price = 26000 ;
-      break;
-    case "Chai Tiger Nâu":
-      price = 25000;
-      break;
-    case "Bia Tiger Nâu":
-      price = 24000;
-      break;
-    case "Bia Tiger Bạc":
-      price = 25000;
-      break;
-    case "Bia Heineken":
-      price = 26000;
-      break;
-    case "Nước 7up":
-      price = 16000;
-      break;
-    case "Nước CocaCola":
-      price = 16000;
-      break;
-    case "Nước pepsi":
-      price = 16000;
-      break;
-    case "Nước Sting":
-      price = 16000;
-      break;
-    case "Nước suối":
-      price = 12000;
-      break;
-    case "Trà tắc":
-      price = 10000;
-      break;
-    case "Khăn giấy":
-      price = 3000;
-      break;
-  }
-  bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
-}
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
+	}
 
 	bill += "</table>";
 
@@ -390,16 +390,56 @@ function calculateA2() {
 		{ name: "Khăn giấy", quantity: napkinA2 },
 	];
 
-	const selectedProductsA2 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsA2.length; i++) {
-		const product = selectedProductsA2[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -692,17 +732,58 @@ function calculateA3() {
 		{ name: "Khăn giấy", quantity: napkinA3 },
 	];
 
-	const selectedProductsA3 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsA3.length; i++) {
-		const product = selectedProductsA3[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
+
 
 	// Hiển thị bill
 	document.getElementById("orderA3").innerHTML = bill;
@@ -989,16 +1070,56 @@ function calculateA4() {
 		{ name: "Khăn giấy", quantity: napkinA4 },
 	];
 
-	const selectedProductsA4 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsA4.length; i++) {
-		const product = selectedProductsA4[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -1287,16 +1408,56 @@ function calculateA5() {
 		{ name: "Khăn giấy", quantity: napkinA5 },
 	];
 
-	const selectedProductsA5 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsA5.length; i++) {
-		const product = selectedProductsA5[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -1584,16 +1745,56 @@ function calculateA6() {
 		{ name: "Khăn giấy", quantity: napkinA6 },
 	];
 
-	const selectedProductsA6 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsA6.length; i++) {
-		const product = selectedProductsA6[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -1880,16 +2081,56 @@ function calculateA7() {
 		{ name: "Khăn giấy", quantity: napkinA7 },
 	];
 
-	const selectedProductsA7 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsA7.length; i++) {
-		const product = selectedProductsA7[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -2178,16 +2419,56 @@ function calculateB11() {
 		{ name: "Khăn giấy", quantity: napkinB11 },
 	];
 
-	const selectedProductsB11 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB11.length; i++) {
-		const product = selectedProductsB11[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -2475,18 +2756,57 @@ function calculateB12() {
 		{ name: "Khăn giấy", quantity: napkinB12 },
 	];
 
-	const selectedProductsB12 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB12.length; i++) {
-		const product = selectedProductsB12[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
-	bill += "</table>";
 
+	bill += "</table>";
 	// Hiển thị bill
 	document.getElementById("orderB12").innerHTML = bill;
 
@@ -2771,16 +3091,56 @@ function calculateB13() {
 		{ name: "Khăn giấy", quantity: napkinB13 },
 	];
 
-	const selectedProductsB13 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB13.length; i++) {
-		const product = selectedProductsB13[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -3067,16 +3427,56 @@ function calculateB23() {
 		{ name: "Khăn giấy", quantity: napkinB23 },
 	];
 
-	const selectedProductsB23 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB23.length; i++) {
-		const product = selectedProductsB23[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -3362,16 +3762,56 @@ function calculateB22() {
 		{ name: "Khăn giấy", quantity: napkinB22 },
 	];
 
-	const selectedProductsB22 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB22.length; i++) {
-		const product = selectedProductsB22[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -3656,16 +4096,56 @@ function calculateB21() {
 		{ name: "Khăn giấy", quantity: napkinB21 },
 	];
 
-	const selectedProductsB21 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB21.length; i++) {
-		const product = selectedProductsB21[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -3952,16 +4432,56 @@ function calculateB31() {
 		{ name: "Khăn giấy", quantity: napkinB31 },
 	];
 
-	const selectedProductsB31 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB31.length; i++) {
-		const product = selectedProductsB31[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -4247,16 +4767,56 @@ function calculateB32() {
 		{ name: "Khăn giấy", quantity: napkinB32 },
 	];
 
-	const selectedProductsB32 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB32.length; i++) {
-		const product = selectedProductsB32[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -4543,16 +5103,56 @@ function calculateB41() {
 		{ name: "Khăn giấy", quantity: napkinB41 },
 	];
 
-	const selectedProductsB41 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB41.length; i++) {
-		const product = selectedProductsB41[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -4835,16 +5435,56 @@ function calculateB42() {
 		{ name: "Khăn giấy", quantity: napkinB42 },
 	];
 
-	const selectedProductsB42 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB42.length; i++) {
-		const product = selectedProductsB42[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -5129,16 +5769,56 @@ function calculateB51() {
 		{ name: "Khăn giấy", quantity: napkinB51 },
 	];
 
-	const selectedProductsB51 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB51.length; i++) {
-		const product = selectedProductsB51[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -5425,16 +6105,56 @@ function calculateB53() {
 		{ name: "Khăn giấy", quantity: napkinB53 },
 	];
 
-	const selectedProductsB53 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB53.length; i++) {
-		const product = selectedProductsB53[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -5719,17 +6439,56 @@ function calculateB52() {
 		{ name: "Trà tắc", quantity: teaB52 },
 		{ name: "Khăn giấy", quantity: napkinB52 },
 	];
-
-	const selectedProductsB52 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsB52.length; i++) {
-		const product = selectedProductsB52[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -6016,16 +6775,56 @@ function calculateC11() {
 		{ name: "Khăn giấy", quantity: napkinC11 },
 	];
 
-	const selectedProductsC11 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC11.length; i++) {
-		const product = selectedProductsC11[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -6311,16 +7110,56 @@ function calculateC12() {
 		{ name: "Khăn giấy", quantity: napkinC12 },
 	];
 
-	const selectedProductsC12 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC12.length; i++) {
-		const product = selectedProductsC12[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -6604,16 +7443,56 @@ function calculateC13() {
 		{ name: "Khăn giấy", quantity: napkinC13 },
 	];
 
-	const selectedProductsC13 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC13.length; i++) {
-		const product = selectedProductsC13[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -6899,16 +7778,56 @@ function calculateC21() {
 		{ name: "Khăn giấy", quantity: napkinC21 },
 	];
 
-	const selectedProductsC21 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC21.length; i++) {
-		const product = selectedProductsC21[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -7193,16 +8112,56 @@ function calculateC22() {
 		{ name: "Khăn giấy", quantity: napkinC22 },
 	];
 
-	const selectedProductsC22 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC22.length; i++) {
-		const product = selectedProductsC22[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -7486,16 +8445,56 @@ function calculateC23() {
 		{ name: "Khăn giấy", quantity: napkinC23 },
 	];
 
-	const selectedProductsC23 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC23.length; i++) {
-		const product = selectedProductsC23[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -7780,16 +8779,56 @@ function calculateC31() {
 		{ name: "Khăn giấy", quantity: napkinC31 },
 	];
 
-	const selectedProductsC31 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC31.length; i++) {
-		const product = selectedProductsC31[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -8075,16 +9114,56 @@ function calculateC32() {
 		{ name: "Khăn giấy", quantity: napkinC32 },
 	];
 
-	const selectedProductsC32 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC32.length; i++) {
-		const product = selectedProductsC32[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -8369,17 +9448,56 @@ function calculateC33() {
 		{ name: "Trà tắc", quantity: teaC33 },
 		{ name: "Khăn giấy", quantity: napkinC33 },
 	];
-
-	const selectedProductsC33 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC33.length; i++) {
-		const product = selectedProductsC33[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -8663,16 +9781,56 @@ function calculateC41() {
 		{ name: "Khăn giấy", quantity: napkinC41 },
 	];
 
-	const selectedProductsC41 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC41.length; i++) {
-		const product = selectedProductsC41[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -8956,17 +10114,56 @@ function calculateC42() {
 		{ name: "Trà tắc", quantity: teaC42 },
 		{ name: "Khăn giấy", quantity: napkinC42 },
 	];
-
-	const selectedProductsC42 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC42.length; i++) {
-		const product = selectedProductsC42[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -9251,16 +10448,56 @@ function calculateC43() {
 		{ name: "Khăn giấy", quantity: napkinC43 },
 	];
 
-	const selectedProductsC43 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC43.length; i++) {
-		const product = selectedProductsC43[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -9546,16 +10783,56 @@ function calculateC51() {
 		{ name: "Khăn giấy", quantity: napkinC51 },
 	];
 
-	const selectedProductsC51 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC51.length; i++) {
-		const product = selectedProductsC51[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -9839,16 +11116,56 @@ function calculateC52() {
 		{ name: "Khăn giấy", quantity: napkinC52 },
 	];
 
-	const selectedProductsC52 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsC52.length; i++) {
-		const product = selectedProductsC52[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -10133,16 +11450,56 @@ function calculateE11() {
 		{ name: "Khăn giấy", quantity: napkinE11 },
 	];
 
-	const selectedProductsE11 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsE11.length; i++) {
-		const product = selectedProductsE11[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -10427,16 +11784,56 @@ function calculateE12() {
 		{ name: "Khăn giấy", quantity: napkinE12 },
 	];
 
-	const selectedProductsE12 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsE12.length; i++) {
-		const product = selectedProductsE12[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -10721,16 +12118,56 @@ function calculateE13() {
 		{ name: "Khăn giấy", quantity: napkinE13 },
 	];
 
-	const selectedProductsE13 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsE13.length; i++) {
-		const product = selectedProductsE13[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -11014,17 +12451,56 @@ function calculateE14() {
 		{ name: "Trà tắc", quantity: teaE14 },
 		{ name: "Khăn giấy", quantity: napkinE14 },
 	];
-
-	const selectedProductsE14 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsE14.length; i++) {
-		const product = selectedProductsE14[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -11309,16 +12785,56 @@ function calculateE21() {
 		{ name: "Khăn giấy", quantity: napkinE21 },
 	];
 
-	const selectedProductsE21 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsE21.length; i++) {
-		const product = selectedProductsE21[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -11603,18 +13119,57 @@ function calculateE22() {
 		{ name: "Khăn giấy", quantity: napkinE22 },
 	];
 
-	const selectedProductsE22 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsE22.length; i++) {
-		const product = selectedProductsE22[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
-	bill += "</table>";
 
+	bill += "</table>";
 	// Hiển thị bill
 	document.getElementById("orderE22").innerHTML = bill;
 
@@ -11898,16 +13453,56 @@ function calculateF11() {
 		{ name: "Khăn giấy", quantity: napkinF11 },
 	];
 
-	const selectedProductsF11 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsF11.length; i++) {
-		const product = selectedProductsF11[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -12193,16 +13788,56 @@ function calculateF12() {
 		{ name: "Khăn giấy", quantity: napkinF12 },
 	];
 
-	const selectedProductsF12 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsF12.length; i++) {
-		const product = selectedProductsF12[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -12489,16 +14124,56 @@ function calculateF13() {
 		{ name: "Khăn giấy", quantity: napkinF13 },
 	];
 
-	const selectedProductsF13 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsF13.length; i++) {
-		const product = selectedProductsF13[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -12782,16 +14457,56 @@ function calculateF14() {
 		{ name: "Khăn giấy", quantity: napkinF14 },
 	];
 
-	const selectedProductsF14 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsF14.length; i++) {
-		const product = selectedProductsF14[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -13078,16 +14793,56 @@ function calculateG11() {
 		{ name: "Khăn giấy", quantity: napkinG11 },
 	];
 
-	const selectedProductsG11 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsG11.length; i++) {
-		const product = selectedProductsG11[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -13373,18 +15128,57 @@ function calculateG12() {
 		{ name: "Khăn giấy", quantity: napkinG12 },
 	];
 
-	const selectedProductsG12 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsG12.length; i++) {
-		const product = selectedProductsG12[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
-	bill += "</table>";
 
+	bill += "</table>";
 	// Hiển thị bill
 	document.getElementById("orderG12").innerHTML = bill;
 
@@ -13668,16 +15462,56 @@ function calculateG31() {
 		{ name: "Khăn giấy", quantity: napkinG31 },
 	];
 
-	const selectedProductsG31 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsG31.length; i++) {
-		const product = selectedProductsG31[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -13964,16 +15798,56 @@ function calculateG21() {
 		{ name: "Khăn giấy", quantity: napkinG21 },
 	];
 
-	const selectedProductsG21 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsG21.length; i++) {
-		const product = selectedProductsG21[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -14259,17 +16133,56 @@ function calculateG23() {
 		{ name: "Trà tắc", quantity: teaG23 },
 		{ name: "Khăn giấy", quantity: napkinG23 },
 	];
-
-	const selectedProductsG23 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsG23.length; i++) {
-		const product = selectedProductsG23[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -14554,16 +16467,57 @@ function calculateG22() {
 		{ name: "Khăn giấy", quantity: napkinG22 },
 	];
 
-	const selectedProductsG22 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsG22.length; i++) {
-		const product = selectedProductsG22[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -14849,16 +16803,56 @@ function calculateG32() {
 		{ name: "Khăn giấy", quantity: napkinG32 },
 	];
 
-	const selectedProductsG32 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsG32.length; i++) {
-		const product = selectedProductsG32[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -15144,17 +17138,56 @@ function calculateG33() {
 		{ name: "Trà tắc", quantity: teaG33 },
 		{ name: "Khăn giấy", quantity: napkinG33 },
 	];
-
-	const selectedProductsG33 = products.filter((product) => product.quantity > 0);
+	const selectedProducts = products.filter((product) => product.quantity > 0);
 
 	// Tạo ra một bill
 	let bill = "<h2>Hoá Đơn Thanh Toán</h2>";
 	bill += "<table>";
-	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th></tr>";
-	for (let i = 0; i < selectedProductsG33.length; i++) {
-		const product = selectedProductsG33[i];
-		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td></tr>`;
+	bill += "<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá x1</th></tr>";
+	for (let i = 0; i < selectedProducts.length; i++) {
+		const product = selectedProducts[i];
+		let price = 0;
+		switch (product.name) {
+			case "Chai Tiger Bạc":
+				price = 26000;
+				break;
+			case "Chai Tiger Nâu":
+				price = 25000;
+				break;
+			case "Bia Tiger Nâu":
+				price = 24000;
+				break;
+			case "Bia Tiger Bạc":
+				price = 25000;
+				break;
+			case "Bia Heineken":
+				price = 26000;
+				break;
+			case "Nước 7up":
+				price = 16000;
+				break;
+			case "Nước CocaCola":
+				price = 16000;
+				break;
+			case "Nước pepsi":
+				price = 16000;
+				break;
+			case "Nước Sting":
+				price = 16000;
+				break;
+			case "Nước suối":
+				price = 12000;
+				break;
+			case "Trà tắc":
+				price = 10000;
+				break;
+			case "Khăn giấy":
+				price = 3000;
+				break;
+		}
+		bill += `<tr><td>${product.name}</td><td>${product.quantity}</td><td>${price}</td></tr>`;
 	}
+
 	bill += "</table>";
 
 	// Hiển thị bill
@@ -16272,162 +18305,162 @@ function handleVoiceResult(result) {
 		cokeInput.value = parseInt(cokeInput.value) + 1;
 	}
 }// Khi DOM được load hoàn chỉnh
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 	const addNoteBtn = document.getElementById('addNoteBtn');
 	const noteList = document.getElementById('noteList');
-  
-	addNoteBtn.addEventListener('click', function() {
-	  const note = document.createElement('div');
-	  note.className = 'note';
-  
-	  const input = document.createElement('input');
-	  input.type = 'text';
-	  input.placeholder = 'Nhập nội dung ghi chú';
-	  note.appendChild(input);
-  
-	  const saveBtn = document.createElement('button');
-	  saveBtn.textContent = 'Lưu';
-	  note.appendChild(saveBtn);
-  
-	  saveBtn.addEventListener('click', function() {
-		const content = input.value;
-		if (content.trim() !== '') {
-		  const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
-		  savedNotes.push(content);
-		  localStorage.setItem('notes', JSON.stringify(savedNotes));
-		  alert('Đã lưu ghi chú: ' + content);
-		  const noteItem = document.createElement('p');
-		  noteItem.textContent = content;
-		  noteList.appendChild(noteItem);
-		  // Thêm sự kiện click vào phần tử p để xóa
-		  noteItem.addEventListener('click', function() {
+
+	addNoteBtn.addEventListener('click', function () {
+		const note = document.createElement('div');
+		note.className = 'note';
+
+		const input = document.createElement('input');
+		input.type = 'text';
+		input.placeholder = 'Nhập nội dung ghi chú';
+		note.appendChild(input);
+
+		const saveBtn = document.createElement('button');
+		saveBtn.textContent = 'Lưu';
+		note.appendChild(saveBtn);
+
+		saveBtn.addEventListener('click', function () {
+			const content = input.value;
+			if (content.trim() !== '') {
+				const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+				savedNotes.push(content);
+				localStorage.setItem('notes', JSON.stringify(savedNotes));
+				alert('Đã lưu ghi chú: ' + content);
+				const noteItem = document.createElement('p');
+				noteItem.textContent = content;
+				noteList.appendChild(noteItem);
+				// Thêm sự kiện click vào phần tử p để xóa
+				noteItem.addEventListener('click', function () {
+					const index = savedNotes.indexOf(content);
+					if (index !== -1) {
+						savedNotes.splice(index, 1);
+						localStorage.setItem('notes', JSON.stringify(savedNotes));
+						alert('Đã xoá ghi chú: ' + content);
+						noteItem.remove();
+						note.remove(); // Xoá class "note" của phần tử div
+					}
+				});
+			} else {
+				alert('Vui lòng nhập nội dung ghi chú');
+			}
+		});
+
+		const noteContainer = document.querySelector('.note-list-items');
+		noteContainer.appendChild(note);
+	});
+
+	const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+	savedNotes.forEach(function (content) {
+		const noteItem = document.createElement('p');
+		noteItem.textContent = content;
+		noteList.appendChild(noteItem);
+		// Thêm sự kiện click vào phần tử p để xóa
+		noteItem.addEventListener('click', function () {
 			const index = savedNotes.indexOf(content);
 			if (index !== -1) {
-			  savedNotes.splice(index, 1);
-			  localStorage.setItem('notes', JSON.stringify(savedNotes));
-			  alert('Đã xoá ghi chú: ' + content);
-			  noteItem.remove();
-			  note.remove(); // Xoá class "note" của phần tử div
+				savedNotes.splice(index, 1);
+				localStorage.setItem('notes', JSON.stringify(savedNotes));
+				alert('Đã xoá ghi chú: ' + content);
+				noteItem.remove();
 			}
-		  });
-		} else {
-		  alert('Vui lòng nhập nội dung ghi chú');
-		}
-	  });
-  
-	  const noteContainer = document.querySelector('.note-list-items');
-	  noteContainer.appendChild(note);
+		});
 	});
-  
-	const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
-	savedNotes.forEach(function(content) {
-	  const noteItem = document.createElement('p');
-	  noteItem.textContent = content;
-	  noteList.appendChild(noteItem);
-	  // Thêm sự kiện click vào phần tử p để xóa
-	  noteItem.addEventListener('click', function() {
-		const index = savedNotes.indexOf(content);
-		if (index !== -1) {
-		  savedNotes.splice(index, 1);
-		  localStorage.setItem('notes', JSON.stringify(savedNotes));
-		  alert('Đã xoá ghi chú: ' + content);
-		  noteItem.remove();
-		}
-	  });
-	});
-  });// Khi DOM được load hoàn chỉnh
-  document.addEventListener('DOMContentLoaded', function() {
+});// Khi DOM được load hoàn chỉnh
+document.addEventListener('DOMContentLoaded', function () {
 	const addNoteBtn = document.getElementById('addNoteBtn');
 	const noteList = document.getElementById('noteList');
-  
-	addNoteBtn.addEventListener('click', function() {
-	  const note = document.createElement('div');
-	  note.className = 'note';
-  
-	  const input = document.createElement('input');
-	  input.type = 'text';
-	  input.placeholder = 'Nhập nội dung ghi chú';
-	  note.appendChild(input);
-  
-	  const saveBtn = document.createElement('button');
-	  saveBtn.textContent = 'Lưu';
-	  note.appendChild(saveBtn);
-  
-	  saveBtn.addEventListener('click', function() {
-		const content = input.value;
-		if (content.trim() !== '') {
-		  const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
-		  savedNotes.push(content);
-		  localStorage.setItem('notes', JSON.stringify(savedNotes));
-		  alert('Đã lưu ghi chú: ' + content);
-		  const noteItem = document.createElement('p');
-		  noteItem.textContent = content;
-		  noteList.appendChild(noteItem);
-		  // Thêm sự kiện click vào phần tử p để xóa
-		  noteItem.addEventListener('click', function() {
+
+	addNoteBtn.addEventListener('click', function () {
+		const note = document.createElement('div');
+		note.className = 'note';
+
+		const input = document.createElement('input');
+		input.type = 'text';
+		input.placeholder = 'Nhập nội dung ghi chú';
+		note.appendChild(input);
+
+		const saveBtn = document.createElement('button');
+		saveBtn.textContent = 'Lưu';
+		note.appendChild(saveBtn);
+
+		saveBtn.addEventListener('click', function () {
+			const content = input.value;
+			if (content.trim() !== '') {
+				const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+				savedNotes.push(content);
+				localStorage.setItem('notes', JSON.stringify(savedNotes));
+				alert('Đã lưu ghi chú: ' + content);
+				const noteItem = document.createElement('p');
+				noteItem.textContent = content;
+				noteList.appendChild(noteItem);
+				// Thêm sự kiện click vào phần tử p để xóa
+				noteItem.addEventListener('click', function () {
+					const index = savedNotes.indexOf(content);
+					if (index !== -1) {
+						savedNotes.splice(index, 1);
+						localStorage.setItem('notes', JSON.stringify(savedNotes));
+						alert('Đã xoá ghi chú: ' + content);
+						noteItem.remove();
+					}
+				});
+			} else {
+				alert('Vui lòng nhập nội dung ghi chú');
+			}
+		});
+
+		const noteContainer = document.querySelector('.note-container');
+		noteContainer.appendChild(note);
+	});
+
+	const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+	savedNotes.forEach(function (content) {
+		const noteItem = document.createElement('p');
+		noteItem.textContent = content;
+		noteList.appendChild(noteItem);
+		// Thêm sự kiện click vào phần tử p để xóa
+		noteItem.addEventListener('click', function () {
 			const index = savedNotes.indexOf(content);
 			if (index !== -1) {
-			  savedNotes.splice(index, 1);
-			  localStorage.setItem('notes', JSON.stringify(savedNotes));
-			  alert('Đã xoá ghi chú: ' + content);
-			  noteItem.remove();
+				savedNotes.splice(index, 1);
+				localStorage.setItem('notes', JSON.stringify(savedNotes));
+				alert('Đã xoá ghi chú: ' + content);
+				noteItem.remove();
 			}
-		  });
-		} else {
-		  alert('Vui lòng nhập nội dung ghi chú');
-		}
-	  });
-  
-	  const noteContainer = document.querySelector('.note-container');
-	  noteContainer.appendChild(note);
+		});
 	});
-  
-	const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
-	savedNotes.forEach(function(content) {
-	  const noteItem = document.createElement('p');
-	  noteItem.textContent = content;
-	  noteList.appendChild(noteItem);
-	  // Thêm sự kiện click vào phần tử p để xóa
-	  noteItem.addEventListener('click', function() {
-		const index = savedNotes.indexOf(content);
-		if (index !== -1) {
-		  savedNotes.splice(index, 1);
-		  localStorage.setItem('notes', JSON.stringify(savedNotes));
-		  alert('Đã xoá ghi chú: ' + content);
-		  noteItem.remove();
-		}
-	  });
-	});
-  });
+});
 
 
-function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
-    var session = "AM";
-    
-    if(h == 0){
-        h = 12;
-    }
-    
-    if(h > 12){
-        h = h - 12;
-        session = "PM";
-    }
-	
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-    
-    var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-    
-    setTimeout(showTime, 1000);
-    
+function showTime() {
+	var date = new Date();
+	var h = date.getHours(); // 0 - 23
+	var m = date.getMinutes(); // 0 - 59
+	var s = date.getSeconds(); // 0 - 59
+	var session = "AM";
+
+	if (h == 0) {
+		h = 12;
+	}
+
+	if (h > 12) {
+		h = h - 12;
+		session = "PM";
+	}
+
+
+	h = (h < 10) ? "0" + h : h;
+	m = (m < 10) ? "0" + m : m;
+	s = (s < 10) ? "0" + s : s;
+
+	var time = h + ":" + m + ":" + s + " " + session;
+	document.getElementById("MyClockDisplay").innerText = time;
+	document.getElementById("MyClockDisplay").textContent = time;
+
+	setTimeout(showTime, 1000);
+
 }
 
 showTime();
@@ -16437,14 +18470,14 @@ showTime();
 const openNote = document.querySelector('.open-note')
 const showOpenNote = document.querySelector('.cover-popup-note')
 const closeNote = document.querySelector('.close-btn-note')
-openNote.addEventListener("click",()=>{
+openNote.addEventListener("click", () => {
 	showOpenNote.classList.add('active')
 })
-closeNote.addEventListener('click',()=>{
+closeNote.addEventListener('click', () => {
 	showOpenNote.classList.remove("active")
 })
 
 var loader = document.getElementById('loader-website')
-window.addEventListener('load',function(){
-    loader.style.display = 'none'
+window.addEventListener('load', function () {
+	loader.style.display = 'none'
 })

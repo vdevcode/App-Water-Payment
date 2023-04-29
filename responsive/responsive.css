@@ -721,9 +721,20 @@
     .cover-popup-note.active{
         display:block;
     }
+    #noteList{
+ 
+       
+    }
     #noteList p{
         font-size: 1rem;
         color: yellow;
+        
+       
+        padding: 4px;
+        border: 1px solid white;
+        margin:10px ;
+        border-radius: 4px;
+        
     }
 
     .note-list-items {
@@ -787,8 +798,13 @@
         position: fixed;
     
     }
-    #total{
+    .total{
         margin-top: 10px;
+        padding: 4px 8px;
+        background-color: rgb(85, 235, 88);
+        display: inline-block;
+        color: rgb(0, 0, 0) !important;
+        border-radius: 2px;
     }
     
 }
